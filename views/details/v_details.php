@@ -118,7 +118,9 @@
 
                             <?php } ?>
 
-                            <div class="col-12" <?php if(!isset($_SESSION['user']) || !isset($_SESSION['user'])){
+                            <div class="col-12" <?php if(isset($_SESSION['admin']) || isset($_SESSION['user'])){
+                                echo "";
+                            }else{
                                 echo "hidden";
                             } ?>>
                                 <form action="" class="form" method="post">
@@ -137,7 +139,7 @@
                 <!-- end content tabs -->
             </div>
 
-            <!-- sidebar -->
+            <!-- sidebar phim cùng loai -->
             <div class="col-12 col-lg-4 col-xl-4">
                 <div class="row row--grid">
                     <!-- section title -->
