@@ -31,7 +31,5 @@ class m_phim extends database {
         $this->setQuery($sql);
         return $this->execute(array($id));
     }
-
-
 }
 ?>

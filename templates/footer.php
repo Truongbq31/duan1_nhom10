@@ -5,8 +5,8 @@
 			<div class="col-12 col-md-3">
 				<h6 class="footer__title">Download Our App</h6>
 				<ul class="footer__app">
-					<li><a href="#"><img src="view/abc/dmitryvolkov.me/demo/flixgo2.0/main/img/Download_on_the_App_Store_Badge.svg" alt=""></a></li>
-					<li><a href="#"><img src="view/abc/dmitryvolkov.me/demo/flixgo2.0/main/img/google-play-badge.png" alt=""></a></li>
+					<li><a href="#"><img src="public/abc/dmitryvolkov.me/demo/flixgo2.0/main/img/Download_on_the_App_Store_Badge.svg" alt=""></a></li>
+					<li><a href="#"><img src="public/abc/dmitryvolkov.me/demo/flixgo2.0/main/img/google-play-badge.png" alt=""></a></li>
 				</ul>
 			</div>
 			<!-- end footer list -->
@@ -52,8 +52,7 @@
 			<!-- footer copyright -->
 			<div class="col-12">
 				<div class="footer__copyright">
-					<small>© FlixGo, 2018—2022. Create by <a href="https://themeforest.net/user/dmitryvolkov/portfolio" target="_blank" rel="noopener">Dmitry Volkov</a>.</small>
-
+					<small>Dự án 1 - Giảng viên Hoàng Quang Thắng - Create by nhóm 10</small>
 					<ul>
 						<li><a href="privacy.html">Terms of Use</a></li>
 						<li><a href="privacy.html">Privacy Policy</a></li>
