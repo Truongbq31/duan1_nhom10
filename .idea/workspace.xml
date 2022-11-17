@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7fee531a-e60d-4653-a655-7a8e4f30f069" name="Changes" comment="update 17/11">
+      <change afterPath="$PROJECT_DIR$/.idea/Duan1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/c_signup.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/m_signup.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/signup.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/accounts/v_signup.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2HLqJElHR5eiItaqKYSrnbajOBI" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/duan1_nhom10&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;two.files.diff.last.used.file&quot;: &quot;C:/xampp/htdocs/Duan1/templates/layout'.php&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Duan1\admin\public" />
+      <recent name="C:\xampp\htdocs\Duan1\views\phim" />
+      <recent name="C:\xampp\htdocs\Duan1\views\home" />
+      <recent name="C:\xampp\htdocs\Duan1\templates" />
+      <recent name="C:\xampp\htdocs\Duan1\public\abc\dmitryvolkov.me\demo\flixgo2.0\main" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7fee531a-e60d-4653-a655-7a8e4f30f069" name="Changes" comment="" />
+      <created>1668074637607</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1668074637607</updated>
+      <workItem from="1668074638763" duration="3063000" />
+      <workItem from="1668087650072" duration="9146000" />
+      <workItem from="1668096904011" duration="343000" />
+      <workItem from="1668097333959" duration="129000" />
+      <workItem from="1668097662149" duration="4361000" />
+      <workItem from="1668102608196" duration="300000" />
+      <workItem from="1668102956904" duration="25000" />
+      <workItem from="1668166671239" duration="683000" />
+      <workItem from="1668168134750" duration="1326000" />
+      <workItem from="1668177127144" duration="16387000" />
+      <workItem from="1668229395851" duration="5708000" />
+      <workItem from="1668235216226" duration="10000" />
+      <workItem from="1668235502016" duration="392000" />
+      <workItem from="1668434232027" duration="14967000" />
+      <workItem from="1668503843775" duration="2948000" />
+      <workItem from="1668508663422" duration="604000" />
+      <workItem from="1668509649119" duration="293000" />
+      <workItem from="1668509954936" duration="435000" />
+      <workItem from="1668510420969" duration="449000" />
+      <workItem from="1668587467545" duration="3023000" />
+      <workItem from="1668676274145" duration="6525000" />
+      <workItem from="1668692103522" duration="1787000" />
+    </task>
+    <task id="LOCAL-00001" summary="test">
+      <created>1668509976207</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1668509976207</updated>
+    </task>
+    <task id="LOCAL-00002" summary="test">
+      <created>1668510467202</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1668510467202</updated>
+    </task>
+    <task id="LOCAL-00003" summary="ok">
+      <created>1668510578546</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1668510578546</updated>
+    </task>
+    <task id="LOCAL-00004" summary="len">
+      <created>1668587835175</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1668587835175</updated>
+    </task>
+    <task id="LOCAL-00005" summary="len tiep">
+      <created>1668587884800</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1668587884800</updated>
+    </task>
+    <task id="LOCAL-00006" summary="file chay admin">
+      <created>1668587917802</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1668587917802</updated>
+    </task>
+    <task id="LOCAL-00007" summary="file lon">
+      <created>1668588034096</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1668588034096</updated>
+    </task>
+    <task id="LOCAL-00008" summary="logout">
+      <created>1668589372563</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1668589372563</updated>
+    </task>
+    <task id="LOCAL-00009" summary="header">
+      <created>1668589398071</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1668589398071</updated>
+    </task>
+    <task id="LOCAL-00010" summary="end comment">
+      <created>1668590483877</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1668590483877</updated>
+    </task>
+    <task id="LOCAL-00011" summary="update 17/11">
+      <created>1668679399039</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1668679399039</updated>
+    </task>
+    <task id="LOCAL-00012" summary="update 17/11">
+      <created>1668679414108</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1668679414108</updated>
+    </task>
+    <task id="LOCAL-00013" summary="update 17/11">
+      <created>1668680326163</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1668680326163</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="abc" />
+    <MESSAGE value="tiep" />
+    <MESSAGE value="test" />
+    <MESSAGE value="ok" />
+    <MESSAGE value="ngu" />
+    <MESSAGE value="len" />
+    <MESSAGE value="len tiep" />
+    <MESSAGE value="file chay admin" />
+    <MESSAGE value="file lon" />
+    <MESSAGE value="logout" />
+    <MESSAGE value="header" />
+    <MESSAGE value="end comment" />
+    <MESSAGE value="update 17/11" />
+    <option name="LAST_COMMIT_MESSAGE" value="update 17/11" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php-line-method">
+          <url>file://$PROJECT_DIR$/admin/models/m_home.php</url>
+          <line>17</line>
+          <properties>
+            <option name="className" value="\m_home" />
+            <option name="methodName" value="thong_ke_loai_hang" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
