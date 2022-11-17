@@ -1,4 +1,3 @@
-<?php @session_start(); ?>
 <!DOCTYPE html>
 <html dir="ltr">
 <head>
@@ -60,11 +59,6 @@
                                 </div>
                                 <input type="password" class="form-control form-control-lg" placeholder="Password" aria-label="Password" name="mat_khau" aria-describedby="basic-addon1">
                             </div>
-                            <?php if (isset($_SESSION['error_login'])) : ?>
-                                <div class="alert" role="alert">
-                                    <?= $_SESSION['error_login'] ?>
-                                </div>
-                            <?php endif ?>
                         </div>
                     </div>
                     <div class="row border-top border-secondary">

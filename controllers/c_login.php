@@ -26,9 +26,12 @@ class c_login{
                 $login='successful';
                 header("location:./index.php?login=$login");
             }else{
-                $_SESSION['error_login'] =  "<script>alert('Đăng nhập thất bại')</script>";
-                header("location:login.php");
+                $errorLogin='errorLogin';
+                header("location:login.php?errorLogin=$errorLogin");
             }
+        }
+        if(isset($_GET['errorLogin'])){
+            echo "<script>alert('Đăng nhập thất bại')</script>";
         }
         $view = "views/accounts/v_login.php";
         include ("templates/content.php");
