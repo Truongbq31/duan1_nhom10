@@ -5,7 +5,7 @@ class c_phim{
         $m_phim = new m_phim();
         $phim = $m_phim->doc_phim();
         $view = "views/phim/v_phim.php";
-       include ("templates/layout.php");
+        include ("templates/layout.php");
 
         if(isset($_GET['update'])){
             echo "<script>alert('Sửa thành công')</script>";
@@ -15,6 +15,9 @@ class c_phim{
         }
     }
     public function addphim(){
+        include ("models/m_loaiphim.php");
+        $m_theloai = new m_loaiphim();
+        $theloai = $m_theloai->doc_loaiphim();
         if (isset($_POST['btn-add'])) {
             $id = NULL;
             $name = $_POST['name'];
@@ -45,6 +48,9 @@ class c_phim{
 
 
     public function edit_phim() {
+        include ("models/m_loaiphim.php");
+        $m_theloai = new m_loaiphim();
+        $theloai = $m_theloai->doc_loaiphim();
         $m_phim = new m_phim();
         if (isset($_GET['id'])) {
             $id = $_GET['id'];
@@ -83,6 +89,4 @@ class c_phim{
         $del="done";
         header("location: phim.php?del=$del");
     }
-
-
 }

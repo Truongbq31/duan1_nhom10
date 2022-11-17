@@ -46,11 +46,10 @@
                             <div class="form-group row">
                                 <label for="lname" class="col-sm-3 text-right control-label col-form-label">Loại phim</label>
                                 <div class="col-sm-9">
-                                    <select class="select2 form-control custom-select" style="width: 100%; height:36px;" name="id_loai_phim" required>
-                                        <option value="1">Hành động</option>
-                                        <option value="2">Kinh dị</option>
-                                        <option value="3">Tình cảm</option>
-
+                                    <select class="select2 form-control custom-select" style="width: 100%; height:36px;" name="id_loai_phim">
+                                        <?php foreach ($theloai as $key => $value){ ?>
+                                            <option value="<?php echo $value->id ?>"><?php echo $value->ten_loai ?></option>
+                                        <?php } ?>
                                     </select>
                                 </div>
                             </div>
