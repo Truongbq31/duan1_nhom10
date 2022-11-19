@@ -45,6 +45,7 @@
 
 							</span>
 							<span class="card__rate"> <?= $value->rate ?></span>
+                            <a href="suat_chieu.php?id=<?php echo $value->id_phim?>">Đặt vé</a>
 						</div>
 					</div>
 					<?php } ?>
