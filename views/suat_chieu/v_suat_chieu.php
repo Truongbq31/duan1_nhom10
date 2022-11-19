@@ -56,16 +56,11 @@
 <!--                    <img src="assets/images/ticket/date.png" alt="ticket">-->
 <!--                </div>-->
                 <span class="type">Ngày chiếu</span>
-                <select class="select-bar" name="id">
                     <?php foreach ($suat_chieu as $key => $value){?>
-                    <option value="<?php echo $value->id_lichchieu;?>"><?php echo $value->ngay_chieu;?></option>
-
+                        <a href="phong_chieu.php?id=<?php echo $value->id_lichchieu; ?>"><?php echo $value->ngay_chieu?></a>
                     <?php } ?>
-                </select>
             </div>
-            <?php foreach ($suat_chieu as $key => $value){?>
-                        <a href="phong_chieu.php?id=<?php $value->id_phong_chieu?>">Next</a>
-            <?php } ?>
+
 <!--            <div class="form-group">-->
 <!--                <div class="thumb">-->
 <!--                    <img src="assets/images/ticket/cinema.png" alt="ticket">-->
@@ -111,6 +106,7 @@
 <!--                                <i class="far fa-heart"></i>-->
 <!--                                <i class="fas fa-heart"></i>-->
 <!--                            </div>-->
+<!--                            <a href="#0" class="name">Genesis Cinema</a>-->
 <!--                            <div class="location-icon">-->
 <!--                                <i class="fas fa-map-marker-alt"></i>-->
 <!--                            </div>-->
