@@ -72,7 +72,7 @@
 					<!-- content tabs nav -->
 					<ul class="nav nav-tabs content__tabs" id="content__tabs" role="tablist">
 						<li class="nav-item" role="presentation">
-							<a class="nav-link active" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true">Mới cập nhật</a>
+							<a class="nav-link active" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true">Đánh giá cao</a>
 						</li>
 
 						<li class="nav-item" role="presentation">
@@ -118,12 +118,12 @@
 		<!-- content tabs -->
 		<div class="tab-content" id="myTabContent">
 
-<!--            Mới cập nhật-->
+<!--            Đánh giá cao-->
 			<div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="1-tab">
 				<div class="row row--grid">
 					<!-- card -->
                     <?php foreach ($phim as $items => $value){
-                            if($value->id_loai_phim == 1){
+                            if($value->rate == 5){
                      ?>
 					<div class="col-6 col-sm-12 col-lg-6">
 						<div class="card card--list">
