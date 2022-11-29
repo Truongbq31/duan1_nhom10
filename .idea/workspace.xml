@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7fee531a-e60d-4653-a655-7a8e4f30f069" name="Changes" comment="done admin khung_gio_chieu" />
+    <list default="true" id="7fee531a-e60d-4653-a655-7a8e4f30f069" name="Changes" comment="done admin khung_gio_chieu">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/controllers/c_home.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controllers/c_home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/models/m_home.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/models/m_home.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -218,20 +223,5 @@
     <MESSAGE value="update 17/11" />
     <MESSAGE value="done admin khung_gio_chieu" />
     <option name="LAST_COMMIT_MESSAGE" value="done admin khung_gio_chieu" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php-line-method">
-          <url>file://$PROJECT_DIR$/admin/models/m_home.php</url>
-          <line>17</line>
-          <properties>
-            <option name="className" value="\m_home" />
-            <option name="methodName" value="thong_ke_loai_hang" />
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
