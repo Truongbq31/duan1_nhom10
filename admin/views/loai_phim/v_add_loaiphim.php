@@ -22,6 +22,7 @@
                                 <a href="loaiphim.php" type="submit" name="btn-submit" class="btn btn-primary">Danh sách</a>
                             </div>
                         </div>
+                        </div>
                     </form>
                 </div>
             </div>
