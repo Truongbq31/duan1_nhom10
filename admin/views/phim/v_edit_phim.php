@@ -21,7 +21,7 @@
                             <div class="form-group row">
                                 <label for="fname" class="col-sm-3 text-right control-label col-form-label">Rate</label>
                                 <div class="col-sm-9">
-                                    <input type="text" class="form-control" id="ten_tieu_de" name="rate" value="<?php echo $phim_details->rate ?>"">
+                                    <input type="number" min="0" max="5" class="form-control" id="ten_tieu_de" name="rate" value="<?php echo $phim_details->rate ?>"">
                                 </div>
                             </div>
                             <div class="form-group row">
