@@ -76,6 +76,8 @@
 <script src="public/abc/dmitryvolkov.me/demo/flixgo2.0/main/js/photoswipe-ui-default.min.js"></script>
 <script src="public/abc/dmitryvolkov.me/demo/flixgo2.0/main/js/main.js"></script>
 
+
+
 <!-- end footer -->
 
 <!-- Root element of PhotoSwipe. Must have class pswp. -->

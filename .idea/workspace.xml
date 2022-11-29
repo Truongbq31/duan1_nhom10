@@ -4,11 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7fee531a-e60d-4653-a655-7a8e4f30f069" name="Changes" comment="done admin khung_gio_chieu">
+    <list default="true" id="7fee531a-e60d-4653-a655-7a8e4f30f069" name="Changes" comment="update 17/11">
+      <change afterPath="$PROJECT_DIR$/controllers/c_gio_chieu.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/c_suat_chieu.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gio_chieu.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/m_gio_chieu.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/m_suat_chieu.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/abc/dmitryvolkov.me/demo/flixgo2.0/main/css/main2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/abc/dmitryvolkov.me/demo/flixgo2.0/main/css/main3.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/suat_chieu.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/layout2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/suat_chieu/v_suat_chieu.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/controllers/c_home.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controllers/c_home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/models/m_home.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/models/m_home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/home/v_home.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/home/v_home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/phim/v_phim.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/phim/v_phim.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -221,7 +230,21 @@
     <MESSAGE value="header" />
     <MESSAGE value="end comment" />
     <MESSAGE value="update 17/11" />
-    <MESSAGE value="done admin khung_gio_chieu" />
-    <option name="LAST_COMMIT_MESSAGE" value="done admin khung_gio_chieu" />
+    <option name="LAST_COMMIT_MESSAGE" value="update 17/11" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php-line-method">
+          <url>file://$PROJECT_DIR$/admin/models/m_home.php</url>
+          <line>17</line>
+          <properties>
+            <option name="className" value="\m_home" />
+            <option name="methodName" value="thong_ke_loai_hang" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
