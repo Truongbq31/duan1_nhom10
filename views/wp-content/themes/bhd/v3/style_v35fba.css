@@ -1,0 +1,305 @@
+.bt_ok+span {
+    min-width: 31.1% !important;
+    float: left;
+    margin-right: 5px;
+}
+.controls .bt_ok+span:last-child {
+    margin-right: 0;
+}
+.clear {
+    clear: both;
+}
+em {
+    font-style: italic !important;
+}
+.section--product-view {
+    padding-bottom: 50px;
+}
+.cinema--background .product--title {
+    margin-top: 10px;
+}
+.table--history tr {
+    border-bottom: 1px solid #e7e7e7;
+}
+.table--history tr td {
+    padding-top: 5px;
+}
+#header .list--social {
+    margin-top: -10px;
+}
+#header .list--social li {
+    margin-right: 15px;
+}
+#header .list--social img {
+    width: 55px;
+    cursor: pointer;
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;
+}
+#header .list--social img:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+@media (min-width: 900px) {
+    .main_header.fixed {
+        position: fixed;
+        width: 100%;
+        z-index: 999999999999;
+    }
+}
+.main_header_innor {
+    position: relative;
+    z-index: 100;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.showtimes .list--times .tab--showtimes-controls li {
+    text-align: center;
+}
+.close_header {
+    position: absolute;
+    display: block;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    display: none;
+}
+.close_header img {
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;
+}
+.close_header img:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+.header-seach-v3.active .close_header {
+    display: block;
+}
+.header-seach-v3 {
+    position: absolute;
+    background: #000000;
+    z-index: 99;
+    width: 100%;
+    min-height: 915px;
+    height: 100%;
+    display: none;
+}
+.header-seach-v3.active {
+    display: block;
+}
+.header-seach-v3 .search-mvtp {
+    position: absolute;
+    left: 50%;
+    margin-left: -300px;
+    width: 300px;
+    top: 12px;
+    text-align: center;
+}
+.header-seach-v3 .search-mvtr a {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+}
+.header-seach-v3 .search-mvtr {
+    position: absolute;
+    left: 50%;
+    margin-left: -1px;
+    top: 12px;
+    text-align: center;
+    width: 300px;
+}
+.page-template-templatelichchieu_phim-php .section--promotion {
+    padding-top: 0;
+}
+.header-seach-v3 .search-mvtr a, .header-seach-v3 .search-mvtp a {
+    width: 300px;
+    background: transparent;
+    border: none;
+    border-radius: 3px;
+    color: #666;
+    padding: 3px 15px;
+    text-decoration: none;
+    display: block;
+}
+.header-seach-v3 .search-mvtp a {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+}
+.main-search .row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+#header .btn--dropdown-menu {
+    width: 120px;
+}
+#header .btn--dropdown-men:hover {
+    opacity: 0.7;
+}
+#header .btn--dropdown-men:hover a {
+    color: #50b647;
+}
+#header .btn--dropdown-menu a {
+    color: #fff;
+    text-decoration: none;
+}
+.header-seach-v3 .search-mvtr a:hover, .header-seach-v3 .search-mvtp a:hover {
+    opacity: 0.7;
+}
+.main-search {
+    padding-top: 90px;
+    width: 1486px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    max-width: 100%;
+}
+.title-search {
+    color: #d4dd29;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.search-title-container li {
+    display: inline-block;
+}
+.search-title-container li a {
+    text-decoration: none;
+}
+.search-title-container li a:hover {
+    color: #d4dd29;
+}
+.search-title-container li:after, .tab-search-rap .search-title-container li:after {
+    content: "|";
+    color: #fff;
+    font-size: 29px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.search-title-container li:last-child:after {
+    content: "";
+    display: none;
+}
+.tab-search-rap .search-title-container li:last-child:after {
+    display: none;
+}
+.search-title-container .title-search {
+    color: #fff;
+}
+/*.search-title-container .title-search.tp-ha-noi{
+    color : #93d822;
+}
+.search-title-container .title-search.tp-hue{
+    color : #19b6a8;
+}*/
+
+.search-title-container .title-search.active {
+    color: #d4dd29;
+}
+.container-search-header {
+    padding: 15px;
+}
+.container-search-header ul li {
+    display: inline-block;
+    width: 32%;
+    padding: 5px 5px;
+    padding-bottom: 20px;
+}
+.container-search-header ul li img {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+}
+.container-search-header ul li a {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+}
+.container-search-header ul li.category-city-tp-hue a {
+    color: #19b6a8;
+}
+.container-search-header ul li.category-city-tp-ha-noi a {
+    color: #93d822;
+}
+.container-search-header ul li a:hover {
+    text-decoration: none;
+    color: #e7e7e7;
+}
+.lich-chieu-phim h3 {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 5px;
+    border-bottom: 2px solid #608a2e;
+    padding: 15px 0;
+}
+.single .showtimes {
+    background: none;
+    position: inherit;
+}
+.single .bhd-notfound {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+.showtimes .list--showtimes-cinema .item--showtimes-cinema .info {
+    height: auto;
+}
+.header-seach-v3 a:hover {
+    color: #d4dd29 !important;
+}
+
+
+.list--times .flex-direction-nav {
+  *height: 0;
+}
+.list--times .flex-direction-nav a {
+  text-decoration: none;
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin: -20px 0 0;
+  position: absolute;
+  top: 65%;
+  z-index: 10;
+  overflow: hidden;
+  opacity: 1;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.8);
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  font : normal normal normal 14px/1 FontAwesome !important;
+}
+.list--times  .flex-direction-nav a:before, .section--product-view .list--times  .flex-direction-nav a:before{  
+  display: inline-block;
+  content: '\f053';
+  color: #fff;
+  font : normal normal normal 14px/1 FontAwesome !important;
+}
+.list--times  .flex-direction-nav a.flex-next:before, .section--product-view .list--times  .flex-direction-nav a.flex-next:before{
+  content: '\f054';
+  font : normal normal normal 14px/1 FontAwesome !important;
+}
+.list--times  .flex-direction-nav .flex-prev {
+  left: -5px;
+}
+.list--times  .flex-direction-nav .flex-next {
+  right: -10px;
+  text-align: right;
+}
+.list--times .flex-control-nav.flex-control-paging{
+    display: none;
+}
+.page-template-lichchieu_phim .list--times .flex-direction-nav a {
+    top:45px;
+}
+.showtimes .list--times .tab--showtimes-controls li {
+    width: 70px !important;
+}

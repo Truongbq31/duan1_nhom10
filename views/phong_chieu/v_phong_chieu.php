@@ -39,7 +39,7 @@
 <!--                        <i class="far fa-heart"></i>-->
 <!--                        <i class="fas fa-heart"></i>-->
 <!--                    </div>-->
-<!--<!--                    -->--><?php ////foreach ($suat_chieu as $key =>$value){?>
+<!--<!--                    -->--><?php ////foreach ($lich_chieu as $key =>$value){?>
 <!--<!--                        <span>-->--><?php ////echo $value->ten_phong;?><!--<!--</span>-->-->
 <!--<!--                    -->--><?php ////}?>
 <!--                    <div class="location-icon">-->

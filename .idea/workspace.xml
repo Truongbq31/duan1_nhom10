@@ -4,20 +4,178 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7fee531a-e60d-4653-a655-7a8e4f30f069" name="Changes" comment="update 17/11">
-      <change afterPath="$PROJECT_DIR$/controllers/c_gio_chieu.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/c_suat_chieu.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gio_chieu.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/m_gio_chieu.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/m_suat_chieu.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/abc/dmitryvolkov.me/demo/flixgo2.0/main/css/main2.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/abc/dmitryvolkov.me/demo/flixgo2.0/main/css/main3.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/suat_chieu.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/layout2.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/suat_chieu/v_suat_chieu.php" afterDir="false" />
+    <list default="true" id="7fee531a-e60d-4653-a655-7a8e4f30f069" name="Changes" comment="update 19/11">
+      <change afterPath="$PROJECT_DIR$/Seat.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/c_Seat.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/c_data.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lich_chieu.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/m_Seat.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/m_data.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/m_ve.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/abc/dmitryvolkov.me/demo/flixgo2.0/main/css/style2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/layout3.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Seat/v_Seat.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/js/script2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/lich_chieu/v_lich_chieu.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/lich_chieu/v_suat_chieu1.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/plugins/contact-form-7/images/ajax-loader.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/plugins/contact-form-7/includes/css/styles972f.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/plugins/contact-form-7/includes/js/scripts972f.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/plugins/sitepress-multilingual-cms/templates/language-switchers/legacy-dropdown/script68b3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/plugins/sitepress-multilingual-cms/templates/language-switchers/legacy-dropdown/style68b3.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/css/font-awesome.min55fe.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/css/jquery.mCustomScrollbar.min55fe.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/css/mCSB_buttons.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/css/rap-theo-gio55fe.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/css/reset55fe.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/css/select2.min7f0f.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/css/style4523.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/fonts/Prototype.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/fonts/Prototype.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/fonts/Prototype.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/fonts/Prototype.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/fonts/Prototype.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/fonts/Prototyped41d.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/fonts/ProximaNova-Bold.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/fonts/ProximaNova-Bold.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/fonts/ProximaNova-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/fonts/ProximaNova-Bold.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/fonts/ProximaNova-Bold.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/fonts/ProximaNova-Boldd41d.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/fonts/ProximaNova-Light.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/fonts/ProximaNova-Light.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/fonts/ProximaNova-Light.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/fonts/ProximaNova-Light.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/fonts/ProximaNova-Light.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/fonts/ProximaNova-Lightd41d.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/fonts/ProximaNova-Reg.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/fonts/ProximaNova-Reg.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/fonts/ProximaNova-Reg.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/fonts/ProximaNova-Reg.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/fonts/ProximaNova-Reg.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/fonts/ProximaNova-RegIt.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/fonts/ProximaNova-RegIt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/fonts/ProximaNova-RegIt.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/fonts/ProximaNova-RegIt.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/fonts/ProximaNova-RegIt.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/fonts/ProximaNova-RegItd41d.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/fonts/ProximaNova-Regd41d.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/fonts/ProximaNova-Sbold.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/fonts/ProximaNova-Sbold.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/fonts/ProximaNova-Sbold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/fonts/ProximaNova-Sbold.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/fonts/ProximaNova-Sbold.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/fonts/ProximaNova-Sboldd41d.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/fonts/font55fe.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/fonts/fontawesome-webfont93e3.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/fonts/fontawesome-webfont93e3.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/fonts/fontawesome-webfont93e3.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/fonts/fontawesome-webfont93e3.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/fonts/fontawesome-webfont93e3.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/fonts/fontawesome-webfontd41d.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/images/app-background.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/images/bg-btn-green-hover.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/images/bg-btn-green.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/images/bg-btn-menu.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/images/bg-btn-white-hover.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/images/bg-btn-white.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/images/bg-button-menu.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/images/bg-button-yolo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/images/bg-buy-ticket-hover.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/images/bg-buy-ticket-hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/images/bg-buy-ticket.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/images/bg-cinema-10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/images/bg-cinema-top.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/images/bg-grid.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/images/bg-header.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/images/bg-home-01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/images/bg-home-02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/images/bg-main.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/images/bg-member.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/images/bg-white-footer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/images/bhds_nutv2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/images/bhds_nutv2_select.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/images/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/images/footer-cured.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/images/icon-down-large.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/images/icon-fb-large.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/images/icon-gp-large.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/images/icon_YT.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/images/icon_fb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/images/icon_in.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/images/icon_tiktok.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/images/img-left-angle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/images/img-map.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/images/img-right-angle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/images/instagram_footer_new.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/images/instagram_footer_new_hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/images/instagram_hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/images/instagram_normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/images/line-gradient-reg-box.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/images/line-gradient.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/images/line-header1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/images/movie-details-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/images/phone.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/images/scroll-down.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/images/user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/images/zalo_footer_new.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/images/zalo_footer_new_hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/images/zalo_hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/images/zalo_normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/plugin/bootstrap-3.3.6-dist/css/bootstrap.min55fe.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/plugin/bootstrap-3.3.6-dist/js/bootstrap.min5152.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/plugin/bootstrap-sweetalert/sweetalert.min77ae.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/plugin/bootstrap-sweetalert/sweetalert55fe.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/plugin/bootstrap-toastr/toastr.min55fe.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/plugin/bootstrap-toastr/toastr.min55fe.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/plugin/jquery-validation/js/additional-methods.mind50e.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/plugin/jquery-validation/js/jquery.validate.mind50e.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/plugin/jquery-validation/js/localization/messages_vid50e.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/plugin/ladda/ladda-themeless.min55fe.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/plugin/ladda/ladda.min61fa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/plugin/ladda/spin.min61fa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/scripts/custom-lich-theo-gio55fe.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/scripts/isotope.pkgd.min5152.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/scripts/jquery.datetimepicker55fe.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/scripts/jquery.flexslider-min5152.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/scripts/jquery.mCustomScrollbar.min5152.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/scripts/jquery.scrollTo-min5152.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/scripts/main5152.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/scripts/select2.min5152.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/assets/scripts/snow.mini55fe.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/lib_frontend/css/loading55fe.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/lib_frontend/css/magnific-popup55fe.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/lib_frontend/css/style5fba.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/lib_frontend/js/jquery.magnific-popup.min5152.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/lib_frontend/js/script4523.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/stylef738.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/themes/bhd/v3/style_v35fba.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/uploads/2017/10/BHD-Star_Hotline_710x320-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/uploads/2018/03/BHD-Star-APP-710x320.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/uploads/2018/03/BHD-Star-ScanQR-710x320.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/uploads/2018/03/COLORFULFESTIVAL-WEB-1920x1080.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/uploads/2018/03/Suat-Khuya-Web.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/uploads/2018/03/U22-web-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/uploads/2018/03/Visa-x-BHD-WEB.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/uploads/2018/03/Web-HappyDay.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-content/uploads/2020/02/dathongbao-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-includes/js/jquery/jquery-migrate.min330a.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-includes/js/jquery/jqueryb8ff.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/wp-includes/js/wp-embed.min55fe.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/c_gio_chieu.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/c_gio_chieu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/c_home.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/c_home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/c_suat_chieu.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/c_lich_chieu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/m_suat_chieu.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/m_lich_chieu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/suat_chieu.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/head.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/head.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/layout2.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layout2.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/home/v_home.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/home/v_home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/phim/v_phim.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/phim/v_phim.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/phong_chieu/v_phong_chieu.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/phong_chieu/v_phong_chieu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/suat_chieu/v_suat_chieu.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +188,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="package.json" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -50,10 +210,11 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/duan1_nhom10&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ADMIN/Downloads/Duan1&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -67,11 +228,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\duan1_nhom10\views\js" />
+      <recent name="C:\xampp\htdocs\duan1_nhom10\public\abc\dmitryvolkov.me\demo\flixgo2.0\main\js" />
+      <recent name="C:\xampp\htdocs\duan1_nhom10\public\abc\dmitryvolkov.me\demo\flixgo2.0\main\css" />
       <recent name="C:\xampp\htdocs\Duan1\admin\public" />
       <recent name="C:\xampp\htdocs\Duan1\views\phim" />
-      <recent name="C:\xampp\htdocs\Duan1\views\home" />
-      <recent name="C:\xampp\htdocs\Duan1\templates" />
-      <recent name="C:\xampp\htdocs\Duan1\public\abc\dmitryvolkov.me\demo\flixgo2.0\main" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -106,7 +267,24 @@
       <workItem from="1668692103522" duration="1787000" />
       <workItem from="1668695122561" duration="1024000" />
       <workItem from="1668781803374" duration="16992000" />
-      <workItem from="1668867698800" duration="3129000" />
+      <workItem from="1668867698800" duration="7753000" />
+      <workItem from="1668917125459" duration="612000" />
+      <workItem from="1668932974927" duration="1908000" />
+      <workItem from="1668954442391" duration="6302000" />
+      <workItem from="1669002147857" duration="1996000" />
+      <workItem from="1669015169501" duration="5693000" />
+      <workItem from="1669040454295" duration="7057000" />
+      <workItem from="1669110309245" duration="4990000" />
+      <workItem from="1669171242460" duration="9824000" />
+      <workItem from="1669262106667" duration="18057000" />
+      <workItem from="1669308833712" duration="5675000" />
+      <workItem from="1669363962912" duration="9000" />
+      <workItem from="1669377964447" duration="2853000" />
+      <workItem from="1669393726520" duration="19563000" />
+      <workItem from="1669514132164" duration="3900000" />
+      <workItem from="1669621867890" duration="781000" />
+      <workItem from="1669627761664" duration="4165000" />
+      <workItem from="1669663870206" duration="6043000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1668509976207</created>
@@ -199,7 +377,21 @@
       <option name="project" value="LOCAL" />
       <updated>1668680326163</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="update 19/11">
+      <created>1668872332092</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1668872332092</updated>
+    </task>
+    <task id="LOCAL-00015" summary="update 19/11">
+      <created>1668875478702</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1668875478702</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,6 +409,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="abc" />
     <MESSAGE value="tiep" />
     <MESSAGE value="test" />
@@ -230,7 +423,8 @@
     <MESSAGE value="header" />
     <MESSAGE value="end comment" />
     <MESSAGE value="update 17/11" />
-    <option name="LAST_COMMIT_MESSAGE" value="update 17/11" />
+    <MESSAGE value="update 19/11" />
+    <option name="LAST_COMMIT_MESSAGE" value="update 19/11" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -243,6 +437,11 @@
             <option name="methodName" value="thong_ke_loai_hang" />
           </properties>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/models/connect.php</url>
+          <line>9</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

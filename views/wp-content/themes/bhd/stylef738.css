@@ -1,0 +1,164 @@
+/*
+Theme Name: BHD Star ok
+Theme URI: https://bhdstar.com
+Author: Ninja team
+Author URI: http://ninjateam.org/
+Description: Kênh book vé trực tuyến của BHD Star
+Version: 1.0
+Tags: bhd, phim, cinemas
+Text Domain: bhd
+Support: skype_hongtam
+*/
+.container{
+    max-width: 1170px;
+}
+
+.gapb-code {
+    text-align: center;
+}
+.gapb-code span {
+    padding: 10px 30px;
+    background: #8cc542;
+    color: #000;
+    font-size: 20px;
+    display: inline-block;
+}
+.single-deals .news--detail-content .text--content p {
+    padding: 0;
+}
+
+.member-card {
+    background: #121e26;
+    padding: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    position: relative;
+}
+                        
+.member-card h3 {
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0 0 5px;
+    padding: 0;
+    color: #fff;
+}
+.member-card > ul {
+    list-style-type: none;
+    margin: 5px 0;
+    padding: 25px 15px;
+    background-color: #39454f;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #40a933;
+}
+.member-card > ul > li {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+}
+.member-card > ul > li > span {
+    letter-spacing: 2px;
+}
+
+.member-card > ul > li > span.lv {
+    padding: 2px 12px;
+    background: #f6a42d;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.member-card-qr {
+    position: absolute;
+    top: 54px;
+    right: 23px;
+    background: #fff;
+    padding: 15px;
+    max-width: 150px;
+}
+@media(max-width : 768px) {
+    .member-card-qr {
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+  .page--member .member--edit {
+    padding : 0;
+  }
+}
+
+#header .header--right {
+    top: 10px;
+}
+
+.header--right img, .gop-y{
+    width: 55px;
+    cursor: pointer;
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    transition:         transform .8s ease-in-out;
+}
+
+.header--right img:hover, {
+    -webkit-transform: rotate(360deg);
+     transform: rotate(360deg);
+}
+.gop-y {
+    border: 2px solid #fff;
+    color: #fff;
+    font-weight: bold;
+    padding: 17px 3px;
+    border-radius: 50%;
+    font-size: 14px;
+}
+#header .top--link.gop-y span{
+    color: #fff;
+}
+.gop-y:hover{
+    transform               : rotate(360deg);
+    -moz-transform          : rotate(360deg);
+    -webkit-transform       : rotate(360deg);
+    transform-origin        : center;
+    -moz-transform-origin   : center;
+    -webkit-transform-origin: center;
+
+    transition              : transform 1.0s ease all;
+    -moz-transition         : -moz-transform 1.0s ease all;
+    -webkit-transition      : -webkit-transform 1.0s ease all;
+}
+
+#gop-y .modal-content{
+    background: #1c262f;
+    color: #fff;
+}
+#gop-y .modal-header, #gop-y .modal-footer {
+    border-color: #38424b;
+    text-align: left;
+}
+#gop-y .modal-header .close {
+    margin-top: -30px;
+    color: #fff;
+}
+#gop-y input, #gop-y textarea{
+    background: #273245;
+    border-color: #273245;
+    color: #fff;
+    padding: 0 15px;
+    font-size: 13px;
+    line-height: 36px;
+}
+#gop-y input:focus, #gop-y textarea:focus{
+    background: #fff;
+    color: #1c262f;
+}
+#gop-y .confirm h4{
+    margin-bottom: 20px;
+}
+#gop-y .confirm {
+    display: none;
+    text-align: center;
+    padding: 80px 40px;
+}
