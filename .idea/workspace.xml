@@ -5,25 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7fee531a-e60d-4653-a655-7a8e4f30f069" name="Changes" comment="29/11">
-      <change afterPath="$PROJECT_DIR$/admin/add_khung_gio_phong_chieu.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/add_phong_chieu.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/controllers/c_khung_gio_phong_chieu.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/controllers/c_phong_chieu.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/delete_khung_gio_phong_chieu.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/delete_phong_chieu.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/edit_khung_gio_phong_chieu.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/edit_phong_chieu.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/khung_gio_phong_chieu.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/models/m_khung_gio_phong_chieu.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/models/m_phong_chieu.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/phong_chieu.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/views/khung_gio_phong_chieu/v_add_khung_gio_phong_chieu.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/views/khung_gio_phong_chieu/v_edit_khung_gio_phong_chieu.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/views/khung_gio_phong_chieu/v_khung_gio_phong_chieu.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/views/phong_chieu/v_add_phong_chieu.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/views/phong_chieu/v_edit_phong_chieu.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/views/phong_chieu/v_phong_chieu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_1_2022_12_51_AM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_1_2022_12_51_AM__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/details/v_details.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/details/v_details.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/home/v_home.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/home/v_home.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

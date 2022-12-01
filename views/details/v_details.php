@@ -44,6 +44,8 @@
                         <div class="card__description card__description--details">
                             <?php echo $values->description;?>
                         </div>
+
+                        <a href="lich_chieu.php?id=<?php echo $values->id?>">Đặt vé</a>
                     </div>
                     <!-- end card content -->
                 </div>

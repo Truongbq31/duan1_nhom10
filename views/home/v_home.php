@@ -45,7 +45,7 @@
 
 							</span>
 							<span class="card__rate"> <?= $value->rate ?></span>
-                            <a href="lich_chieu.php?id=<?php echo $value->id_phim?>">Đặt vé</a>
+
 						</div>
 					</div>
 					<?php } ?>
@@ -123,7 +123,7 @@
 				<div class="row row--grid">
 					<!-- card -->
                     <?php foreach ($phim as $items => $value){
-                            if($value->rate == 5){
+                            if($value->rate >= 4){
                      ?>
 					<div class="col-6 col-sm-12 col-lg-6">
 						<div class="card card--list">
