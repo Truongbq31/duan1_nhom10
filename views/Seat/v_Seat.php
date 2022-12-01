@@ -92,7 +92,7 @@ $mangGhe = [["A1","A2","A3","A4","A5","A6"],
 <!--            <span class="title price"></span>-->
 <!--        </div>-->
         <div class="book-item">
-            <a style=" color:red ; text-decoration: none;font-size: 20px; background-color: yellow;border-radius: 3px"  href="" class="submit">Booking</a>
+            <a style=" color:red ; text-decoration: none;font-size: 20px; background-color: yellow;border-radius: 3px"  href="" class="submit">Đặt Vé+</a>
         </div>
     </div>
 </div>
@@ -126,7 +126,7 @@ $mangGhe = [["A1","A2","A3","A4","A5","A6"],
         });
         $(".submit").click(function(){
 
-            if(confirm("Bạn đã chắc chắn chưa ?")){
+            if(confirm("Bạn có chắc muốn đặt vé ?")){
                 var id=$(".booked").html();
                 // var gia=$(".price").html()
                 var ten_phim=$(".ten_phim").html();
@@ -134,7 +134,6 @@ $mangGhe = [["A1","A2","A3","A4","A5","A6"],
                 var ngay_chieu = $(".ngay_chieu").html();
                 var phong_chieu = $(".ten_phong").html();
                 var chi_nhanh = $(".ten_chi_nhanh").html();
-
 
                 $.post("models/m_ve.php",{ghe_ngoi: id,ten_phim: ten_phim,gio_bat_dau:gio_bat_dau,ngay_chieu:ngay_chieu,phong_chieu:phong_chieu,chi_nhanh:chi_nhanh});
             }

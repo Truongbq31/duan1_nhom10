@@ -4,7 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7fee531a-e60d-4653-a655-7a8e4f30f069" name="Changes" comment="update 1/12" />
+    <list default="true" id="7fee531a-e60d-4653-a655-7a8e4f30f069" name="Changes" comment="29/11">
+      <change afterPath="$PROJECT_DIR$/admin/add_khung_gio_phong_chieu.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/add_phong_chieu.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/controllers/c_khung_gio_phong_chieu.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/controllers/c_phong_chieu.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/delete_khung_gio_phong_chieu.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/delete_phong_chieu.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/edit_khung_gio_phong_chieu.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/edit_phong_chieu.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/khung_gio_phong_chieu.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/models/m_khung_gio_phong_chieu.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/models/m_phong_chieu.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/phong_chieu.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/views/khung_gio_phong_chieu/v_add_khung_gio_phong_chieu.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/views/khung_gio_phong_chieu/v_edit_khung_gio_phong_chieu.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/views/khung_gio_phong_chieu/v_khung_gio_phong_chieu.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/views/phong_chieu/v_add_phong_chieu.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/views/phong_chieu/v_edit_phong_chieu.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/views/phong_chieu/v_phong_chieu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -99,8 +119,7 @@
       <workItem from="1668695122561" duration="1024000" />
       <workItem from="1668781803374" duration="16992000" />
       <workItem from="1668867698800" duration="3129000" />
-      <workItem from="1669750415668" duration="4957000" />
-      <workItem from="1669885476931" duration="4207000" />
+      <workItem from="1669750415668" duration="4418000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1668509976207</created>
@@ -193,21 +212,7 @@
       <option name="project" value="LOCAL" />
       <updated>1668680326163</updated>
     </task>
-    <task id="LOCAL-00014" summary="admin khung_gio_phong_chieu and phong_chieu">
-      <created>1669754959805</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1669754959805</updated>
-    </task>
-    <task id="LOCAL-00015" summary="update 1/12">
-      <created>1669889563247</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1669889563247</updated>
-    </task>
-    <option name="localTasksCounter" value="16" />
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,8 +244,6 @@
     <MESSAGE value="end comment" />
     <MESSAGE value="update 17/11" />
     <MESSAGE value="done admin khung_gio_chieu" />
-    <MESSAGE value="admin khung_gio_phong_chieu and phong_chieu" />
-    <MESSAGE value="update 1/12" />
-    <option name="LAST_COMMIT_MESSAGE" value="update 1/12" />
+    <option name="LAST_COMMIT_MESSAGE" value="done admin khung_gio_chieu" />
   </component>
 </project>

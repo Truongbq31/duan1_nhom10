@@ -10,7 +10,7 @@ class m_lich_chieu extends database
       inner join khung_gio_chieu on khung_gio_chieu.id=lich_chieu.id_khung_gio_chieu
       inner join khung_gio_phong_chieu on khung_gio_chieu.id=khung_gio_phong_chieu.id_khung_gio_chieu
       inner join phong_chieu on khung_gio_phong_chieu.id_phong_chieu=phong_chieu.id                                                   
-      where phim.id=? ";
+      where phim.id=? group by lich_chieu.ngay_chieu";
         $this->setQuery($sql);
         return $this->loadAllRows(array($id));
 
@@ -22,7 +22,7 @@ class m_lich_chieu extends database
       inner join khung_gio_chieu on khung_gio_chieu.id=lich_chieu.id_khung_gio_chieu
       inner join khung_gio_phong_chieu on khung_gio_chieu.id=khung_gio_phong_chieu.id_khung_gio_chieu
       inner join phong_chieu on khung_gio_phong_chieu.id_phong_chieu=phong_chieu.id                                                   
-      where phim.id=? ";
+      where phim.id=? group by lich_chieu.ngay_chieu";
         $this->setQuery($sql);
         return $this->loadAllRows(array($id));
     }
@@ -33,7 +33,7 @@ class m_lich_chieu extends database
       inner join khung_gio_chieu on khung_gio_chieu.id=lich_chieu.id_khung_gio_chieu
       inner join khung_gio_phong_chieu on khung_gio_chieu.id=khung_gio_phong_chieu.id_khung_gio_chieu
       inner join phong_chieu on khung_gio_phong_chieu.id_phong_chieu=phong_chieu.id                                                   
-      where phim.id=? ";
+      where phim.id=?";
         $this->setQuery($sql);
         return $this->loadAllRows(array($id));
     }

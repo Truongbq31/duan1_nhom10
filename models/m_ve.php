@@ -4,6 +4,7 @@ require("connect.php");
 if(isset($_POST["ghe_ngoi"])){
     $ghe_ngoi=$_POST["ghe_ngoi"];
     if($ghe_ngoi==""){
+        echo "<script>alert('Vui lòng chọn ghế ngồi')</script>";
         die();
     }
     $ten_phim =$_POST["ten_phim"];
