@@ -1,0 +1,223 @@
+Index: admin/controllers/c_home.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?php\r\ninclude (\"models/m_home.php\");\r\nclass c_home {\r\n    public function thong_ke_website() {\r\n        $m_thong_ke = new m_home();\r\n//        $thong_ke_hh = $m_thong_ke->thong_ke_hang_hoa();\r\n//        $thong_ke_lh = $m_thong_ke->thong_ke_loai_hang();\r\n//        $thong_ke_kh = $m_thong_ke->thong_ke_khach_hang();\r\n//        $thong_ke_bl = $m_thong_ke->thong_ke_binh_luan();\r\n        $view = \"views/home/v_home.php\";\r\n        include (\"templates/layout.php\");\r\n\r\n        if(isset($_GET['login'])){\r\n            echo \"<script>alert('Đăng nhập thành công')</script>\";\r\n        }\r\n    }\r\n}\r\n// làm tính năng đăng nhập nhảy vào trang m_home.php\r\n// nếu như không đăng nhập mà vào link của m_home.php sẽ bị bật về trang login\r\n// làm tính năng đăng xuất\r\n//cắt trang chart html
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/admin/controllers/c_home.php b/admin/controllers/c_home.php
+--- a/admin/controllers/c_home.php	(revision 04e00ccabdd8d1ddffd635193c93f20f8a18ce49)
++++ b/admin/controllers/c_home.php	(date 1669730830562)
+@@ -1,21 +1,1 @@
+-<?php
+-include ("models/m_home.php");
+-class c_home {
+-    public function thong_ke_website() {
+-        $m_thong_ke = new m_home();
+-//        $thong_ke_hh = $m_thong_ke->thong_ke_hang_hoa();
+-//        $thong_ke_lh = $m_thong_ke->thong_ke_loai_hang();
+-//        $thong_ke_kh = $m_thong_ke->thong_ke_khach_hang();
+-//        $thong_ke_bl = $m_thong_ke->thong_ke_binh_luan();
+-        $view = "views/home/v_home.php";
+-        include ("templates/layout.php");
+-
+-        if(isset($_GET['login'])){
+-            echo "<script>alert('Đăng nhập thành công')</script>";
+-        }
+-    }
+-}
+-// làm tính năng đăng nhập nhảy vào trang m_home.php
+-// nếu như không đăng nhập mà vào link của m_home.php sẽ bị bật về trang login
+-// làm tính năng đăng xuất
+-//cắt trang chart html
+\ No newline at end of file
++<?php
+\ No newline at end of file
+Index: admin/models/m_home.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?php\r\nrequire_once('database.php');\r\nclass m_home extends database{\r\n    // xây dựng lấy danh sách hàng hóa\r\n//    public function thong_ke_hang_hoa(){\r\n//        $sql = \"SELECT COUNT(id) as sl_hh from phim \";//chuỗi câu truy vấn dữ liệu\r\n//        $this->setQuery($sql);\r\n//        //lấy nhiều dòng dữ liệu(Trả về 1 mảng dữ liệu)\r\n//        return $this->loadAllRows();\r\n//    }\r\n\r\n//    public function thong_ke_khach_hang(){\r\n//        $sql = \"SELECT COUNT(id) as sl_kh from nguoi_dung\";//chuỗi câu truy vấn dữ liệu\r\n//        $this->setQuery($sql);\r\n//        //lấy nhiều dòng dữ liệu(Trả về 1 mảng dữ liệu)\r\n//        return $this->loadAllRows();\r\n//    }\r\n//    public function thong_ke_loai_hang(){\r\n//        $sql = \"SELECT COUNT(id) as sl_lh from loai_phim\";//chuỗi câu truy vấn dữ liệu\r\n//        $this->setQuery($sql);\r\n//        //lấy nhiều dòng dữ liệu(Trả về 1 mảng dữ liệu)\r\n//        return $this->loadAllRows();\r\n//    }\r\n\r\n//    public function thong_ke_binh_luan(){\r\n//        $sql = \"SELECT COUNT(id) as sl_bl from binh_luan\";//chuỗi câu truy vấn dữ liệu\r\n//        $this->setQuery($sql);\r\n//        //lấy nhiều dòng dữ liệu(Trả về 1 mảng dữ liệu)\r\n//        return $this->loadAllRows();\r\n//    }\r\n\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/admin/models/m_home.php b/admin/models/m_home.php
+--- a/admin/models/m_home.php	(revision 04e00ccabdd8d1ddffd635193c93f20f8a18ce49)
++++ b/admin/models/m_home.php	(date 1669730830546)
+@@ -1,33 +1,5 @@
+ <?php
+ require_once('database.php');
+ class m_home extends database{
+-    // xây dựng lấy danh sách hàng hóa
+-//    public function thong_ke_hang_hoa(){
+-//        $sql = "SELECT COUNT(id) as sl_hh from phim ";//chuỗi câu truy vấn dữ liệu
+-//        $this->setQuery($sql);
+-//        //lấy nhiều dòng dữ liệu(Trả về 1 mảng dữ liệu)
+-//        return $this->loadAllRows();
+-//    }
+-
+-//    public function thong_ke_khach_hang(){
+-//        $sql = "SELECT COUNT(id) as sl_kh from nguoi_dung";//chuỗi câu truy vấn dữ liệu
+-//        $this->setQuery($sql);
+-//        //lấy nhiều dòng dữ liệu(Trả về 1 mảng dữ liệu)
+-//        return $this->loadAllRows();
+-//    }
+-//    public function thong_ke_loai_hang(){
+-//        $sql = "SELECT COUNT(id) as sl_lh from loai_phim";//chuỗi câu truy vấn dữ liệu
+-//        $this->setQuery($sql);
+-//        //lấy nhiều dòng dữ liệu(Trả về 1 mảng dữ liệu)
+-//        return $this->loadAllRows();
+-//    }
+-
+-//    public function thong_ke_binh_luan(){
+-//        $sql = "SELECT COUNT(id) as sl_bl from binh_luan";//chuỗi câu truy vấn dữ liệu
+-//        $this->setQuery($sql);
+-//        //lấy nhiều dòng dữ liệu(Trả về 1 mảng dữ liệu)
+-//        return $this->loadAllRows();
+-//    }
+-
+ 
+ }
+Index: admin/home.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?php\r\n//session_start();\r\n//if(isset($_SESSION['admin'])){\r\ninclude (\"controllers/c_home.php\");\r\n$thong_ke = new c_home();\r\n$thong_ke->thong_ke_website();\r\n//}else{\r\n//    echo \"<script>alert('Cần đăng nhập để vào admin')</script>\";\r\n//}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/admin/home.php b/admin/home.php
+--- a/admin/home.php	(revision 04e00ccabdd8d1ddffd635193c93f20f8a18ce49)
++++ b/admin/home.php	(date 1669730848475)
+@@ -1,9 +1,1 @@
+ <?php
+-//session_start();
+-//if(isset($_SESSION['admin'])){
+-include ("controllers/c_home.php");
+-$thong_ke = new c_home();
+-$thong_ke->thong_ke_website();
+-//}else{
+-//    echo "<script>alert('Cần đăng nhập để vào admin')</script>";
+-//}
+\ No newline at end of file
+Index: admin/views/home/v_home.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\r\n\r\n\r\n\r\n<body>\r\n<!--<div class=\"container\">-->\r\n<!--    <h1> Thống kê website</h1>-->\r\n<!--    <form>-->\r\n<!--        <table>-->\r\n<!--            --><?php\r\n//            foreach ($thong_ke_hh as $key => $value){\r\n//                echo \"Hàng hóa hiện có: \" .$value->sl_hh .\" sản phẩm\";\r\n//                echo \"</br>\";\r\n//            }\r\n//\r\n//            foreach ($thong_ke_kh as $key => $value){\r\n//                echo \"Tổng số lượng user: \" .$value->sl_kh;\r\n//                echo \"</br>\";\r\n//            }\r\n//\r\n//            foreach ($thong_ke_lh as $key => $value){\r\n//                echo \"Loại hàng: \" .$value->sl_lh .\" loại\";\r\n//                echo \"</br>\";\r\n//            }\r\n//\r\n//            foreach ($thong_ke_bl as $key => $value){\r\n//                echo \"Tổng số lượng bình luận: \" .$value->sl_bl;\r\n//                echo \"</br>\";\r\n//            }\r\n//\r\n//            ?>\r\n<!--        </table>-->\r\n<!--    </form>-->\r\n<!--</div>-->\r\n    <!-- ============================================================== -->\r\n    <!-- All Jquery -->\r\n    <!-- ============================================================== -->\r\n    <script src=\"assets/libs/jquery/dist/jquery.min.js\"></script>\r\n    <script src=\"dist/js/jquery.ui.touch-punch-improved.js\"></script>\r\n    <script src=\"dist/js/jquery-ui.min.js\"></script>\r\n    <!-- Bootstrap tether Core JavaScript -->\r\n    <script src=\"assets/libs/popper.js/dist/umd/popper.min.js\"></script>\r\n    <script src=\"assets/libs/bootstrap/dist/js/bootstrap.min.js\"></script>\r\n    <!-- slimscrollbar scrollbar JavaScript -->\r\n    <script src=\"assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js\"></script>\r\n    <script src=\"assets/extra-libs/sparkline/sparkline.js\"></script>\r\n    <!--Wave Effects -->\r\n    <script src=\"dist/js/waves.js\"></script>\r\n    <!--Menu sidebar -->\r\n    <script src=\"dist/js/sidebarmenu.js\"></script>\r\n    <!--Custom JavaScript -->\r\n    <script src=\"dist/js/custom.min.js\"></script>\r\n    <!-- this page js -->\r\n    <script src=\"assets/libs/moment/min/moment.min.js\"></script>\r\n    <script src=\"assets/libs/fullcalendar/dist/fullcalendar.min.js\"></script>\r\n    <script src=\"dist/js/pages/calendar/cal-init.js\"></script>\r\n\r\n</body>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/admin/views/home/v_home.php b/admin/views/home/v_home.php
+--- a/admin/views/home/v_home.php	(revision 04e00ccabdd8d1ddffd635193c93f20f8a18ce49)
++++ b/admin/views/home/v_home.php	(date 1669730866817)
+@@ -1,58 +1,0 @@
+-
+-
+-
+-
+-<body>
+-<!--<div class="container">-->
+-<!--    <h1> Thống kê website</h1>-->
+-<!--    <form>-->
+-<!--        <table>-->
+-<!--            --><?php
+-//            foreach ($thong_ke_hh as $key => $value){
+-//                echo "Hàng hóa hiện có: " .$value->sl_hh ." sản phẩm";
+-//                echo "</br>";
+-//            }
+-//
+-//            foreach ($thong_ke_kh as $key => $value){
+-//                echo "Tổng số lượng user: " .$value->sl_kh;
+-//                echo "</br>";
+-//            }
+-//
+-//            foreach ($thong_ke_lh as $key => $value){
+-//                echo "Loại hàng: " .$value->sl_lh ." loại";
+-//                echo "</br>";
+-//            }
+-//
+-//            foreach ($thong_ke_bl as $key => $value){
+-//                echo "Tổng số lượng bình luận: " .$value->sl_bl;
+-//                echo "</br>";
+-//            }
+-//
+-//            ?>
+-<!--        </table>-->
+-<!--    </form>-->
+-<!--</div>-->
+-    <!-- ============================================================== -->
+-    <!-- All Jquery -->
+-    <!-- ============================================================== -->
+-    <script src="assets/libs/jquery/dist/jquery.min.js"></script>
+-    <script src="dist/js/jquery.ui.touch-punch-improved.js"></script>
+-    <script src="dist/js/jquery-ui.min.js"></script>
+-    <!-- Bootstrap tether Core JavaScript -->
+-    <script src="assets/libs/popper.js/dist/umd/popper.min.js"></script>
+-    <script src="assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+-    <!-- slimscrollbar scrollbar JavaScript -->
+-    <script src="assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js"></script>
+-    <script src="assets/extra-libs/sparkline/sparkline.js"></script>
+-    <!--Wave Effects -->
+-    <script src="dist/js/waves.js"></script>
+-    <!--Menu sidebar -->
+-    <script src="dist/js/sidebarmenu.js"></script>
+-    <!--Custom JavaScript -->
+-    <script src="dist/js/custom.min.js"></script>
+-    <!-- this page js -->
+-    <script src="assets/libs/moment/min/moment.min.js"></script>
+-    <script src="assets/libs/fullcalendar/dist/fullcalendar.min.js"></script>
+-    <script src="dist/js/pages/calendar/cal-init.js"></script>
+-
+-</body>
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"7fee531a-e60d-4653-a655-7a8e4f30f069\" name=\"Changes\" comment=\"done admin khung_gio_chieu\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"ComposerSettings\">\r\n    <execution />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"CSS File\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2HLqJElHR5eiItaqKYSrnbajOBI\" />\r\n  <component name=\"ProjectLevelVcsManager\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\r\n    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/duan1_nhom10&quot;,\r\n    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,\r\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,\r\n    &quot;settings.editor.selected.configurable&quot;: &quot;web-ide.project.structure&quot;,\r\n    &quot;two.files.diff.last.used.file&quot;: &quot;C:/xampp/htdocs/Duan1/templates/layout'.php&quot;,\r\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\r\n  }\r\n}</component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\xampp\\htdocs\\Duan1\\admin\\public\" />\r\n      <recent name=\"C:\\xampp\\htdocs\\Duan1\\views\\phim\" />\r\n      <recent name=\"C:\\xampp\\htdocs\\Duan1\\views\\home\" />\r\n      <recent name=\"C:\\xampp\\htdocs\\Duan1\\templates\" />\r\n      <recent name=\"C:\\xampp\\htdocs\\Duan1\\public\\abc\\dmitryvolkov.me\\demo\\flixgo2.0\\main\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"7fee531a-e60d-4653-a655-7a8e4f30f069\" name=\"Changes\" comment=\"\" />\r\n      <created>1668074637607</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1668074637607</updated>\r\n      <workItem from=\"1668074638763\" duration=\"3063000\" />\r\n      <workItem from=\"1668087650072\" duration=\"9146000\" />\r\n      <workItem from=\"1668096904011\" duration=\"343000\" />\r\n      <workItem from=\"1668097333959\" duration=\"129000\" />\r\n      <workItem from=\"1668097662149\" duration=\"4361000\" />\r\n      <workItem from=\"1668102608196\" duration=\"300000\" />\r\n      <workItem from=\"1668102956904\" duration=\"25000\" />\r\n      <workItem from=\"1668166671239\" duration=\"683000\" />\r\n      <workItem from=\"1668168134750\" duration=\"1326000\" />\r\n      <workItem from=\"1668177127144\" duration=\"16387000\" />\r\n      <workItem from=\"1668229395851\" duration=\"5708000\" />\r\n      <workItem from=\"1668235216226\" duration=\"10000\" />\r\n      <workItem from=\"1668235502016\" duration=\"392000\" />\r\n      <workItem from=\"1668434232027\" duration=\"14967000\" />\r\n      <workItem from=\"1668503843775\" duration=\"2948000\" />\r\n      <workItem from=\"1668508663422\" duration=\"604000\" />\r\n      <workItem from=\"1668509649119\" duration=\"293000\" />\r\n      <workItem from=\"1668509954936\" duration=\"435000\" />\r\n      <workItem from=\"1668510420969\" duration=\"449000\" />\r\n      <workItem from=\"1668587467545\" duration=\"3023000\" />\r\n      <workItem from=\"1668676274145\" duration=\"6525000\" />\r\n      <workItem from=\"1668692103522\" duration=\"1787000\" />\r\n      <workItem from=\"1668695122561\" duration=\"1024000\" />\r\n      <workItem from=\"1668781803374\" duration=\"16992000\" />\r\n      <workItem from=\"1668867698800\" duration=\"3129000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"test\">\r\n      <created>1668509976207</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1668509976207</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"test\">\r\n      <created>1668510467202</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1668510467202</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"ok\">\r\n      <created>1668510578546</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1668510578546</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"len\">\r\n      <created>1668587835175</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1668587835175</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"len tiep\">\r\n      <created>1668587884800</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1668587884800</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"file chay admin\">\r\n      <created>1668587917802</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1668587917802</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"file lon\">\r\n      <created>1668588034096</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1668588034096</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"logout\">\r\n      <created>1668589372563</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1668589372563</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"header\">\r\n      <created>1668589398071</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1668589398071</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00010\" summary=\"end comment\">\r\n      <created>1668590483877</created>\r\n      <option name=\"number\" value=\"00010\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1668590483877</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00011\" summary=\"update 17/11\">\r\n      <created>1668679399039</created>\r\n      <option name=\"number\" value=\"00011\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00011\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1668679399039</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00012\" summary=\"update 17/11\">\r\n      <created>1668679414108</created>\r\n      <option name=\"number\" value=\"00012\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00012\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1668679414108</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00013\" summary=\"update 17/11\">\r\n      <created>1668680326163</created>\r\n      <option name=\"number\" value=\"00013\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00013\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1668680326163</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"14\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"abc\" />\r\n    <MESSAGE value=\"tiep\" />\r\n    <MESSAGE value=\"test\" />\r\n    <MESSAGE value=\"ok\" />\r\n    <MESSAGE value=\"ngu\" />\r\n    <MESSAGE value=\"len\" />\r\n    <MESSAGE value=\"len tiep\" />\r\n    <MESSAGE value=\"file chay admin\" />\r\n    <MESSAGE value=\"file lon\" />\r\n    <MESSAGE value=\"logout\" />\r\n    <MESSAGE value=\"header\" />\r\n    <MESSAGE value=\"end comment\" />\r\n    <MESSAGE value=\"update 17/11\" />\r\n    <MESSAGE value=\"done admin khung_gio_chieu\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"done admin khung_gio_chieu\" />\r\n  </component>\r\n  <component name=\"XDebuggerManager\">\r\n    <breakpoint-manager>\r\n      <breakpoints>\r\n        <line-breakpoint enabled=\"true\" type=\"php-line-method\">\r\n          <url>file://$PROJECT_DIR$/admin/models/m_home.php</url>\r\n          <line>17</line>\r\n          <properties>\r\n            <option name=\"className\" value=\"\\m_home\" />\r\n            <option name=\"methodName\" value=\"thong_ke_loai_hang\" />\r\n          </properties>\r\n          <option name=\"timeStamp\" value=\"1\" />\r\n        </line-breakpoint>\r\n      </breakpoints>\r\n    </breakpoint-manager>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 04e00ccabdd8d1ddffd635193c93f20f8a18ce49)
++++ b/.idea/workspace.xml	(date 1669730866899)
+@@ -4,7 +4,13 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="7fee531a-e60d-4653-a655-7a8e4f30f069" name="Changes" comment="done admin khung_gio_chieu" />
++    <list default="true" id="7fee531a-e60d-4653-a655-7a8e4f30f069" name="Changes" comment="done admin khung_gio_chieu">
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/admin/controllers/c_home.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controllers/c_home.php" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/admin/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/home.php" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/admin/models/m_home.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/models/m_home.php" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/admin/views/home/v_home.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/views/home/v_home.php" afterDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -21,6 +27,7 @@
+     </option>
+   </component>
+   <component name="Git.Settings">
++    <option name="PUSH_AUTO_UPDATE" value="true" />
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
+   <component name="MarkdownSettingsMigration">
+@@ -219,19 +226,4 @@
+     <MESSAGE value="done admin khung_gio_chieu" />
+     <option name="LAST_COMMIT_MESSAGE" value="done admin khung_gio_chieu" />
+   </component>
+-  <component name="XDebuggerManager">
+-    <breakpoint-manager>
+-      <breakpoints>
+-        <line-breakpoint enabled="true" type="php-line-method">
+-          <url>file://$PROJECT_DIR$/admin/models/m_home.php</url>
+-          <line>17</line>
+-          <properties>
+-            <option name="className" value="\m_home" />
+-            <option name="methodName" value="thong_ke_loai_hang" />
+-          </properties>
+-          <option name="timeStamp" value="1" />
+-        </line-breakpoint>
+-      </breakpoints>
+-    </breakpoint-manager>
+-  </component>
+ </project>
+\ No newline at end of file
