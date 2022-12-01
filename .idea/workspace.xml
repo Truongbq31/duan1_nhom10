@@ -4,23 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7fee531a-e60d-4653-a655-7a8e4f30f069" name="Changes" comment="admin khung_gio_phong_chieu and phong_chieu">
-      <change afterPath="$PROJECT_DIR$/admin/add_lich_chieu.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/controllers/c_lich_chieu.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/controllers/c_ve.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/delete_lich_chieu.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/delete_ve.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/edit_lich_chieu.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/lich_chieu.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/models/m_lich_chieu.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/models/m_ve.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/ve.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/views/lich_chieu/v_add_lich_chieu.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/views/lich_chieu/v_edit_lich_chieu.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/views/lich_chieu/v_lich_chieu.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/views/ve/v_ve.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="7fee531a-e60d-4653-a655-7a8e4f30f069" name="Changes" comment="update 1/12" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -116,7 +100,7 @@
       <workItem from="1668781803374" duration="16992000" />
       <workItem from="1668867698800" duration="3129000" />
       <workItem from="1669750415668" duration="4957000" />
-      <workItem from="1669885476931" duration="3742000" />
+      <workItem from="1669885476931" duration="4207000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1668509976207</created>
@@ -216,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669754959805</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="update 1/12">
+      <created>1669889563247</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1669889563247</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -249,6 +240,7 @@
     <MESSAGE value="update 17/11" />
     <MESSAGE value="done admin khung_gio_chieu" />
     <MESSAGE value="admin khung_gio_phong_chieu and phong_chieu" />
-    <option name="LAST_COMMIT_MESSAGE" value="admin khung_gio_phong_chieu and phong_chieu" />
+    <MESSAGE value="update 1/12" />
+    <option name="LAST_COMMIT_MESSAGE" value="update 1/12" />
   </component>
 </project>
