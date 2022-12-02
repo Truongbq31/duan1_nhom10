@@ -4,11 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7fee531a-e60d-4653-a655-7a8e4f30f069" name="Changes" comment="29/11">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_1_2022_12_51_AM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_1_2022_12_51_AM__Changes_.xml" afterDir="false" />
+    <list default="true" id="7fee531a-e60d-4653-a655-7a8e4f30f069" name="Changes" comment="update 1/12">
+      <change afterPath="$PROJECT_DIR$/admin/public/img/cropped-1920-1080-606238.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/controllers/c_phim.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controllers/c_phim.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/models/m_phim.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/models/m_phim.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/views/phim/v_add_phim.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/views/phim/v_add_phim.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/views/phim/v_edit_phim.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/views/phim/v_edit_phim.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/views/phim/v_phim.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/views/phim/v_phim.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/details/v_details.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/details/v_details.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/home/v_home.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/home/v_home.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,6 +109,7 @@
       <workItem from="1668781803374" duration="16992000" />
       <workItem from="1668867698800" duration="3129000" />
       <workItem from="1669750415668" duration="4418000" />
+      <workItem from="1669966400057" duration="3384000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1668509976207</created>
@@ -197,7 +202,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668680326163</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="update 1/12">
+      <created>1669890349025</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1669890349025</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,6 +241,7 @@
     <MESSAGE value="end comment" />
     <MESSAGE value="update 17/11" />
     <MESSAGE value="done admin khung_gio_chieu" />
-    <option name="LAST_COMMIT_MESSAGE" value="done admin khung_gio_chieu" />
+    <MESSAGE value="update 1/12" />
+    <option name="LAST_COMMIT_MESSAGE" value="update 1/12" />
   </component>
 </project>

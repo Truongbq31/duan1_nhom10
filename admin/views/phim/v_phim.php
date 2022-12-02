@@ -8,7 +8,7 @@
             <div class="col-12">
                 <div class="card">
         <div class="card-body">
-            <h5 class="card-title">Danh sách hàng hóa</h5>
+            <h1 class="card-title">Danh sách phim đang chiếu</h1>
             <a href="add_phim.php">Thêm mới</a>
             <div class="table-responsive">
                 <table id="zero_config" class="table table-striped table-bordered">

@@ -44,9 +44,17 @@
                             </div>
 
                             <div class="form-group row">
+                                <label for="fname" class="col-sm-3 text-right control-label col-form-label">Link demo</label>
+                                <div class="col-sm-9">
+                                    <textarea type="text" class="form-control" id="ten_tieu_de" name="link_demo"><?php echo $phim_details->link_demo ?></textarea>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
                                 <label for="lname" class="col-sm-3 text-right control-label col-form-label">Loại phim</label>
                                 <div class="col-sm-9">
                                     <select class="select2 form-control custom-select" style="width: 100%; height:36px;" name="id_loai_phim">
+                                        <option selected value="<?php echo $phim_details->id_loai_phim ?>"><?php echo $phim_details->ten_loai ?></option>
                                         <?php foreach ($theloai as $key => $value){ ?>
                                             <option value="<?php echo $value->id ?>"><?php echo $value->ten_loai ?></option>
                                         <?php } ?>

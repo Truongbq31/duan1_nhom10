@@ -30,8 +30,9 @@ class c_phim{
 //            echo print_r($_FILES['f_hinh_anh']);
 //            die();
             $img = ($_FILES['img']['error'] == 0) ? $_FILES['img']['name'] :"";
+            $link_demo = $_POST['link_demo'];
             $add_phim = new m_phim();
-           $result = $add_phim->insert_phim($id,$name,$rate,$description,$img,$id_loai_phim);
+           $result = $add_phim->insert_phim($id,$name,$rate,$description,$img,$link_demo, $id_loai_phim);
            if ($result) {
                if ($img != "") {
                    //di chuyển hình ảnh vào thư mục source
@@ -59,11 +60,12 @@ class c_phim{
                 $name = $_POST['name'];
                 $rate = $_POST['rate'];
                 $description = $_POST['description'];
+                $link_demo = $_POST['link_demo'];
                 $id_loai_phim = $_POST['id_loai_phim'];
 
                 $img = empty($_FILES['img']['name']) ? $phim_details->img  : $_FILES['img']['name'];
                 $edit_phim = new m_phim();
-                $result = $edit_phim->edit_phim($id,$name,$rate,$description,$img,$id_loai_phim);
+                $result = $edit_phim->edit_phim($id,$name,$rate,$description,$img,$link_demo,$id_loai_phim);
                 if ($result) {
                     if ($img != "") {
                         //di chuyển hình ảnh vào thư mục source
