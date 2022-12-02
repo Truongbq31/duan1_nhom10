@@ -45,7 +45,7 @@
                             <?php echo $values->description;?>
                         </div>
 
-                        <a href="lich_chieu.php?id=<?php echo $values->id?>">Đặt vé</a>
+                        <a href="lich_chieu.php?id=<?php echo $values->id_phim?>">Đặt vé</a>
                     </div>
                     <!-- end card content -->
                 </div>
