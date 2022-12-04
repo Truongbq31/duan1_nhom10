@@ -12,13 +12,14 @@ if(isset($_POST["ghe_ngoi"])){
     $ngay_chieu = $_POST["ngay_chieu"];
     $phong_chieu = $_POST["phong_chieu"];
     $chi_nhanh = $_POST["chi_nhanh"];
+    $trang_thai = "0";
 //    $gia=$_POST["gia"];
 
     $ghe_ngoi = $_POST['ghe_ngoi'];
     date_default_timezone_set('Asia/Ho_Chi_Minh');
     $ngay_dat=date("H:i a d-m-Y");
     echo $ngay_dat;
-    $sql="INSERT INTO ve VALUE('','$ten_phim','$gio_bat_dau','$ngay_chieu','$phong_chieu','$chi_nhanh','$ghe_ngoi','$ngay_dat')";
+    $sql="INSERT INTO ve VALUE('','$ten_phim','$gio_bat_dau','$ngay_chieu','$phong_chieu','$chi_nhanh','$ghe_ngoi','$ngay_dat', '$trang_thai')";
     $conn->exec($sql);
 }
 ?>

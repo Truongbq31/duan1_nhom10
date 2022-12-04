@@ -134,6 +134,7 @@ $mangGhe = [["A1","A2","A3","A4","A5","A6"],
                 var ngay_chieu = $(".ngay_chieu").html();
                 var phong_chieu = $(".ten_phong").html();
                 var chi_nhanh = $(".ten_chi_nhanh").html();
+                // var trang_thai =
 
                 $.post("models/m_ve.php",{ghe_ngoi: id,ten_phim: ten_phim,gio_bat_dau:gio_bat_dau,ngay_chieu:ngay_chieu,phong_chieu:phong_chieu,chi_nhanh:chi_nhanh});
             }

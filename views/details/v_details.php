@@ -45,7 +45,12 @@
                             <?php echo $values->description;?>
                         </div>
 
-                        <a href="lich_chieu.php?id=<?php echo $values->id_phim?>">Đặt vé</a>
+                        <?php if(!isset($_SESSION['user']) && !isset($_SESSION['admin'])) echo "<p style='color: orange;font-size: large;font-weight: 500;text-align: center;padding: 0.7em 0em' ><a href='login.php?id_phim=$values->id_phim'>Vui lòng đăng nhập để đặt vé</a></p>";?>
+                        <a style="margin-top: 50px" class="header__sign-in" <?php if(isset($_SESSION['user']) || isset($_SESSION['admin'])){
+                            echo "";
+                        }else{
+                            echo "hidden";
+                        } ?> href="lich_chieu.php?id=<?php echo $values->id_phim?>">Đặt vé</a>
                     </div>
                     <!-- end card content -->
                 </div>
@@ -106,6 +111,8 @@
 
                             <?php } ?>
 
+
+                            <?php if(!isset($_SESSION['user']) && !isset($_SESSION['admin'])) echo "<p style='color: orange;font-size: large;font-weight: 500;text-align: center;padding: 0.7em 0em' ><a href='login.php'>Vui lòng đăng nhập để bình luận</a></p>";?>
                             <div class="col-12" <?php if(isset($_SESSION['admin']) || isset($_SESSION['user'])){
                                 echo "";
                             }else{

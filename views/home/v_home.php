@@ -14,7 +14,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
-				<h1 class="home__title"><b>NEW ITEMS</b> OF THIS SEASON</h1>
+				<h1 class="home__title"><b>PHIM MỚI</b> CẬP NHẬT</h1>
 
 				<button class="home__nav home__nav--prev" aria-label="prev card" type="button">
 					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17,11H9.41l3.3-3.29a1,1,0,1,0-1.42-1.42l-5,5a1,1,0,0,0-.21.33,1,1,0,0,0,0,.76,1,1,0,0,0,.21.33l5,5a1,1,0,0,0,1.42,0,1,1,0,0,0,0-1.42L9.41,13H17a1,1,0,0,0,0-2Z"/></svg>
@@ -41,7 +41,7 @@
 						<div class="card__content">
 							<h3 class="card__title"><a href="#"><?= $value->name?></a></h3>
 							<span class="card__category">
-								<a href="details.php?id=<?php echo $value->id_phim?>"><?= $value->ten_loai ?></a>
+								<a href="ds_phim.php?id=<?php echo $value->id_loai_phim?>"><?= $value->ten_loai ?></a>
 
 							</span>
 							<span class="card__rate"> <?= $value->rate ?></span>
