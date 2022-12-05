@@ -112,7 +112,7 @@
                             <?php } ?>
 
 
-                            <?php if(!isset($_SESSION['user']) && !isset($_SESSION['admin'])) echo "<p style='color: orange;font-size: large;font-weight: 500;text-align: center;padding: 0.7em 0em' ><a href='login.php'>Vui lòng đăng nhập để bình luận</a></p>";?>
+                            <?php if(!isset($_SESSION['user']) && !isset($_SESSION['admin'])) echo "<p style='color: orange;font-size: large;font-weight: 500;text-align: center;padding: 0.7em 0em' ><a href='login.php?id_phim=$values->id_phim'>Vui lòng đăng nhập để bình luận</a></p>";?>
                             <div class="col-12" <?php if(isset($_SESSION['admin']) || isset($_SESSION['user'])){
                                 echo "";
                             }else{

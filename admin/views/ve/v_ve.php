@@ -14,14 +14,14 @@
                                 <thead>
                                 <tr>
                                     <th>ID</th>
-                                    <th>Ten phim</th>
-                                    <th>Giờ bắt dau</th>
-                                    <th>ngày chiếu</th>
-                                    <th>phòng chiếu</th>
-                                    <th>chi nhánh</th>
-                                    <th>ghe ngồi</th>
-                                    <th>ngày đat</th>
-                                    <th>Trạng thái</th>
+                                    <th>Tên phim</th>
+                                    <th>Giờ bắt đầu</th>
+                                    <th>Ngày chiếu</th>
+                                    <th>Phòng chiếu</th>
+                                    <th>Chi nhánh</th>
+                                    <th>Ghế ngồi</th>
+                                    <th>Ngày đặt</th>
+                                    <th>Giá vé</th>
                                     <th>Hành động</th>
                                 </tr>
                                 </thead>
@@ -39,7 +39,7 @@
                                         <td><?php echo $value->chi_nhanh; ?></td>
                                         <td><?php echo $value->ghe_ngoi; ?></td>
                                         <td><?php echo $value->ngay_dat; ?></td>
-                                        <td><?php echo $value->trang_thai == 0 ? "Chưa thanh toán" : "Đã thanh toán"; ?></td>
+                                        <td><?php echo $value->gia; ?></td>
 
                                         <td>
                                             <button style="margin: 5px 0px; width: 80px" type="button" name="btn_edit" class="btn btn-cyan btn-sm" onclick="window.location.href='edit_tt_ve.php?id=<?php echo $value->id;?>'">Update</button>
