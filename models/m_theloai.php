@@ -1,26 +1,9 @@
 <?php
-require_once("database.php");
-class m_detail extends database{
-    public function mdetail(){
-        if(isset($_GET["id"])){
-            $id=$_GET["id"];
-            $sql="SELECT*FROM category_movie where id=$id";
-            $this->setQuery($sql);
-            return $this->loadRow();
-        }
-    }
-    public function mbinhluan(){
-        if(isset($_GET["id"])){
-            $id=$_GET["id"];
-            $sql="SELECT*FROM comment where id_comment=$id";
-            $this->setQuery($sql);
-            return $this->loadAllRows();
-        }
-    }
-    public function binhluan($comment,$date,$idcomment,$name){
-        $sql="INSERT INTO comment VALUES('','$comment','$date','$idcomment','$name')";
+require_once "database.php";
+class m_theloai extends database{
+    public function doc_theloai(){
+        $sql = "SELECT * from loai_phim";
         $this->setQuery($sql);
-        $this->execute();
-
+        return $this->loadAllRows();
     }
 }
