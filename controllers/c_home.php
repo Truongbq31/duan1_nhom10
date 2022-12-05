@@ -9,5 +9,8 @@ class c_home {
         if(isset($_GET['login'])){
             echo "<script>alert('Đăng nhập thành công')</script>";
         }
+        if(isset($_GET['msg'])){
+            echo "<script>alert('Đặt vé thành công')</script>";
+        }
     }
 }

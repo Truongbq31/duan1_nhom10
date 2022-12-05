@@ -1,7 +1,5 @@
 <?php
 require "models/connect.php";
-
-
 $id = $_GET['id'];
 $sql = "Select *, phim.name as ten_phim, chi_nhanh.ten_chi_nhanh,khung_gio_chieu.gio_bat_dau,phong_chieu.ten_phong,lich_chieu.id as id_lich_chieu from lich_chieu  inner join chi_nhanh_phim on chi_nhanh_phim.id=lich_chieu.id_chi_nhanh_phim 
       inner join phim on chi_nhanh_phim.id_phim = phim.id 
@@ -87,12 +85,12 @@ $mangGhe = [["A1","A2","A3","A4","A5","A6"],
             <span>Chi Nhánh:</span>
                         <span class="title ten_chi_nhanh"><?= $result['ten_chi_nhanh'] ?></span>
         </div>
-<!--        <div class="book-item">-->
-<!--            <span>Giá:</span>-->
-<!--            <span class="title price"></span>-->
-<!--        </div>-->
         <div class="book-item">
-            <a style=" color:red ; text-decoration: none;font-size: 20px; background-color: yellow;border-radius: 3px"  href="" class="submit">Đặt Vé+</a>
+            <span>Giá:</span>
+            <span class="title price"></span>
+        </div>
+        <div class="book-item">
+            <a style=" color:red ; text-decoration: none;font-size: 20px; background-color: yellow;border-radius: 3px"  class="submit">Đặt Vé+</a>
         </div>
     </div>
 </div>
@@ -113,31 +111,33 @@ $mangGhe = [["A1","A2","A3","A4","A5","A6"],
             if (!e.target.classList.contains("selected")) {
                 var id = $(this).html();
                 arr.push(id);
+                var price = arr.length * <?= $result["gia"] ?>;
                 $(".booked").html(arr+" ");
+                $(".price").html(price);
             }
             if(e.target.classList.contains("selected")) {
                 var id_delete = $(this).html();
                 var num_delete = arr.indexOf(id_delete);
                 arr.splice(num_delete, 1);
-                //var prices=arr.length*<?//= $show_idphim["price"] ?>// +"K";
+                var price = arr.length*<?= $result["gia"] ?>;
                 $(".booked").html(arr + " ");
-                // $(".price").html(prices);
+                $(".price").html(price);
             }
         });
         $(".submit").click(function(){
 
-            if(confirm("Bạn có chắc muốn đặt vé ?")){
+            // if(confirm("Bạn có chắc muốn đặt vé ?")){
                 var id=$(".booked").html();
-                // var gia=$(".price").html()
+                var gia=$(".price").html()
                 var ten_phim=$(".ten_phim").html();
                 var gio_bat_dau=$(".gio_chieu").html();
                 var ngay_chieu = $(".ngay_chieu").html();
                 var phong_chieu = $(".ten_phong").html();
                 var chi_nhanh = $(".ten_chi_nhanh").html();
                 // var trang_thai =
-
-                $.post("models/m_ve.php",{ghe_ngoi: id,ten_phim: ten_phim,gio_bat_dau:gio_bat_dau,ngay_chieu:ngay_chieu,phong_chieu:phong_chieu,chi_nhanh:chi_nhanh});
-            }
+                 location.href="vnpay_php/index.php?id="+id+"&&gia="+gia+"&&ten_phim="+ten_phim+"&&gio_bat_dau="+gio_bat_dau+"&&ngay_chieu="+ngay_chieu+"&&phong_chieu="+phong_chieu+"&&chi_nhanh=" +chi_nhanh;
+                // $.post("models/m_ve.php",{ghe_ngoi: id,ten_phim: ten_phim,gio_bat_dau:gio_bat_dau,ngay_chieu:ngay_chieu,phong_chieu:phong_chieu,chi_nhanh:chi_nhanh,gia:gia});
+            // }
         })
     });
 </script>
