@@ -89,6 +89,7 @@
                                     <ul class="comments__list">
                                         <li class="comments__item">
                                             <div class="comments__autor">
+                                                <img class="comments__avatar" src="public/abc/dmitryvolkov.me/demo/flixgo2.0/main/img/user.svg" alt="">
                                                 <span class="comments__name"><?php echo $value->username;?></span>
                                                 <span class="comments__time"><?php echo $value->ngay_binh_luan;?></span>
                                             </div>
