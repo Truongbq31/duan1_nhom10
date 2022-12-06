@@ -29,6 +29,17 @@ $mangGhe = [["A1","A2","A3","A4","A5","A6"],
     ["F1","F2","F3","F4","F5","F6"],];
 ?>
 <body>
+<link rel="stylesheet" href="views/abc/style.css">
+<link rel="stylesheet" href="views/Giochieuphim/css/bootstrap.min.css">
+<link rel="stylesheet" href="views/Giochieuphim/css/all.min.css">
+<link rel="stylesheet" href="views/Giochieuphim/css/animate.css">
+<link rel="stylesheet" href="views/Giochieuphim/css/flaticon.css">
+<link rel="stylesheet" href="views/Giochieuphim/css/magnific-popup.css">
+<link rel="stylesheet" href="views/Giochieuphim/css/odometer.css">
+<link rel="stylesheet" href="views/Giochieuphim/css/owl.carousel.min.css">
+<link rel="stylesheet" href="views/Giochieuphim/css/owl.theme.default.min.css">
+<link rel="stylesheet" href="views/Giochieuphim/css/nice-select.css">
+<link rel="stylesheet" href="views/Giochieuphim/css/main.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
 <link rel="stylesheet" href="public/abc/dmitryvolkov.me/demo/flixgo2.0/main/css/style2.css">
@@ -56,49 +67,51 @@ $mangGhe = [["A1","A2","A3","A4","A5","A6"],
             </div>
         <?php }?>
     </div>
+<div  class="proceed-book bg_img" data-background="view/giochieuphim/images/movie/movie-bg-proceed.jpg" style="width: 100%;">
 <form action="" method="post">
-<div class="proceed-book bg_img" data-background="view/giochieuphim/images/movie/movie-bg-proceed.jpg" style="width: 100%;">
     <div class="proceed-to-book">
         <div class="book-item">
-            <span>Ghế:</span>
-            <span class="title booked"></span>
+            <span>Ghế</span>
+            <h3 class="title booked"></h3>
         </div>
         <div class="book-item">
-            <span>Phim:</span>
+            <span>Phim</span>
 
-            <span class="title ten_phim"><?=  $result['ten_phim']; ?></span>
+            <h3 class="title ten_phim"><?= $result['ten_phim']; ?></h3>
 
         </div>
         <div class="book-item">
-            <span>Giờ Chiếu:</span>
-            <span class="title gio_chieu"><?= $result['gio_bat_dau'] ?></span>
+            <span>Giờ Chiếu</span>
+
+            <h3 class="title gio_chieu"><?= $result['gio_bat_dau'] ?></h3>
+
         </div>
         <div class="book-item">
-            <span>Ngày chiếu:</span>
-                        <span class="title ngay_chieu"><?= $result['ngay_chieu'] ?></span>
+
+            <span>Ngày chiếu</span>
+                        <h3 class="title ngay_chieu"><?= $result['ngay_chieu'] ?></h3>
         </div>
         <div class="book-item">
-            <span>Phòng chiếu:</span>
-                        <span class="title ten_phong"><?= $result['ten_phong'] ?></span>
+
+            <span>Phòng chiếu</span>
+
+            <h3 class="title ten_phong"><?= $result['ten_phong'] ?></h3>
+
         </div>
         <div class="book-item">
-            <span>Chi Nhánh:</span>
-                        <span class="title ten_chi_nhanh"><?= $result['ten_chi_nhanh'] ?></span>
+            <span>Chi Nhánh</span>
+                        <h3 class="title ten_chi_nhanh"><?= $result['ten_chi_nhanh'] ?></h3>
         </div>
         <div class="book-item">
-            <span>Giá:</span>
-            <span class="title price"></span>
+            <span>Giá</span>
+            <h3 class="title price"></h3>
         </div>
         <div class="book-item">
-            <a style=" color:red ; text-decoration: none;font-size: 20px; background-color: yellow;border-radius: 3px"  class="submit">Đặt Vé+</a>
+            <a style=" color:red ; text-decoration: none;font-size: 20px; background-color: yellow;border-radius: 3px"  class="custom-button submit">Đặt Vé</a>
         </div>
     </div>
-</div>
 </form>
-
-<!--<p class="text1">-->
-<!--    You have selected <span id="count1">0</span> seats for a price of $ <span id="total1">0</span>-->
-<!--</p>-->
+</div>
 <script src="views/js/script2.js"></script>
 <script>
     $(document).ready(function(){

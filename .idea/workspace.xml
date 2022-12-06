@@ -4,9 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7fee531a-e60d-4653-a655-7a8e4f30f069" name="Changes" comment="6/12">
+    <list default="true" id="7fee531a-e60d-4653-a655-7a8e4f30f069" name="Changes" comment="update 19/11">
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_5_2022_10_49_PM_[Changes]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_5_2022_10_49_PM__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vnpay_php/assets/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vnpay_php/assets/jquery-1.11.3.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vnpay_php/assets/jumbotron-narrow.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vnpay_php/config.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vnpay_php/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vnpay_php/nbproject/private/private.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vnpay_php/nbproject/private/private.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vnpay_php/nbproject/project.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vnpay_php/nbproject/project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vnpay_php/vnpay_create_payment.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vnpay_php/vnpay_ipn.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vnpay_php/vnpay_query.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vnpay_php/vnpay_refund.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vnpay_php/vnpay_return.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/details/v_details.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/details/v_details.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/c_home.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/c_home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/m_data.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/m_data.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/m_ve.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/m_ve.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/Seat/v_Seat.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/Seat/v_Seat.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,17 +38,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="package.json" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="PUSH_TAGS">
-      <GitPushTagMode>
-        <option name="argument" value="--tags" />
-        <option name="title" value="All" />
-      </GitPushTagMode>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -49,7 +64,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/duan1_nhom10&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ADMIN/Downloads/Duan1&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -63,11 +78,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\duan1_nhom10\views\js" />
+      <recent name="C:\xampp\htdocs\duan1_nhom10\public\abc\dmitryvolkov.me\demo\flixgo2.0\main\js" />
+      <recent name="C:\xampp\htdocs\duan1_nhom10\public\abc\dmitryvolkov.me\demo\flixgo2.0\main\css" />
       <recent name="C:\xampp\htdocs\Duan1\admin\public" />
       <recent name="C:\xampp\htdocs\Duan1\views\phim" />
-      <recent name="C:\xampp\htdocs\Duan1\views\home" />
-      <recent name="C:\xampp\htdocs\Duan1\templates" />
-      <recent name="C:\xampp\htdocs\Duan1\public\abc\dmitryvolkov.me\demo\flixgo2.0\main" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -102,15 +117,24 @@
       <workItem from="1668692103522" duration="1787000" />
       <workItem from="1668695122561" duration="1024000" />
       <workItem from="1668781803374" duration="16992000" />
-      <workItem from="1668867698800" duration="3129000" />
-      <workItem from="1669750415668" duration="4418000" />
-      <workItem from="1669966400057" duration="3895000" />
-      <workItem from="1669970768441" duration="490000" />
-      <workItem from="1670061718029" duration="3984000" />
-      <workItem from="1670159735294" duration="9339000" />
-      <workItem from="1670260165010" duration="3644000" />
-      <workItem from="1670264435503" duration="985000" />
-      <workItem from="1670318666990" duration="1242000" />
+      <workItem from="1668867698800" duration="7753000" />
+      <workItem from="1668917125459" duration="612000" />
+      <workItem from="1668932974927" duration="1908000" />
+      <workItem from="1668954442391" duration="6302000" />
+      <workItem from="1669002147857" duration="1996000" />
+      <workItem from="1669015169501" duration="5693000" />
+      <workItem from="1669040454295" duration="7057000" />
+      <workItem from="1669110309245" duration="4990000" />
+      <workItem from="1669171242460" duration="9824000" />
+      <workItem from="1669262106667" duration="18057000" />
+      <workItem from="1669308833712" duration="5675000" />
+      <workItem from="1669363962912" duration="9000" />
+      <workItem from="1669377964447" duration="2853000" />
+      <workItem from="1669393726520" duration="19563000" />
+      <workItem from="1669514132164" duration="3900000" />
+      <workItem from="1669621867890" duration="781000" />
+      <workItem from="1669627761664" duration="4165000" />
+      <workItem from="1669663870206" duration="6043000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1668509976207</created>
@@ -203,42 +227,21 @@
       <option name="project" value="LOCAL" />
       <updated>1668680326163</updated>
     </task>
-    <task id="LOCAL-00014" summary="update 1/12">
-      <created>1669890349025</created>
+    <task id="LOCAL-00014" summary="update 19/11">
+      <created>1668872332092</created>
       <option name="number" value="00014" />
       <option name="presentableId" value="LOCAL-00014" />
       <option name="project" value="LOCAL" />
-      <updated>1669890349025</updated>
+      <updated>1668872332092</updated>
     </task>
-    <task id="LOCAL-00015" summary="update 2/12">
-      <created>1669970263188</created>
+    <task id="LOCAL-00015" summary="update 19/11">
+      <created>1668875478702</created>
       <option name="number" value="00015" />
       <option name="presentableId" value="LOCAL-00015" />
       <option name="project" value="LOCAL" />
-      <updated>1669970263188</updated>
+      <updated>1668875478702</updated>
     </task>
-    <task id="LOCAL-00016" summary="update 2/12">
-      <created>1669970283637</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1669970283637</updated>
-    </task>
-    <task id="LOCAL-00017" summary="update 2/12">
-      <created>1669971254739</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1669971254739</updated>
-    </task>
-    <task id="LOCAL-00018" summary="6/12">
-      <created>1670264752107</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1670264752107</updated>
-    </task>
-    <option name="localTasksCounter" value="19" />
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,10 +273,27 @@
     <MESSAGE value="header" />
     <MESSAGE value="end comment" />
     <MESSAGE value="update 17/11" />
-    <MESSAGE value="done admin khung_gio_chieu" />
-    <MESSAGE value="update 1/12" />
-    <MESSAGE value="update 2/12" />
-    <MESSAGE value="6/12" />
-    <option name="LAST_COMMIT_MESSAGE" value="6/12" />
+    <MESSAGE value="update 19/11" />
+    <option name="LAST_COMMIT_MESSAGE" value="update 19/11" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php-line-method">
+          <url>file://$PROJECT_DIR$/admin/models/m_home.php</url>
+          <line>9</line>
+          <properties>
+            <option name="className" value="\m_home" />
+            <option name="methodName" value="thong_ke_loai_hang" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/models/connect.php</url>
+          <line>9</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
