@@ -18,31 +18,45 @@ class c_phim{
         include ("models/m_loaiphim.php");
         $m_theloai = new m_loaiphim();
         $theloai = $m_theloai->doc_loaiphim();
+
         if (isset($_POST['btn-add'])) {
             $id = NULL;
             $name = $_POST['name'];
             $rate = $_POST['rate'];
             $description = $_POST['description'];
             $id_loai_phim = $_POST['id_loai_phim'];
-
-            //lấy được tên của hình ảnh
-//            echo "<pre>";
-//            echo print_r($_FILES['f_hinh_anh']);
-//            die();
-            $img = ($_FILES['img']['error'] == 0) ? $_FILES['img']['name'] :"";
+            $gia = $_POST['gia'];
             $link_demo = $_POST['link_demo'];
-            $add_phim = new m_phim();
-           $result = $add_phim->insert_phim($id,$name,$rate,$description,$img,$link_demo, $id_loai_phim);
-           if ($result) {
-               if ($img != "") {
-                   //di chuyển hình ảnh vào thư mục source
-                   move_uploaded_file($_FILES['img']['tmp_name'],"public/img/".$img);
-               }
-               echo "<script>alert('thành công')</script>";
-           } else {
-               echo "<script>alert('thêm không thành công')</script>";
-           }
+
+            if(isset($_FILES['img'])){
+                $allow_upload = true;
+                $img = $_FILES['img']['name'];
+                $target_dir = "public/img/";
+                $target_file = $target_dir .$_FILES['img']['name'];
+                $imageFileType = pathinfo($target_file, PATHINFO_EXTENSION);
+                $allowTypes = ['jpg', 'png', 'jpeg'];
+                $check = getimagesize($_FILES['img']['tmp_name']);
+                if($check == false){
+                    echo "<script>alert('File upload không phải file ảnh')</script>";
+                    $allow_upload = false;
+                }
+
+                if(!in_array($imageFileType, $allowTypes)){
+                    echo "<script>alert('Đuôi file không được phép upload')</script>";
+                    $allow_upload = false;
+                }
+                if ($allow_upload == true) {
+                    move_uploaded_file($_FILES['img']['tmp_name'],$target_file);
+                    $add_phim = new m_phim();
+                    $result = $add_phim->insert_phim($id,$name,$rate,$description,$img,$gia, $link_demo, $id_loai_phim);
+                    echo "<script>alert('Thêm thành công')</script>";
+                }else {
+                    echo "<script>alert('Thêm không thành công')</script>";
+                }
+            }
+
         }
+
         $view = "views/phim/v_add_phim.php";
         include ("templates/layout.php");
     }
@@ -61,20 +75,39 @@ class c_phim{
                 $rate = $_POST['rate'];
                 $description = $_POST['description'];
                 $link_demo = $_POST['link_demo'];
+                $gia = $_POST['gia'];
                 $id_loai_phim = $_POST['id_loai_phim'];
 
-                $img = empty($_FILES['img']['name']) ? $phim_details->img  : $_FILES['img']['name'];
-                $edit_phim = new m_phim();
-                $result = $edit_phim->edit_phim($id,$name,$rate,$description,$img,$link_demo,$id_loai_phim);
-                if ($result) {
-                    if ($img != "") {
-                        //di chuyển hình ảnh vào thư mục source
-                        move_uploaded_file($_FILES['img']['tmp_name'],"public/img/".$img);
+                if(isset($_FILES['img'])){
+                    $allow_upload = true;
+                    $img = empty($_FILES['img']['name']) ? $phim_details->img : $_FILES['img']['name'];
+                    $target_dir = "public/img/";
+                    $target_file = $target_dir .$_FILES['img']['name'];
+                    $imageFileType = pathinfo($target_file, PATHINFO_EXTENSION);
+                    $allowTypes = ['jpg', 'png', 'jpeg',''];
+
+
+                    if($img != $phim_details->img){
+                        $check = getimagesize($_FILES['img']['tmp_name']);
+                        if($check == false){
+                            echo "<script>alert('File upload không phải file ảnh')</script>";
+                            $allow_upload = false;
+                        }
                     }
-                    $update = "done";
-                    header("location: phim.php?update=$update");
-                } else {
-                    echo "<script>alert('Sửa không thành công')</script>";
+
+                    if(!in_array($imageFileType, $allowTypes)){
+                        echo "<script>alert('Đuôi file không được phép upload')</script>";
+                        $allow_upload = false;
+                    }
+                    if ($allow_upload == true) {
+                        move_uploaded_file($_FILES['img']['tmp_name'],$target_file);
+                        $edit_phim = new m_phim();
+                        $result = $edit_phim->edit_phim($id,$name,$rate,$description,$img, $gia, $link_demo,$id_loai_phim);
+                        $update = "done";
+                        header("location: phim.php?update=$update");
+                    }else {
+                        echo "<script>alert('Sửa không thành công')</script>";
+                    }
                 }
             }
         }

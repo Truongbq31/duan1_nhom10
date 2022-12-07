@@ -40,7 +40,14 @@
                             </div>
 
                             <div class="form-group row">
-                                <label for="fname" class="col-sm-3 text-right control-label col-form-label">Link Demo</label>
+                                <label for="fname" class="col-sm-3 text-right control-label col-form-label">Giá phim</label>
+                                <div class="col-sm-9">
+                                    <input type="number" min="0" class="form-control" id="ten_tieu_de" name="gia" placeholder="Giá phim" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="fname" class="col-sm-3 text-right control-label col-form-label">Link Demo phim</label>
                                 <div class="col-sm-9">
                                     <textarea type="text" class="form-control" id="ten_tieu_de" name="link_demo" placeholder="Link demo" required></textarea>
                                 </div>

@@ -30,6 +30,7 @@
                                     <input type="text" class="form-control" id="ten_tieu_de" name="description" value="<?php echo $phim_details->description ?>"">
                                 </div>
                             </div>
+
                             <div class="form-group row">
                                 <label for="lname" class="col-sm-3 text-right control-label col-form-label">Hình ảnh</label>
 
@@ -40,6 +41,13 @@
                                         <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
                                         <div class="invalid-feedback">Example invalid custom file feedback</div>
                                     </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="fname" class="col-sm-3 text-right control-label col-form-label">Giá phim</label>
+                                <div class="col-sm-9">
+                                    <input type="number" min="0" class="form-control" id="ten_tieu_de" name="gia" placeholder="Giá phim" required value="<?php echo $phim_details->gia;?>">
                                 </div>
                             </div>
 

@@ -14,12 +14,13 @@
                 <table id="zero_config" class="table table-striped table-bordered">
                     <thead>
                     <tr>
-                        <th>Name</th>
-                        <th>Rating</th>
-                        <th>Description</th>
+                        <th>Tên phim</th>
+                        <th>Đánh giá</th>
+                        <th>Chi tiết</th>
                         <th>Ảnh</th>
                         <th>Loại phim</th>
-                        <th>Action</th>
+                        <th>Giá vé</th>
+                        <th>Hành động</th>
 
                     </tr>
                     </thead>
@@ -33,6 +34,7 @@
                         <td><?php echo $value->description; ?></td>
                         <td><img width="100px" src="public/img/<?php echo $value->img; ?>"></td>
                         <td><?php echo $value->ten_loai; ?></td>
+                        <th><?php echo number_format($value->gia); ?> VNĐ</th>
 
 
                         <td>

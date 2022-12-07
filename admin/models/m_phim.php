@@ -8,16 +8,16 @@ class m_phim extends database {
         //lấy nhiều dòng dữ liệu(Trả về 1 mảng dữ liệu)
         return $this -> loadAllRows();
     }
-    public function insert_phim($id,$name,$rate,$description,$img,$link_demo,$id_loai_phim) {
-        $sql = "INSERT INTO phim values (?,?,?,?,?,?,?)";
+    public function insert_phim($id,$name,$rate,$description,$img,$gia,$link_demo,$id_loai_phim) {
+        $sql = "INSERT INTO phim values (?,?,?,?,?,?,?,?)";
         $this->setQuery($sql);
-        return $this->execute(array($id,$name,$rate,$description,$img,$link_demo,$id_loai_phim));
+        return $this->execute(array($id,$name,$rate,$description,$img,$gia,$link_demo,$id_loai_phim));
     }
 
-    public function edit_phim($id,$name,$rate,$description,$img,$link_demo, $id_loai_phim){
-        $sql = "update PHIM set name=?, rate=?, description=?, img=?, link_demo=?, id_loai_phim=? where id=?";
+    public function edit_phim($id,$name,$rate,$description,$img,$gia, $link_demo, $id_loai_phim){
+        $sql = "update PHIM set name=?, rate=?, description=?, img=?, gia=?, link_demo=?, id_loai_phim=? where id=?";
         $this->setQuery($sql);
-        return $this->execute(array($name, $rate, $description, $img,$link_demo, $id_loai_phim, $id));
+        return $this->execute(array($name, $rate, $description, $img, $gia, $link_demo, $id_loai_phim, $id));
     }
 
     public function read_phim_by_id($id) {
