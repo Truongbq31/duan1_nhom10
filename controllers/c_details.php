@@ -6,6 +6,7 @@ class c_details {
         $details = $m_details->m_details();
         $phims = $m_details->m_phim();
         $comment = $m_details->m_comment();
+        $lich_chieu = $m_details->load_lich_chieu();
         $view = "views/details/v_details.php";
         include ("templates/layout.php");
 

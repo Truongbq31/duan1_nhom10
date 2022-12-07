@@ -4,18 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7fee531a-e60d-4653-a655-7a8e4f30f069" name="Changes" comment="6/12">
-      <change afterPath="$PROJECT_DIR$/admin/public/img/Nitro_Wallpaper_5000x2813 - Copy.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/public/img/Planet9_Wallpaper_5000x2813 - Copy.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/public/img/cropped-1920-1080-705556.png" afterDir="false" />
+    <list default="true" id="7fee531a-e60d-4653-a655-7a8e4f30f069" name="Changes" comment="8/12">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/controllers/c_phim.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controllers/c_phim.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/models/m_phim.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/models/m_phim.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/models/m_ve.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/models/m_ve.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/views/phim/v_add_phim.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/views/phim/v_add_phim.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/views/phim/v_edit_phim.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/views/phim/v_edit_phim.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/views/phim/v_phim.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/views/phim/v_phim.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/views/ve/v_ve.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/views/ve/v_ve.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/c_details.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/c_details.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/m_details.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/m_details.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/details/v_details.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/details/v_details.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -247,7 +240,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670264752107</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="8/12">
+      <created>1670432685144</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1670432685144</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -283,6 +283,7 @@
     <MESSAGE value="update 1/12" />
     <MESSAGE value="update 2/12" />
     <MESSAGE value="6/12" />
-    <option name="LAST_COMMIT_MESSAGE" value="6/12" />
+    <MESSAGE value="8/12" />
+    <option name="LAST_COMMIT_MESSAGE" value="8/12" />
   </component>
 </project>
