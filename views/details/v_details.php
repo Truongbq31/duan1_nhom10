@@ -50,7 +50,7 @@
                             echo "";
                         }else{
                             echo "hidden";
-                        } ?> href="lich_chieu.php?id=<?php echo $values->id_phim?>">Đặt vé</a>
+                        } ?> href="lich_chieu.php?id=<?php echo $values->id_lich_chieu?>">Đặt vé</a>
                     </div>
                     <!-- end card content -->
                 </div>

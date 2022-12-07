@@ -1,4 +1,6 @@
 <?php
+session_start();
+$_SESSION['id_lich_chieu'] = $_GET['id'];
 require "models/connect.php";
 $id = $_GET['id'];
 $sql = "Select *, phim.name as ten_phim, chi_nhanh.ten_chi_nhanh,khung_gio_chieu.gio_bat_dau,phong_chieu.ten_phong,lich_chieu.id as id_lich_chieu from lich_chieu  inner join chi_nhanh_phim on chi_nhanh_phim.id=lich_chieu.id_chi_nhanh_phim 
@@ -42,7 +44,7 @@ $mangGhe = [["A1","A2","A3","A4","A5","A6"],
 <link rel="stylesheet" href="views/Giochieuphim/css/main.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
-<link rel="stylesheet" href="public/abc/dmitryvolkov.me/demo/flixgo2.0/main/css/style2.css">
+<link rel="stylesheet" href="public/abc/dmitryvolkov.me/demo/flixgo2.0/main/css/style3.css">
 <ul class="showcase2">
     <li>
         <div class="seat"></div>
@@ -141,7 +143,7 @@ $mangGhe = [["A1","A2","A3","A4","A5","A6"],
 
             // if(confirm("Bạn có chắc muốn đặt vé ?")){
                 var id=$(".booked").html();
-                var gia=$(".price").html()
+                var gia=$(".price").html();
                 var ten_phim=$(".ten_phim").html();
                 var gio_bat_dau=$(".gio_chieu").html();
                 var ngay_chieu = $(".ngay_chieu").html();

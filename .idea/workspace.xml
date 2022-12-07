@@ -5,27 +5,393 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7fee531a-e60d-4653-a655-7a8e4f30f069" name="Changes" comment="update 19/11">
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_5_2022_10_49_PM_[Changes]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_5_2022_10_49_PM__Changes_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vnpay_php/assets/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vnpay_php/assets/jquery-1.11.3.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vnpay_php/assets/jumbotron-narrow.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vnpay_php/config.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vnpay_php/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vnpay_php/nbproject/private/private.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vnpay_php/nbproject/private/private.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vnpay_php/nbproject/project.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vnpay_php/nbproject/project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vnpay_php/vnpay_create_payment.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vnpay_php/vnpay_ipn.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vnpay_php/vnpay_query.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vnpay_php/vnpay_refund.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vnpay_php/vnpay_return.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/abc/dmitryvolkov.me/demo/flixgo2.0/main/css/style3.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/css/Flaticon.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/css/Flaticon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/css/Flaticon.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/css/Flaticon.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/css/Flaticon.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/css/Flaticond41d.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/css/all.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/css/animate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/css/flaticon.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/css/img/check.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/css/img/check02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/css/img/movie-seat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/css/img/quotation.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/css/img/team-shape.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/css/img/team-shape02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/css/img/ticket-bg04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/css/img/ticket-bg05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/css/img/ticket-bg06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/css/img/times.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/css/img/wreath-01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/css/img/wreath-02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/css/jquery.animatedheadline.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/css/magnific-popup.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/css/nice-select.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/css/odometer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/css/owl.carousel.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/css/owl.theme.default.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/css/owl.video.play.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/404.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/about/about-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/about/about-counter01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/about/about-counter02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/about/about-counter03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/about/about-counter04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/about/about01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/account/account-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/apps/apps01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/apps/apps02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/apps/apps03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/banner/banner01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/banner/banner02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/banner/banner03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/banner/banner04.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/banner/banner05.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/banner/banner06.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/banner/banner07.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/banner/banner08.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/banner/banner09.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/banner/banner10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/blog/author.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/blog/blog01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/blog/blog02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/blog/blog03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/blog/blog04.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/blog/slider01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/cast/cast01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/cast/cast02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/cast/cast03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/cast/cast04.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/cast/cast05.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/cast/cast06.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/cast/cast07.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/cast/cast08.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/client/client-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/client/client01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/client/client02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/client/client03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/client/client04.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/contact/contact.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/contact/contact01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/contact/contact02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/event/event-about.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/event/event01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/event/event02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/event/event03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/event/event04.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/event/event05.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/event/event06.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/event/event07.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/event/event08.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/event/event09.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/event/event10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/event/event11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/event/event12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/event/icon/event-icon01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/event/icon/event-icon02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/event/icon/event-icon03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/event/ticket/ticket01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/event/ticket/ticket02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/event/ticket/ticket03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/footer/footer-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/footer/footer-shape.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/gallery/gallery01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/gallery/gallery02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/gallery/gallery03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/gallery/gallery04.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/gallery/gallery05.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/gallery/gallery06.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/gallery/gallery07.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/gallery/gallery08.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/gallery/gallery09.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/gallery/gallery10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/gallery/gallery11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/gallery/gallery12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/gallery/gallery13.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/icons/book.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/icons/heart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/icons/play-button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/logo/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/movie/cake.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/movie/cake2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/movie/movie-bg-proceed.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/movie/movie-details01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/movie/movie-details02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/movie/movie-details03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/movie/movie01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/movie/movie02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/movie/movie03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/movie/movie04.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/movie/movie05.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/movie/movie06.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/movie/movie07.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/movie/movie08.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/movie/movie09.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/movie/movie10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/movie/movie11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/movie/movie12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/movie/popcorn/pop1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/movie/popcorn/pop2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/movie/popcorn/pop3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/movie/popcorn/pop4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/movie/screen-thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/movie/seat-plan.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/movie/seat01-free.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/movie/seat01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/movie/seat02-booked.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/movie/seat02-free.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/movie/seat02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/movie/tomato.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/movie/tomato2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/movie/venus.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/movie/video-button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/newslater/newslater-bg01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/payment/card.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/payment/paypal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/philosophy/icon1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/philosophy/icon2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/philosophy/icon3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/sidebar/banner/banner01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/sidebar/banner/banner02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/sidebar/banner/banner03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/sidebar/banner/banner04.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/sidebar/icons/sidebar01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/sidebar/icons/sidebar02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/sidebar/icons/sidebar03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/sidebar/offer01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/sidebar/offer02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/sidebar/offer03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/speaker/speaker01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/speaker/speaker02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/speaker/speaker03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/speaker/speaker04.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/speaker/speaker05.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/sponsor/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/sponsor/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/sponsor/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/sponsor/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/sponsor/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/sports/sports-about.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/sports/sports01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/sports/sports02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/sports/sports03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/sports/sports04.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/sports/sports05.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/sports/sports06.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/sports/sports07.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/sports/sports08.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/sports/sports09.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/sports/sports10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/sports/sports11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/sports/sports12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/statistics/stat01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/statistics/stat02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/statistics/stat03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/statistics/statistics-bg01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/ticket/cinema.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/ticket/city.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/ticket/date.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/ticket/exp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/ticket/ticket-bg01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/ticket/ticket-tab01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/ticket/ticket-tab02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/ticket/ticket-tab03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/tour/icon01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/tour/icon02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/images/tour/tour.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/js/contact.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/js/countdown.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/js/heandline.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/js/isotope.pkgd.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/js/jquery-3.3.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/js/magnific-popup.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/js/modernizr-3.6.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/js/nice-select.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/js/odometer.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/js/owl.carousel.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/js/plugins.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/js/viewport.jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/js/wow.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/webfonts/fa-brands-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/webfonts/fa-brands-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/webfonts/fa-brands-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/webfonts/fa-brands-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/webfonts/fa-brands-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/webfonts/fa-brands-400d41d.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/webfonts/fa-regular-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/webfonts/fa-regular-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/webfonts/fa-regular-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/webfonts/fa-regular-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/webfonts/fa-regular-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/webfonts/fa-regular-400d41d.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/webfonts/fa-solid-900.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/webfonts/fa-solid-900.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/webfonts/fa-solid-900.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/webfonts/fa-solid-900.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/webfonts/fa-solid-900.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Giochieuphim/webfonts/fa-solid-900d41d.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/about.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/backblue.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/catalog.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/catalog1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/catalog2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/contacts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/details1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/details2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/about.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/catalog.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/catalog1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/catalog2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/contacts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/css/datve.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/css/default-skin-2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/css/default-skin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/css/default-skin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/css/jquery.mCustomScrollbar.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/css/mCSB_buttons.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/css/nouislider.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/css/owl.carousel.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/css/owl.video.play.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/css/photoswipe.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/css/plyr.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/css/preloader.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/details1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/details2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/faq.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/forgot.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/icon/favicon-32x32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/img/Download_on_the_App_Store_Badge.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/img/angle-down.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/img/arrow-left.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/img/arrow-right.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/img/check.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/img/comments.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/img/compress-arrows.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/img/covers/cover.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/img/covers/cover2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/img/covers/cover3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/img/covers/cover4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/img/covers/cover5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/img/covers/cover6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/img/credit-card.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/img/ellipsis-h.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/img/expand-arrows.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/img/film.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/img/gallery/project-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/img/gallery/project-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/img/gallery/project-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/img/gallery/project-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/img/gallery/project-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/img/gallery/project-6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/img/google-play-badge.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/img/home/home__bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/img/home/home__bg2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/img/home/home__bg3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/img/home/home__bg4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/img/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/img/multiply.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/img/partners/3docean-light-background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/img/partners/activeden-light-background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/img/partners/audiojungle-light-background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/img/partners/codecanyon-light-background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/img/partners/photodune-light-background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/img/partners/themeforest-light-background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/img/play.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/img/section/section.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/img/star-half-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/img/star.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/img/user.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/index2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/js/datve.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/js/jquery-3.6.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/js/jquery.mCustomScrollbar.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/js/jquery.morelines.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/js/jquery.mousewheel.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/js/nouislider.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/js/owl.carousel.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/js/photoswipe-ui-default.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/js/photoswipe.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/js/plyr.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/js/wNumb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/pricing.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/privacy.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/profile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/reviews.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/signin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/dmitryvolkov.me/demo/flixgo2.0/main/signup.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/fade.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/faq.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/forgot.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/hts-cache/doit.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/hts-cache/new.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/hts-cache/new.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/hts-cache/new.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/hts-cache/old.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/hts-cache/old.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/hts-cache/old.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/hts-cache/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/hts-cache/winprofile.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/hts-log.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/index2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/pricing.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/privacy.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/profile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/reviews.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/signin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/signup.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/abc/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/css2/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/css2/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/css2/default-skin-2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/css2/default-skin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/css2/default-skin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/css2/jquery.mCustomScrollbar.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/css2/mCSB_buttons.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/css2/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/css2/main2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/css2/main3.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/css2/nouislider.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/css2/owl.carousel.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/css2/owl.video.play.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/css2/photoswipe.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/css2/plyr.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/css2/preloader.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/css2/style2.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_06_12_2022_1_19_SA__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_06_12_2022_1_19_SA__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_11_2022_9_52_CH_[Changes]/cropped-1920-1080-598846.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_11_2022_9_52_CH_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_11_2022_9_52_CH_[Changes]/tải xuống (1).jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_11_2022_9_52_CH_[Changes]/tải xuống (2).jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_11_2022_9_52_CH_[Changes]/tải xuống.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_11_2022_9_52_CH__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/c_home.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/c_home.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/m_data.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/m_data.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/m_details.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/m_details.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/m_lich_chieu.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/m_lich_chieu.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/m_ve.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/m_ve.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/Seat/v_Seat.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/Seat/v_Seat.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/accounts/v_login.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/accounts/v_login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/details/v_details.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/details/v_details.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,8 +405,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package.json" />
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -135,6 +501,10 @@
       <workItem from="1669621867890" duration="781000" />
       <workItem from="1669627761664" duration="4165000" />
       <workItem from="1669663870206" duration="6043000" />
+      <workItem from="1670336183735" duration="1483000" />
+      <workItem from="1670351279145" duration="598000" />
+      <workItem from="1670419591713" duration="433000" />
+      <workItem from="1670424542165" duration="3132000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1668509976207</created>
@@ -241,7 +611,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668875478702</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="update 19/11">
+      <created>1670321019274</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1670321019274</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

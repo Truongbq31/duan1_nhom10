@@ -41,7 +41,8 @@
         <div class="auth-box bg-dark border-top border-secondary">
             <div id="loginform">
                 <div class="text-center p-t-20 p-b-20">
-                    <span class="db"> <img width="200px" src="admin/public/assets/images/logo_group5.png" alt="logo" /></span>
+                    <h1 style="color: yellow">Đăng Nhập</h1>
+<!--                    <span class="db"> <img width="200px" src="admin/public/assets/images/logo_group5.png" alt="logo" /></span>-->
                 </div>
                 <!-- Form -->
                 <form class="form-horizontal m-t-20" id="loginform" action="login.php" method="POST">

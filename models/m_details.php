@@ -3,7 +3,11 @@ require "database.php";
 class m_details extends database{
     public function m_details(){
         $id = $_GET['id'];
-        $sql="SELECT *, phim.id as id_phim FROM phim inner join loai_phim on loai_phim.id=phim.id_loai_phim where phim.id=$id";
+        $sql="SELECT *, phim.id as id_phim,lich_chieu.id as id_lich_chieu FROM phim 
+           inner join loai_phim on loai_phim.id=phim.id_loai_phim
+     inner join chi_nhanh_phim on chi_nhanh_phim.id_phim=phim.id
+           inner join lich_chieu on lich_chieu.id_chi_nhanh_phim=chi_nhanh_phim.id
+           where phim.id=$id group by phim.id";
         $this->setQuery($sql);
         return $this->loadAllRows();
     }
