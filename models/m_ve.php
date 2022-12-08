@@ -10,9 +10,16 @@ require("connect.php");
     $ngay_dat=date("H:i a d-m-Y");
     echo $ngay_dat;
     $gia = $_SESSION['gia'];
-    $trang_thai = 1;
+    $trang_thai = isset($_SESSION['online']) ? 1 : 0;
     $sql="INSERT INTO ve VALUE('','$id_lich_chieu','$id_nguoi_dung','$ghe_ngoi','$ngay_dat','$gia','$trang_thai')";
     $conn->exec($sql);
-    $msg = "done";
-    header("location:../index.php?msg=$msg");
+
+    if($trang_thai == 1){
+        $online = "done";
+        header("location:../index.php?online=$online");
+    }else{
+        $offline = "done";
+        header("location:../index.php?offline=$offline");
+    }
+
 ?>

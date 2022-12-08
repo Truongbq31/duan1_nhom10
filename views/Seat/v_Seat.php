@@ -1,6 +1,7 @@
 <?php
 session_start();
 $_SESSION['id_lich_chieu'] = $_GET['id'];
+
 require "models/connect.php";
 $id = $_GET['id'];
 $sql = "Select *, phim.name as ten_phim, chi_nhanh.ten_chi_nhanh,khung_gio_chieu.gio_bat_dau,phong_chieu.ten_phong,lich_chieu.id as id_lich_chieu from lich_chieu  inner join chi_nhanh_phim on chi_nhanh_phim.id=lich_chieu.id_chi_nhanh_phim 
@@ -109,7 +110,10 @@ $mangGhe = [["A1","A2","A3","A4","A5","A6"],
             <h3 class="title price"></h3>
         </div>
         <div class="book-item">
-            <a style=" color:red ; text-decoration: none;font-size: 20px; background-color: yellow;border-radius: 3px"  class="custom-button submit">Đặt Vé</a>
+            <a style=" color:whitesmoke ; text-decoration: none;font-size: 20px; background-color: yellow;border-radius: 3px"  class="custom-button submit_onl">Thanh toán online</a>
+        </div>
+        <div class="book-item">
+            <a style=" color:whitesmoke ; text-decoration: none;font-size: 20px; background-color: yellow;border-radius: 3px"  class="custom-button submit_off">Thanh toán tại quầy</a>
         </div>
     </div>
 </form>
@@ -139,7 +143,7 @@ $mangGhe = [["A1","A2","A3","A4","A5","A6"],
                 $(".price").html(price);
             }
         });
-        $(".submit").click(function(){
+        $(".submit_onl").click(function(){
 
             // if(confirm("Bạn có chắc muốn đặt vé ?")){
                 var id=$(".booked").html();
@@ -150,8 +154,16 @@ $mangGhe = [["A1","A2","A3","A4","A5","A6"],
                 var phong_chieu = $(".ten_phong").html();
                 var chi_nhanh = $(".ten_chi_nhanh").html();
                 // var trang_thai =
-                 location.href="vnpay_php/index.php?id="+id+"&&gia="+gia+"&&ten_phim="+ten_phim+"&&gio_bat_dau="+gio_bat_dau+"&&ngay_chieu="+ngay_chieu+"&&phong_chieu="+phong_chieu+"&&chi_nhanh=" +chi_nhanh;
+                 location.href="vnpay_php/index.php?id="+id+"&&gia="+gia+"&&ten_phim="+ten_phim+"&&gio_bat_dau="+gio_bat_dau+"&&ngay_chieu="+ngay_chieu+"&&phong_chieu="+phong_chieu+"&&chi_nhanh=" +chi_nhanh+"&&online="+0;
+
                 // $.post("models/m_ve.php",{ghe_ngoi: id,ten_phim: ten_phim,gio_bat_dau:gio_bat_dau,ngay_chieu:ngay_chieu,phong_chieu:phong_chieu,chi_nhanh:chi_nhanh,gia:gia});
+            // }
+        })
+
+        $(".submit_off").click(function(){
+            location.href="models/m_ve.php";
+
+            // $.post("models/m_ve.php",{ghe_ngoi: id,ten_phim: ten_phim,gio_bat_dau:gio_bat_dau,ngay_chieu:ngay_chieu,phong_chieu:phong_chieu,chi_nhanh:chi_nhanh,gia:gia});
             // }
         })
     });
