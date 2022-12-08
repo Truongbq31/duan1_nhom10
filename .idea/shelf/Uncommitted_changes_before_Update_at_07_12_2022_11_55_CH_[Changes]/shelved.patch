@@ -1,0 +1,433 @@
+Index: admin/views/phim/v_edit_phim.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\r\n<div class=\"page-wrapper\">\r\n    <div class=\"container-fluid\">\r\n        <!-- ============================================================== -->\r\n        <!-- Start Page Content -->\r\n        <!-- ============================================================== -->\r\n        <div class=\"row\">\r\n            <div class=\"col-md-6\">\r\n                <div class=\"card\">\r\n                    <form method=\"POST\" action=\"\" enctype=\"multipart/form-data\" class=\"form-horizontal\">\r\n\r\n\r\n                        <div class=\"card-body\">\r\n                            <h4 class=\"card-title\">Thêm tiêu đề</h4>\r\n                            <div class=\"form-group row\">\r\n                                <label for=\"fname\" class=\"col-sm-3 text-right control-label col-form-label\">Name</label>\r\n                                <div class=\"col-sm-9\">\r\n                                    <input type=\"text\" class=\"form-control\" id=\"ten_tieu_de\" name=\"name\" value=\"<?php echo $phim_details->name ?>\">\r\n                                </div>\r\n                            </div>\r\n                            <div class=\"form-group row\">\r\n                                <label for=\"fname\" class=\"col-sm-3 text-right control-label col-form-label\">Rate</label>\r\n                                <div class=\"col-sm-9\">\r\n                                    <input type=\"number\" min=\"0\" max=\"5\" class=\"form-control\" id=\"ten_tieu_de\" name=\"rate\" value=\"<?php echo $phim_details->rate ?>\"\">\r\n                                </div>\r\n                            </div>\r\n                            <div class=\"form-group row\">\r\n                                <label for=\"fname\" class=\"col-sm-3 text-right control-label col-form-label\">Description</label>\r\n                                <div class=\"col-sm-9\">\r\n                                    <input type=\"text\" class=\"form-control\" id=\"ten_tieu_de\" name=\"description\" value=\"<?php echo $phim_details->description ?>\"\">\r\n                                </div>\r\n                            </div>\r\n                            <div class=\"form-group row\">\r\n                                <label for=\"lname\" class=\"col-sm-3 text-right control-label col-form-label\">Hình ảnh</label>\r\n\r\n                                <div class=\"col-sm-9\">\r\n                                    <div class=\"custom-file\">\r\n                                        <img style=\"margin-top: 50px\" width=\"100px\" src=\"public/img/<?php echo $phim_details->img;?>\">\r\n                                        <input type=\"file\"  class=\"custom-file-input\" id=\"validatedCustomFile\" name=\"img\">\r\n                                        <label class=\"custom-file-label\" for=\"validatedCustomFile\">Choose file...</label>\r\n                                        <div class=\"invalid-feedback\">Example invalid custom file feedback</div>\r\n                                    </div>\r\n                                </div>\r\n                            </div>\r\n\r\n                            <div class=\"form-group row\">\r\n                                <label for=\"fname\" class=\"col-sm-3 text-right control-label col-form-label\">Link demo</label>\r\n                                <div class=\"col-sm-9\">\r\n                                    <textarea type=\"text\" class=\"form-control\" id=\"ten_tieu_de\" name=\"link_demo\"><?php echo $phim_details->link_demo ?></textarea>\r\n                                </div>\r\n                            </div>\r\n\r\n                            <div class=\"form-group row\">\r\n                                <label for=\"lname\" class=\"col-sm-3 text-right control-label col-form-label\">Loại phim</label>\r\n                                <div class=\"col-sm-9\">\r\n                                    <select class=\"select2 form-control custom-select\" style=\"width: 100%; height:36px;\" name=\"id_loai_phim\">\r\n                                        <option selected value=\"<?php echo $phim_details->id_loai_phim ?>\"><?php echo $phim_details->ten_loai ?></option>\r\n                                        <?php foreach ($theloai as $key => $value){ ?>\r\n                                            <option value=\"<?php echo $value->id ?>\"><?php echo $value->ten_loai ?></option>\r\n                                        <?php } ?>\r\n                                    </select>\r\n                                </div>\r\n                            </div>\r\n\r\n\r\n                        <div class=\"border-top\">\r\n                            <div class=\"card-body\">\r\n                                <button type=\"submit\" name=\"btn_save\" class=\"btn btn-primary\">Lưu</button>\r\n                                <a type=\"submit\" href=\"ds_phim.php\" class=\"btn btn-primary\">Danh sách</a>\r\n                            </div>\r\n                        </div>\r\n                    </form>\r\n                </div>\r\n\r\n            </div>\r\n        </div>\r\n\r\n        <!-- ============================================================== -->\r\n        <!-- End PAge Content -->\r\n        <!-- ============================================================== -->\r\n        <!-- ============================================================== -->\r\n        <!-- Right sidebar -->\r\n        <!-- ============================================================== -->\r\n        <!-- .right-sidebar -->\r\n        <!-- ============================================================== -->\r\n        <!-- End Right sidebar -->\r\n        <!-- ============================================================== -->\r\n    </div>\r\n</div>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/admin/views/phim/v_edit_phim.php b/admin/views/phim/v_edit_phim.php
+--- a/admin/views/phim/v_edit_phim.php	(revision d627b5845dbc67cdefe665bc5f245e8037f315d5)
++++ b/admin/views/phim/v_edit_phim.php	(date 1670430691888)
+@@ -30,6 +30,7 @@
+                                     <input type="text" class="form-control" id="ten_tieu_de" name="description" value="<?php echo $phim_details->description ?>"">
+                                 </div>
+                             </div>
++
+                             <div class="form-group row">
+                                 <label for="lname" class="col-sm-3 text-right control-label col-form-label">Hình ảnh</label>
+ 
+@@ -43,6 +44,13 @@
+                                 </div>
+                             </div>
+ 
++                            <div class="form-group row">
++                                <label for="fname" class="col-sm-3 text-right control-label col-form-label">Giá phim</label>
++                                <div class="col-sm-9">
++                                    <input type="number" min="0" class="form-control" id="ten_tieu_de" name="gia" placeholder="Giá phim" required value="<?php echo $phim_details->gia;?>">
++                                </div>
++                            </div>
++
+                             <div class="form-group row">
+                                 <label for="fname" class="col-sm-3 text-right control-label col-form-label">Link demo</label>
+                                 <div class="col-sm-9">
+Index: admin/models/m_phim.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?php\r\nrequire_once('database.php');\r\nclass m_phim extends database {\r\n    // xây dựng lấy danh sách hàng hóa\r\n    public function doc_phim(){\r\n        $sql = \"SELECT *, phim.id as id_phim, loai_phim.id as id_loai FROM phim inner join loai_phim on loai_phim.id=phim.id_loai_phim\";//chuỗi câu truy vấn dữ liệu\r\n        $this -> setQuery($sql);\r\n        //lấy nhiều dòng dữ liệu(Trả về 1 mảng dữ liệu)\r\n        return $this -> loadAllRows();\r\n    }\r\n    public function insert_phim($id,$name,$rate,$description,$img,$link_demo,$id_loai_phim) {\r\n        $sql = \"INSERT INTO phim values (?,?,?,?,?,?,?)\";\r\n        $this->setQuery($sql);\r\n        return $this->execute(array($id,$name,$rate,$description,$img,$link_demo,$id_loai_phim));\r\n    }\r\n\r\n    public function edit_phim($id,$name,$rate,$description,$img,$link_demo, $id_loai_phim){\r\n        $sql = \"update PHIM set name=?, rate=?, description=?, img=?, link_demo=?, id_loai_phim=? where id=?\";\r\n        $this->setQuery($sql);\r\n        return $this->execute(array($name, $rate, $description, $img,$link_demo, $id_loai_phim, $id));\r\n    }\r\n\r\n    public function read_phim_by_id($id) {\r\n        $sql = \"select * from phim inner join loai_phim on loai_phim.id=phim.id_loai_phim where phim.id=?\";\r\n        $this->setQuery($sql);\r\n        return $this->loadRow(array($id));\r\n    }\r\n\r\n    public function delete_phim($id) {\r\n        $sql = \"Delete from phim where id=?\";\r\n        $this->setQuery($sql);\r\n        return $this->execute(array($id));\r\n    }\r\n}\r\n?>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/admin/models/m_phim.php b/admin/models/m_phim.php
+--- a/admin/models/m_phim.php	(revision d627b5845dbc67cdefe665bc5f245e8037f315d5)
++++ b/admin/models/m_phim.php	(date 1670429288723)
+@@ -8,16 +8,16 @@
+         //lấy nhiều dòng dữ liệu(Trả về 1 mảng dữ liệu)
+         return $this -> loadAllRows();
+     }
+-    public function insert_phim($id,$name,$rate,$description,$img,$link_demo,$id_loai_phim) {
+-        $sql = "INSERT INTO phim values (?,?,?,?,?,?,?)";
++    public function insert_phim($id,$name,$rate,$description,$img,$gia,$link_demo,$id_loai_phim) {
++        $sql = "INSERT INTO phim values (?,?,?,?,?,?,?,?)";
+         $this->setQuery($sql);
+-        return $this->execute(array($id,$name,$rate,$description,$img,$link_demo,$id_loai_phim));
++        return $this->execute(array($id,$name,$rate,$description,$img,$gia,$link_demo,$id_loai_phim));
+     }
+ 
+-    public function edit_phim($id,$name,$rate,$description,$img,$link_demo, $id_loai_phim){
+-        $sql = "update PHIM set name=?, rate=?, description=?, img=?, link_demo=?, id_loai_phim=? where id=?";
++    public function edit_phim($id,$name,$rate,$description,$img,$gia, $link_demo, $id_loai_phim){
++        $sql = "update PHIM set name=?, rate=?, description=?, img=?, gia=?, link_demo=?, id_loai_phim=? where id=?";
+         $this->setQuery($sql);
+-        return $this->execute(array($name, $rate, $description, $img,$link_demo, $id_loai_phim, $id));
++        return $this->execute(array($name, $rate, $description, $img, $gia, $link_demo, $id_loai_phim, $id));
+     }
+ 
+     public function read_phim_by_id($id) {
+Index: admin/views/phim/v_add_phim.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\r\n<div class=\"page-wrapper\">\r\n    <div class=\"container-fluid\">\r\n        <!-- ============================================================== -->\r\n        <!-- Start Page Content -->\r\n        <!-- ============================================================== -->\r\n        <div class=\"row\">\r\n            <div class=\"col-md-6\">\r\n                <div class=\"card\">\r\n                    <form method=\"POST\" action=\"\" enctype=\"multipart/form-data\" class=\"form-horizontal\">\r\n                        <div class=\"card-body\">\r\n                            <h4 class=\"card-title\">Thêm tiêu đề</h4>\r\n                            <div class=\"form-group row\">\r\n                                <label for=\"fname\" class=\"col-sm-3 text-right control-label col-form-label\">Tên phim</label>\r\n                                <div class=\"col-sm-9\">\r\n                                    <input type=\"text\" class=\"form-control\" id=\"ten_tieu_de\" name=\"name\" placeholder=\"Tên phim\" required>\r\n                                </div>\r\n                            </div>\r\n                            <div class=\"form-group row\">\r\n                                <label for=\"fname\" class=\"col-sm-3 text-right control-label col-form-label\">Rating</label>\r\n                                <div class=\"col-sm-9\">\r\n                                    <input type=\"number\" min=\"0\" max=\"5\" class=\"form-control\" id=\"ten_tieu_de\" name=\"rate\" placeholder=\"Rating\" required>\r\n                                </div>\r\n                            </div>\r\n                            <div class=\"form-group row\">\r\n                                <label for=\"fname\" class=\"col-sm-3 text-right control-label col-form-label\">Description</label>\r\n                                <div class=\"col-sm-9\">\r\n                                    <input type=\"text\" class=\"form-control\" id=\"ten_tieu_de\" name=\"description\" placeholder=\"Description\" required>\r\n                                </div>\r\n                            </div>\r\n                            <div class=\"form-group row\">\r\n                                <label for=\"lname\" class=\"col-sm-3 text-right control-label col-form-label\">Hình ảnh</label>\r\n                                <div class=\"col-sm-9\">\r\n                                    <div class=\"custom-file\">\r\n                                        <input type=\"file\"  class=\"custom-file-input\" id=\"validatedCustomFile\" name=\"img\" required>\r\n                                        <label class=\"custom-file-label\" for=\"validatedCustomFile\">Choose file...</label>\r\n                                        <div class=\"invalid-feedback\">Example invalid custom file feedback</div>\r\n                                    </div>\r\n                                </div>\r\n                            </div>\r\n\r\n                            <div class=\"form-group row\">\r\n                                <label for=\"fname\" class=\"col-sm-3 text-right control-label col-form-label\">Link Demo</label>\r\n                                <div class=\"col-sm-9\">\r\n                                    <textarea type=\"text\" class=\"form-control\" id=\"ten_tieu_de\" name=\"link_demo\" placeholder=\"Link demo\" required></textarea>\r\n                                </div>\r\n                            </div>\r\n\r\n                            <!-- <div class=\"form-group row\">\r\n                                <label for=\"fname\" class=\"col-sm-3 text-right control-label col-form-label\">Ngày nhập</label>\r\n                                <div class=\"col-sm-9\">\r\n                                    <input type=\"datetime-local\" class=\"form-control\" id=\"ten_tieu_de\" name=\"ngay_nhap\" placeholder=\"Ngày nhập\">\r\n                                </div>\r\n                            </div> -->\r\n                            <div class=\"form-group row\">\r\n                                <label for=\"lname\" class=\"col-sm-3 text-right control-label col-form-label\">Loại phim</label>\r\n                                <div class=\"col-sm-9\">\r\n\r\n                                    <select class=\"select2 form-control custom-select\" style=\"width: 100%; height:36px;\" name=\"id_loai_phim\">\r\n                                        <?php foreach ($theloai as $key => $value){ ?>\r\n                                            <option value=\"<?php echo $value->id ?>\"><?php echo $value->ten_loai ?></option>\r\n                                        <?php } ?>\r\n                                    </select>\r\n\r\n\r\n                                </div>\r\n                            </div>\r\n\r\n\r\n\r\n\r\n                        <div class=\"border-top\">\r\n                            <div class=\"card-body\">\r\n                                <button type=\"submit\" name=\"btn-add\" class=\"btn btn-primary\">Thêm</button>\r\n                                <a type=\"submit\" href=\"ds_phim.php\" class=\"btn btn-primary\">Danh sách</a>\r\n                            </div>\r\n                        </div>\r\n                    </form>\r\n                </div>\r\n\r\n            </div>\r\n        </div>\r\n\r\n        <!-- ============================================================== -->\r\n        <!-- End PAge Content -->\r\n        <!-- ============================================================== -->\r\n        <!-- ============================================================== -->\r\n        <!-- Right sidebar -->\r\n        <!-- ============================================================== -->\r\n        <!-- .right-sidebar -->\r\n        <!-- ============================================================== -->\r\n        <!-- End Right sidebar -->\r\n        <!-- ============================================================== -->\r\n    </div>\r\n</div>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/admin/views/phim/v_add_phim.php b/admin/views/phim/v_add_phim.php
+--- a/admin/views/phim/v_add_phim.php	(revision d627b5845dbc67cdefe665bc5f245e8037f315d5)
++++ b/admin/views/phim/v_add_phim.php	(date 1670428414296)
+@@ -40,7 +40,14 @@
+                             </div>
+ 
+                             <div class="form-group row">
+-                                <label for="fname" class="col-sm-3 text-right control-label col-form-label">Link Demo</label>
++                                <label for="fname" class="col-sm-3 text-right control-label col-form-label">Giá phim</label>
++                                <div class="col-sm-9">
++                                    <input type="number" min="0" class="form-control" id="ten_tieu_de" name="gia" placeholder="Giá phim" required>
++                                </div>
++                            </div>
++
++                            <div class="form-group row">
++                                <label for="fname" class="col-sm-3 text-right control-label col-form-label">Link Demo phim</label>
+                                 <div class="col-sm-9">
+                                     <textarea type="text" class="form-control" id="ten_tieu_de" name="link_demo" placeholder="Link demo" required></textarea>
+                                 </div>
+Index: admin/views/ve/v_ve.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\r\n<div class=\"page-wrapper\">\r\n    <div class=\"container-fluid\">\r\n        <!-- ============================================================== -->\r\n        <!-- Start Page Content -->\r\n        <!-- ============================================================== -->\r\n        <div class=\"row\">\r\n            <div class=\"col-12\">\r\n                <div class=\"card\">\r\n                    <div class=\"card-body\">\r\n                        <h5 class=\"card-title\">Vé</h5>\r\n                        <div class=\"table-responsive\">\r\n                            <table id=\"zero_config\" class=\"table table-striped table-bordered\">\r\n                                <thead>\r\n                                <tr>\r\n                                    <th>ID</th>\r\n                                    <th>Tên phim</th>\r\n                                    <th>Giờ bắt đầu</th>\r\n                                    <th>Ngày chiếu</th>\r\n                                    <th>Phòng chiếu</th>\r\n                                    <th>Chi nhánh</th>\r\n                                    <th>Ghế ngồi</th>\r\n                                    <th>Ngày đặt</th>\r\n                                    <th>Giá vé</th>\r\n                                    <th>Hành động</th>\r\n                                </tr>\r\n                                </thead>\r\n\r\n                                <tbody>\r\n                                <?php\r\n                                foreach ($ve as $key => $value) {\r\n                                    ?>\r\n                                    <tr>\r\n                                        <td><?php echo $value->id; ?></td>\r\n                                        <td><?php echo $value->ten_phim; ?></td>\r\n                                        <td><?php echo $value->gio_bat_dau; ?></td>\r\n                                        <td><?php echo $value->ngay_chieu; ?></td>\r\n                                        <td><?php echo $value->phong_chieu; ?></td>\r\n                                        <td><?php echo $value->chi_nhanh; ?></td>\r\n                                        <td><?php echo $value->ghe_ngoi; ?></td>\r\n                                        <td><?php echo $value->ngay_dat; ?></td>\r\n                                        <td><?php echo $value->gia; ?></td>\r\n\r\n                                        <td>\r\n                                            <button style=\"margin: 5px 0px; width: 80px\" type=\"button\" name=\"btn_edit\" class=\"btn btn-cyan btn-sm\" onclick=\"window.location.href='edit_tt_ve.php?id=<?php echo $value->id;?>'\">Update</button>\r\n                                            <button style=\"width: 80px;\" type=\"button\" name=\"btn_del\" class=\"btn btn-cyan btn-sm\" onclick=\"return confirm('Chắc chắn xóa?')\">\r\n                                                <a style=\"color: white\" href=\"delete_ve.php?id=<?php echo $value->id;?>\">Delete</a>\r\n                                            </button>\r\n                                        </td>\r\n                                    </tr>\r\n                                    <?php\r\n                                }\r\n                                ?>\r\n                                </tbody>\r\n\r\n                            </table>\r\n                        </div>\r\n\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div><?php\r\n\r\n\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/admin/views/ve/v_ve.php b/admin/views/ve/v_ve.php
+--- a/admin/views/ve/v_ve.php	(revision d627b5845dbc67cdefe665bc5f245e8037f315d5)
++++ b/admin/views/ve/v_ve.php	(date 1670431861052)
+@@ -13,7 +13,7 @@
+                             <table id="zero_config" class="table table-striped table-bordered">
+                                 <thead>
+                                 <tr>
+-                                    <th>ID</th>
++                                    <th>Tên khách hàng</th>
+                                     <th>Tên phim</th>
+                                     <th>Giờ bắt đầu</th>
+                                     <th>Ngày chiếu</th>
+@@ -31,20 +31,20 @@
+                                 foreach ($ve as $key => $value) {
+                                     ?>
+                                     <tr>
+-                                        <td><?php echo $value->id; ?></td>
+-                                        <td><?php echo $value->ten_phim; ?></td>
++                                        <td><?php echo $value->username; ?></td>
++                                        <td><?php echo $value->name; ?></td>
+                                         <td><?php echo $value->gio_bat_dau; ?></td>
+                                         <td><?php echo $value->ngay_chieu; ?></td>
+-                                        <td><?php echo $value->phong_chieu; ?></td>
+-                                        <td><?php echo $value->chi_nhanh; ?></td>
++                                        <td><?php echo $value->ten_phong; ?></td>
++                                        <td><?php echo $value->ten_chi_nhanh; ?></td>
+                                         <td><?php echo $value->ghe_ngoi; ?></td>
+                                         <td><?php echo $value->ngay_dat; ?></td>
+                                         <td><?php echo $value->gia; ?></td>
+ 
+                                         <td>
+-                                            <button style="margin: 5px 0px; width: 80px" type="button" name="btn_edit" class="btn btn-cyan btn-sm" onclick="window.location.href='edit_tt_ve.php?id=<?php echo $value->id;?>'">Update</button>
++                                            <button style="margin: 5px 0px; width: 80px" type="button" name="btn_edit" class="btn btn-cyan btn-sm" onclick="window.location.href='edit_tt_ve.php?id=<?php echo $value->id_ve;?>'">Update</button>
+                                             <button style="width: 80px;" type="button" name="btn_del" class="btn btn-cyan btn-sm" onclick="return confirm('Chắc chắn xóa?')">
+-                                                <a style="color: white" href="delete_ve.php?id=<?php echo $value->id;?>">Delete</a>
++                                                <a style="color: white" href="delete_ve.php?id=<?php echo $value->id_ve;?>">Delete</a>
+                                             </button>
+                                         </td>
+                                     </tr>
+Index: admin/models/m_ve.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?php\r\nrequire_once ('database.php');\r\nclass m_ve extends database {\r\n    public function doc_ve(){\r\n        $sql = \"SELECT * from ve\";//chuỗi câu truy vấn dữ liệu\r\n        $this -> setQuery($sql);\r\n        //lấy nhiều dòng dữ liệu(Trả về 1 mảng dữ liệu)\r\n        return $this -> loadAllRows();\r\n    }\r\n\r\n    public function delete_ve($id) {\r\n        $sql = \"Delete from ve where id=?\";\r\n        $this->setQuery($sql);\r\n        return $this->execute(array($id));\r\n    }\r\n\r\n    public function read_ve_by_id($id) {\r\n        $sql = \"select * from ve where id = ?\";\r\n        $this->setQuery($sql);\r\n        return $this->loadRow(array($id));\r\n    }\r\n\r\n    public function edit_ve($id, $ghe_ngoi) {\r\n        $sql = \"update ve set ghe_ngoi = ? where id = ?\";\r\n        $this->setQuery($sql);\r\n        return $this->execute(array($ghe_ngoi, $id));\r\n    }\r\n}\r\n\r\n\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/admin/models/m_ve.php b/admin/models/m_ve.php
+--- a/admin/models/m_ve.php	(revision d627b5845dbc67cdefe665bc5f245e8037f315d5)
++++ b/admin/models/m_ve.php	(date 1670432000406)
+@@ -2,7 +2,15 @@
+ require_once ('database.php');
+ class m_ve extends database {
+     public function doc_ve(){
+-        $sql = "SELECT * from ve";//chuỗi câu truy vấn dữ liệu
++        $sql = "SELECT *, ve.id as id_ve from ve inner join lich_chieu on lich_chieu.id=ve.id_lich_chieu
++        inner join nguoi_dung on nguoi_dung.id=ve.id_nguoi_dung
++        inner join chi_nhanh_phim on lich_chieu.id_chi_nhanh_phim=chi_nhanh_phim.id
++        inner join phim on phim.id=chi_nhanh_phim.id_phim
++        inner join khung_gio_chieu on khung_gio_chieu.id=lich_chieu.id_khung_gio_chieu
++        inner join khung_gio_phong_chieu on khung_gio_phong_chieu.id_khung_gio_chieu=khung_gio_chieu.id
++        inner join phong_chieu on phong_chieu.id=khung_gio_phong_chieu.id_phong_chieu
++        inner join chi_nhanh on chi_nhanh.id=chi_nhanh_phim.id_chi_nhanh
++        group by ve.id";//chuỗi câu truy vấn dữ liệu
+         $this -> setQuery($sql);
+         //lấy nhiều dòng dữ liệu(Trả về 1 mảng dữ liệu)
+         return $this -> loadAllRows();
+Index: admin/controllers/c_phim.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?php\r\ninclude (\"models/m_phim.php\");\r\nclass c_phim{\r\n    public function index() {\r\n        $m_phim = new m_phim();\r\n        $phim = $m_phim->doc_phim();\r\n        $view = \"views/phim/v_phim.php\";\r\n        include (\"templates/layout.php\");\r\n\r\n        if(isset($_GET['update'])){\r\n            echo \"<script>alert('Sửa thành công')</script>\";\r\n        }\r\n        if(isset($_GET['del'])){\r\n            echo \"<script>alert('Xóa thành công')</script>\";\r\n        }\r\n    }\r\n    public function addphim(){\r\n        include (\"models/m_loaiphim.php\");\r\n        $m_theloai = new m_loaiphim();\r\n        $theloai = $m_theloai->doc_loaiphim();\r\n        if (isset($_POST['btn-add'])) {\r\n            $id = NULL;\r\n            $name = $_POST['name'];\r\n            $rate = $_POST['rate'];\r\n            $description = $_POST['description'];\r\n            $id_loai_phim = $_POST['id_loai_phim'];\r\n\r\n            //lấy được tên của hình ảnh\r\n//            echo \"<pre>\";\r\n//            echo print_r($_FILES['f_hinh_anh']);\r\n//            die();\r\n            $img = ($_FILES['img']['error'] == 0) ? $_FILES['img']['name'] :\"\";\r\n            $link_demo = $_POST['link_demo'];\r\n            $add_phim = new m_phim();\r\n           $result = $add_phim->insert_phim($id,$name,$rate,$description,$img,$link_demo, $id_loai_phim);\r\n           if ($result) {\r\n               if ($img != \"\") {\r\n                   //di chuyển hình ảnh vào thư mục source\r\n                   move_uploaded_file($_FILES['img']['tmp_name'],\"public/img/\".$img);\r\n               }\r\n               echo \"<script>alert('thành công')</script>\";\r\n           } else {\r\n               echo \"<script>alert('thêm không thành công')</script>\";\r\n           }\r\n        }\r\n        $view = \"views/phim/v_add_phim.php\";\r\n        include (\"templates/layout.php\");\r\n    }\r\n\r\n\r\n    public function edit_phim() {\r\n        include (\"models/m_loaiphim.php\");\r\n        $m_theloai = new m_loaiphim();\r\n        $theloai = $m_theloai->doc_loaiphim();\r\n        $m_phim = new m_phim();\r\n        if (isset($_GET['id'])) {\r\n            $id = $_GET['id'];\r\n            $phim_details = $m_phim->read_phim_by_id($id);\r\n            if (isset($_POST['btn_save'])) {\r\n                $name = $_POST['name'];\r\n                $rate = $_POST['rate'];\r\n                $description = $_POST['description'];\r\n                $link_demo = $_POST['link_demo'];\r\n                $id_loai_phim = $_POST['id_loai_phim'];\r\n\r\n                $img = empty($_FILES['img']['name']) ? $phim_details->img  : $_FILES['img']['name'];\r\n                $edit_phim = new m_phim();\r\n                $result = $edit_phim->edit_phim($id,$name,$rate,$description,$img,$link_demo,$id_loai_phim);\r\n                if ($result) {\r\n                    if ($img != \"\") {\r\n                        //di chuyển hình ảnh vào thư mục source\r\n                        move_uploaded_file($_FILES['img']['tmp_name'],\"public/img/\".$img);\r\n                    }\r\n                    $update = \"done\";\r\n                    header(\"location: phim.php?update=$update\");\r\n                } else {\r\n                    echo \"<script>alert('Sửa không thành công')</script>\";\r\n                }\r\n            }\r\n        }\r\n        $view = \"views/phim/v_edit_phim.php\";\r\n        include (\"templates/layout.php\");\r\n    }\r\n\r\n    public function del_phim(){\r\n        $m_phim = new m_phim();\r\n        if(isset($_GET['id'])){\r\n            $id = $_GET['id'];\r\n            $m_phim->delete_phim($id);\r\n        }\r\n        $del=\"done\";\r\n        header(\"location: phim.php?del=$del\");\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/admin/controllers/c_phim.php b/admin/controllers/c_phim.php
+--- a/admin/controllers/c_phim.php	(revision d627b5845dbc67cdefe665bc5f245e8037f315d5)
++++ b/admin/controllers/c_phim.php	(date 1670431105915)
+@@ -18,31 +18,45 @@
+         include ("models/m_loaiphim.php");
+         $m_theloai = new m_loaiphim();
+         $theloai = $m_theloai->doc_loaiphim();
++
+         if (isset($_POST['btn-add'])) {
+             $id = NULL;
+             $name = $_POST['name'];
+             $rate = $_POST['rate'];
+             $description = $_POST['description'];
+             $id_loai_phim = $_POST['id_loai_phim'];
+-
+-            //lấy được tên của hình ảnh
+-//            echo "<pre>";
+-//            echo print_r($_FILES['f_hinh_anh']);
+-//            die();
+-            $img = ($_FILES['img']['error'] == 0) ? $_FILES['img']['name'] :"";
++            $gia = $_POST['gia'];
+             $link_demo = $_POST['link_demo'];
+-            $add_phim = new m_phim();
+-           $result = $add_phim->insert_phim($id,$name,$rate,$description,$img,$link_demo, $id_loai_phim);
+-           if ($result) {
+-               if ($img != "") {
+-                   //di chuyển hình ảnh vào thư mục source
+-                   move_uploaded_file($_FILES['img']['tmp_name'],"public/img/".$img);
+-               }
+-               echo "<script>alert('thành công')</script>";
+-           } else {
+-               echo "<script>alert('thêm không thành công')</script>";
+-           }
++
++            if(isset($_FILES['img'])){
++                $allow_upload = true;
++                $img = $_FILES['img']['name'];
++                $target_dir = "public/img/";
++                $target_file = $target_dir .$_FILES['img']['name'];
++                $imageFileType = pathinfo($target_file, PATHINFO_EXTENSION);
++                $allowTypes = ['jpg', 'png', 'jpeg'];
++                $check = getimagesize($_FILES['img']['tmp_name']);
++                if($check == false){
++                    echo "<script>alert('File upload không phải file ảnh')</script>";
++                    $allow_upload = false;
++                }
++
++                if(!in_array($imageFileType, $allowTypes)){
++                    echo "<script>alert('Đuôi file không được phép upload')</script>";
++                    $allow_upload = false;
++                }
++                if ($allow_upload == true) {
++                    move_uploaded_file($_FILES['img']['tmp_name'],$target_file);
++                    $add_phim = new m_phim();
++                    $result = $add_phim->insert_phim($id,$name,$rate,$description,$img,$gia, $link_demo, $id_loai_phim);
++                    echo "<script>alert('Thêm thành công')</script>";
++                }else {
++                    echo "<script>alert('Thêm không thành công')</script>";
++                }
++            }
++
+         }
++
+         $view = "views/phim/v_add_phim.php";
+         include ("templates/layout.php");
+     }
+@@ -61,20 +75,39 @@
+                 $rate = $_POST['rate'];
+                 $description = $_POST['description'];
+                 $link_demo = $_POST['link_demo'];
++                $gia = $_POST['gia'];
+                 $id_loai_phim = $_POST['id_loai_phim'];
+ 
+-                $img = empty($_FILES['img']['name']) ? $phim_details->img  : $_FILES['img']['name'];
+-                $edit_phim = new m_phim();
+-                $result = $edit_phim->edit_phim($id,$name,$rate,$description,$img,$link_demo,$id_loai_phim);
+-                if ($result) {
+-                    if ($img != "") {
+-                        //di chuyển hình ảnh vào thư mục source
+-                        move_uploaded_file($_FILES['img']['tmp_name'],"public/img/".$img);
+-                    }
+-                    $update = "done";
+-                    header("location: phim.php?update=$update");
+-                } else {
+-                    echo "<script>alert('Sửa không thành công')</script>";
++                if(isset($_FILES['img'])){
++                    $allow_upload = true;
++                    $img = empty($_FILES['img']['name']) ? $phim_details->img : $_FILES['img']['name'];
++                    $target_dir = "public/img/";
++                    $target_file = $target_dir .$_FILES['img']['name'];
++                    $imageFileType = pathinfo($target_file, PATHINFO_EXTENSION);
++                    $allowTypes = ['jpg', 'png', 'jpeg',''];
++
++
++                    if($img != $phim_details->img){
++                        $check = getimagesize($_FILES['img']['tmp_name']);
++                        if($check == false){
++                            echo "<script>alert('File upload không phải file ảnh')</script>";
++                            $allow_upload = false;
++                        }
++                    }
++
++                    if(!in_array($imageFileType, $allowTypes)){
++                        echo "<script>alert('Đuôi file không được phép upload')</script>";
++                        $allow_upload = false;
++                    }
++                    if ($allow_upload == true) {
++                        move_uploaded_file($_FILES['img']['tmp_name'],$target_file);
++                        $edit_phim = new m_phim();
++                        $result = $edit_phim->edit_phim($id,$name,$rate,$description,$img, $gia, $link_demo,$id_loai_phim);
++                        $update = "done";
++                        header("location: phim.php?update=$update");
++                    }else {
++                        echo "<script>alert('Sửa không thành công')</script>";
++                    }
+                 }
+             }
+         }
+Index: admin/views/phim/v_phim.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\r\n<div class=\"page-wrapper\">\r\n    <div class=\"container-fluid\">\r\n        <!-- ============================================================== -->\r\n        <!-- Start Page Content -->\r\n        <!-- ============================================================== -->\r\n        <div class=\"row\">\r\n            <div class=\"col-12\">\r\n                <div class=\"card\">\r\n        <div class=\"card-body\">\r\n            <h1 class=\"card-title\">Danh sách phim đang chiếu</h1>\r\n            <a href=\"add_phim.php\">Thêm mới</a>\r\n            <div class=\"table-responsive\">\r\n                <table id=\"zero_config\" class=\"table table-striped table-bordered\">\r\n                    <thead>\r\n                    <tr>\r\n                        <th>Name</th>\r\n                        <th>Rating</th>\r\n                        <th>Description</th>\r\n                        <th>Ảnh</th>\r\n                        <th>Loại phim</th>\r\n                        <th>Action</th>\r\n\r\n                    </tr>\r\n                    </thead>\r\n                    <tbody>\r\n                    <?php\r\n                        foreach ($phim as $key=>$value) {\r\n                    ?>\r\n                    <tr>\r\n                        <td><?php echo $value->name; ?></td>\r\n                        <td><?php echo $value->rate; ?></td>\r\n                        <td><?php echo $value->description; ?></td>\r\n                        <td><img width=\"100px\" src=\"public/img/<?php echo $value->img; ?>\"></td>\r\n                        <td><?php echo $value->ten_loai; ?></td>\r\n\r\n\r\n                        <td>\r\n                            <button type=\"button\" class=\"btn btn-cyan btn-sm\" onclick=\"window.location.href='edit_phim.php?id=<?php echo $value->id_phim;?>'\">Edit</button>\r\n                            <button type=\"button\" name=\"btn_del\" class=\"btn btn-cyan btn-sm\" onclick=\"return confirm('Chắc chắn xóa?')\">\r\n                                <a style=\"color: white\" href=\"delete_phim.php?id=<?php echo $value->id_phim;?>\">Delete</a>\r\n                            </button>\r\n                        </td>\r\n                    </tr>\r\n                    <?php\r\n                        }\r\n                    ?>\r\n                    </tbody>\r\n\r\n                </table>\r\n            </div>\r\n\r\n        </div>\r\n    </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/admin/views/phim/v_phim.php b/admin/views/phim/v_phim.php
+--- a/admin/views/phim/v_phim.php	(revision d627b5845dbc67cdefe665bc5f245e8037f315d5)
++++ b/admin/views/phim/v_phim.php	(date 1670428870275)
+@@ -14,12 +14,13 @@
+                 <table id="zero_config" class="table table-striped table-bordered">
+                     <thead>
+                     <tr>
+-                        <th>Name</th>
+-                        <th>Rating</th>
+-                        <th>Description</th>
++                        <th>Tên phim</th>
++                        <th>Đánh giá</th>
++                        <th>Chi tiết</th>
+                         <th>Ảnh</th>
+                         <th>Loại phim</th>
+-                        <th>Action</th>
++                        <th>Giá vé</th>
++                        <th>Hành động</th>
+ 
+                     </tr>
+                     </thead>
+@@ -33,6 +34,7 @@
+                         <td><?php echo $value->description; ?></td>
+                         <td><img width="100px" src="public/img/<?php echo $value->img; ?>"></td>
+                         <td><?php echo $value->ten_loai; ?></td>
++                        <th><?php echo number_format($value->gia); ?> VNĐ</th>
+ 
+ 
+                         <td>
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_29_11_2022_9_52_CH_[Changes]/shelved.patch
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_29_11_2022_9_52_CH_[Changes]/shelved.patch b/.idea/shelf/Uncommitted_changes_before_Update_at_29_11_2022_9_52_CH_[Changes]/shelved.patch
+deleted file mode 100644
+--- a/.idea/shelf/Uncommitted_changes_before_Update_at_29_11_2022_9_52_CH_[Changes]/shelved.patch	(revision d627b5845dbc67cdefe665bc5f245e8037f315d5)
++++ /dev/null	(revision d627b5845dbc67cdefe665bc5f245e8037f315d5)
+@@ -1,25 +0,0 @@
+-Index: .idea/workspace.xml
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+-<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"7fee531a-e60d-4653-a655-7a8e4f30f069\" name=\"Changes\" comment=\"done admin khung_gio_chieu\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/admin/controllers/c_home.php\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/admin/controllers/c_home.php\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/admin/home.php\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/admin/home.php\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/admin/models/m_home.php\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/admin/models/m_home.php\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"ComposerSettings\">\r\n    <execution />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"CSS File\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2HLqJElHR5eiItaqKYSrnbajOBI\" />\r\n  <component name=\"ProjectLevelVcsManager\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\r\n    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/duan1_nhom10&quot;,\r\n    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,\r\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,\r\n    &quot;settings.editor.selected.configurable&quot;: &quot;web-ide.project.structure&quot;,\r\n    &quot;two.files.diff.last.used.file&quot;: &quot;C:/xampp/htdocs/Duan1/templates/layout'.php&quot;,\r\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\r\n  }\r\n}</component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\xampp\\htdocs\\Duan1\\admin\\public\" />\r\n      <recent name=\"C:\\xampp\\htdocs\\Duan1\\views\\phim\" />\r\n      <recent name=\"C:\\xampp\\htdocs\\Duan1\\views\\home\" />\r\n      <recent name=\"C:\\xampp\\htdocs\\Duan1\\templates\" />\r\n      <recent name=\"C:\\xampp\\htdocs\\Duan1\\public\\abc\\dmitryvolkov.me\\demo\\flixgo2.0\\main\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"7fee531a-e60d-4653-a655-7a8e4f30f069\" name=\"Changes\" comment=\"\" />\r\n      <created>1668074637607</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1668074637607</updated>\r\n      <workItem from=\"1668074638763\" duration=\"3063000\" />\r\n      <workItem from=\"1668087650072\" duration=\"9146000\" />\r\n      <workItem from=\"1668096904011\" duration=\"343000\" />\r\n      <workItem from=\"1668097333959\" duration=\"129000\" />\r\n      <workItem from=\"1668097662149\" duration=\"4361000\" />\r\n      <workItem from=\"1668102608196\" duration=\"300000\" />\r\n      <workItem from=\"1668102956904\" duration=\"25000\" />\r\n      <workItem from=\"1668166671239\" duration=\"683000\" />\r\n      <workItem from=\"1668168134750\" duration=\"1326000\" />\r\n      <workItem from=\"1668177127144\" duration=\"16387000\" />\r\n      <workItem from=\"1668229395851\" duration=\"5708000\" />\r\n      <workItem from=\"1668235216226\" duration=\"10000\" />\r\n      <workItem from=\"1668235502016\" duration=\"392000\" />\r\n      <workItem from=\"1668434232027\" duration=\"14967000\" />\r\n      <workItem from=\"1668503843775\" duration=\"2948000\" />\r\n      <workItem from=\"1668508663422\" duration=\"604000\" />\r\n      <workItem from=\"1668509649119\" duration=\"293000\" />\r\n      <workItem from=\"1668509954936\" duration=\"435000\" />\r\n      <workItem from=\"1668510420969\" duration=\"449000\" />\r\n      <workItem from=\"1668587467545\" duration=\"3023000\" />\r\n      <workItem from=\"1668676274145\" duration=\"6525000\" />\r\n      <workItem from=\"1668692103522\" duration=\"1787000\" />\r\n      <workItem from=\"1668695122561\" duration=\"1024000\" />\r\n      <workItem from=\"1668781803374\" duration=\"16992000\" />\r\n      <workItem from=\"1668867698800\" duration=\"3129000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"test\">\r\n      <created>1668509976207</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1668509976207</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"test\">\r\n      <created>1668510467202</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1668510467202</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"ok\">\r\n      <created>1668510578546</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1668510578546</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"len\">\r\n      <created>1668587835175</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1668587835175</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"len tiep\">\r\n      <created>1668587884800</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1668587884800</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"file chay admin\">\r\n      <created>1668587917802</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1668587917802</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"file lon\">\r\n      <created>1668588034096</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1668588034096</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"logout\">\r\n      <created>1668589372563</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1668589372563</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"header\">\r\n      <created>1668589398071</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1668589398071</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00010\" summary=\"end comment\">\r\n      <created>1668590483877</created>\r\n      <option name=\"number\" value=\"00010\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1668590483877</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00011\" summary=\"update 17/11\">\r\n      <created>1668679399039</created>\r\n      <option name=\"number\" value=\"00011\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00011\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1668679399039</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00012\" summary=\"update 17/11\">\r\n      <created>1668679414108</created>\r\n      <option name=\"number\" value=\"00012\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00012\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1668679414108</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00013\" summary=\"update 17/11\">\r\n      <created>1668680326163</created>\r\n      <option name=\"number\" value=\"00013\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00013\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1668680326163</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"14\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"abc\" />\r\n    <MESSAGE value=\"tiep\" />\r\n    <MESSAGE value=\"test\" />\r\n    <MESSAGE value=\"ok\" />\r\n    <MESSAGE value=\"ngu\" />\r\n    <MESSAGE value=\"len\" />\r\n    <MESSAGE value=\"len tiep\" />\r\n    <MESSAGE value=\"file chay admin\" />\r\n    <MESSAGE value=\"file lon\" />\r\n    <MESSAGE value=\"logout\" />\r\n    <MESSAGE value=\"header\" />\r\n    <MESSAGE value=\"end comment\" />\r\n    <MESSAGE value=\"update 17/11\" />\r\n    <MESSAGE value=\"done admin khung_gio_chieu\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"done admin khung_gio_chieu\" />\r\n  </component>\r\n</project>
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+---- a/.idea/workspace.xml	(revision 508261aed700e4a76e82c925511acf706cfe7812)
+-+++ b/.idea/workspace.xml	(date 1669733542789)
+-@@ -5,10 +5,10 @@
+-   </component>
+-   <component name="ChangeListManager">
+-     <list default="true" id="7fee531a-e60d-4653-a655-7a8e4f30f069" name="Changes" comment="done admin khung_gio_chieu">
+--      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+--      <change beforePath="$PROJECT_DIR$/admin/controllers/c_home.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controllers/c_home.php" afterDir="false" />
+--      <change beforePath="$PROJECT_DIR$/admin/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/home.php" afterDir="false" />
+--      <change beforePath="$PROJECT_DIR$/admin/models/m_home.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/models/m_home.php" afterDir="false" />
+-+      <change afterPath="$PROJECT_DIR$/admin/public/img/cropped-1920-1080-598846.jpg" afterDir="false" />
+-+      <change afterPath="$PROJECT_DIR$/admin/public/img/tải xuống (1).jfif" afterDir="false" />
+-+      <change afterPath="$PROJECT_DIR$/admin/public/img/tải xuống (2).jfif" afterDir="false" />
+-+      <change afterPath="$PROJECT_DIR$/admin/public/img/tải xuống.jfif" afterDir="false" />
+-     </list>
+-     <option name="SHOW_DIALOG" value="false" />
+-     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_29_11_2022_9_52_CH__Changes_.xml
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_29_11_2022_9_52_CH__Changes_.xml b/.idea/shelf/Uncommitted_changes_before_Update_at_29_11_2022_9_52_CH__Changes_.xml
+deleted file mode 100644
+--- a/.idea/shelf/Uncommitted_changes_before_Update_at_29_11_2022_9_52_CH__Changes_.xml	(revision d627b5845dbc67cdefe665bc5f245e8037f315d5)
++++ /dev/null	(revision d627b5845dbc67cdefe665bc5f245e8037f315d5)
+@@ -1,24 +0,0 @@
+-<changelist name="Uncommitted_changes_before_Update_at_29_11_2022_9_52_CH_[Changes]" date="1669733576151" recycled="true" deleted="true">
+-  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_11_2022_9_52_CH_[Changes]/shelved.patch" />
+-  <option name="DESCRIPTION" value="Uncommitted changes before Update at 29/11/2022 9:52 CH [Changes]" />
+-  <binary>
+-    <option name="BEFORE_PATH" />
+-    <option name="AFTER_PATH" value="admin/public/img/cropped-1920-1080-598846.jpg" />
+-    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_11_2022_9_52_CH_[Changes]/cropped-1920-1080-598846.jpg" />
+-  </binary>
+-  <binary>
+-    <option name="BEFORE_PATH" />
+-    <option name="AFTER_PATH" value="admin/public/img/tải xuống.jfif" />
+-    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_11_2022_9_52_CH_[Changes]/tải xuống.jfif" />
+-  </binary>
+-  <binary>
+-    <option name="BEFORE_PATH" />
+-    <option name="AFTER_PATH" value="admin/public/img/tải xuống (1).jfif" />
+-    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_11_2022_9_52_CH_[Changes]/tải xuống (1).jfif" />
+-  </binary>
+-  <binary>
+-    <option name="BEFORE_PATH" />
+-    <option name="AFTER_PATH" value="admin/public/img/tải xuống (2).jfif" />
+-    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_11_2022_9_52_CH_[Changes]/tải xuống (2).jfif" />
+-  </binary>
+-</changelist>
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"7fee531a-e60d-4653-a655-7a8e4f30f069\" name=\"Changes\" comment=\"6/12\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/views/details/v_details.php\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/views/details/v_details.php\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"ComposerSettings\">\r\n    <execution />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"CSS File\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"PUSH_TAGS\">\r\n      <GitPushTagMode>\r\n        <option name=\"argument\" value=\"--tags\" />\r\n        <option name=\"title\" value=\"All\" />\r\n      </GitPushTagMode>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2HLqJElHR5eiItaqKYSrnbajOBI\" />\r\n  <component name=\"ProjectLevelVcsManager\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\r\n    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/duan1_nhom10&quot;,\r\n    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,\r\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,\r\n    &quot;settings.editor.selected.configurable&quot;: &quot;web-ide.project.structure&quot;,\r\n    &quot;two.files.diff.last.used.file&quot;: &quot;C:/xampp/htdocs/Duan1/templates/layout'.php&quot;,\r\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\r\n  }\r\n}</component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\xampp\\htdocs\\Duan1\\admin\\public\" />\r\n      <recent name=\"C:\\xampp\\htdocs\\Duan1\\views\\phim\" />\r\n      <recent name=\"C:\\xampp\\htdocs\\Duan1\\views\\home\" />\r\n      <recent name=\"C:\\xampp\\htdocs\\Duan1\\templates\" />\r\n      <recent name=\"C:\\xampp\\htdocs\\Duan1\\public\\abc\\dmitryvolkov.me\\demo\\flixgo2.0\\main\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"7fee531a-e60d-4653-a655-7a8e4f30f069\" name=\"Changes\" comment=\"\" />\r\n      <created>1668074637607</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1668074637607</updated>\r\n      <workItem from=\"1668074638763\" duration=\"3063000\" />\r\n      <workItem from=\"1668087650072\" duration=\"9146000\" />\r\n      <workItem from=\"1668096904011\" duration=\"343000\" />\r\n      <workItem from=\"1668097333959\" duration=\"129000\" />\r\n      <workItem from=\"1668097662149\" duration=\"4361000\" />\r\n      <workItem from=\"1668102608196\" duration=\"300000\" />\r\n      <workItem from=\"1668102956904\" duration=\"25000\" />\r\n      <workItem from=\"1668166671239\" duration=\"683000\" />\r\n      <workItem from=\"1668168134750\" duration=\"1326000\" />\r\n      <workItem from=\"1668177127144\" duration=\"16387000\" />\r\n      <workItem from=\"1668229395851\" duration=\"5708000\" />\r\n      <workItem from=\"1668235216226\" duration=\"10000\" />\r\n      <workItem from=\"1668235502016\" duration=\"392000\" />\r\n      <workItem from=\"1668434232027\" duration=\"14967000\" />\r\n      <workItem from=\"1668503843775\" duration=\"2948000\" />\r\n      <workItem from=\"1668508663422\" duration=\"604000\" />\r\n      <workItem from=\"1668509649119\" duration=\"293000\" />\r\n      <workItem from=\"1668509954936\" duration=\"435000\" />\r\n      <workItem from=\"1668510420969\" duration=\"449000\" />\r\n      <workItem from=\"1668587467545\" duration=\"3023000\" />\r\n      <workItem from=\"1668676274145\" duration=\"6525000\" />\r\n      <workItem from=\"1668692103522\" duration=\"1787000\" />\r\n      <workItem from=\"1668695122561\" duration=\"1024000\" />\r\n      <workItem from=\"1668781803374\" duration=\"16992000\" />\r\n      <workItem from=\"1668867698800\" duration=\"3129000\" />\r\n      <workItem from=\"1669750415668\" duration=\"4418000\" />\r\n      <workItem from=\"1669966400057\" duration=\"3895000\" />\r\n      <workItem from=\"1669970768441\" duration=\"490000\" />\r\n      <workItem from=\"1670061718029\" duration=\"3984000\" />\r\n      <workItem from=\"1670159735294\" duration=\"9339000\" />\r\n      <workItem from=\"1670260165010\" duration=\"3644000\" />\r\n      <workItem from=\"1670264435503\" duration=\"985000\" />\r\n      <workItem from=\"1670318666990\" duration=\"1242000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"test\">\r\n      <created>1668509976207</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1668509976207</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"test\">\r\n      <created>1668510467202</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1668510467202</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"ok\">\r\n      <created>1668510578546</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1668510578546</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"len\">\r\n      <created>1668587835175</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1668587835175</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"len tiep\">\r\n      <created>1668587884800</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1668587884800</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"file chay admin\">\r\n      <created>1668587917802</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1668587917802</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"file lon\">\r\n      <created>1668588034096</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1668588034096</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"logout\">\r\n      <created>1668589372563</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1668589372563</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"header\">\r\n      <created>1668589398071</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1668589398071</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00010\" summary=\"end comment\">\r\n      <created>1668590483877</created>\r\n      <option name=\"number\" value=\"00010\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1668590483877</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00011\" summary=\"update 17/11\">\r\n      <created>1668679399039</created>\r\n      <option name=\"number\" value=\"00011\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00011\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1668679399039</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00012\" summary=\"update 17/11\">\r\n      <created>1668679414108</created>\r\n      <option name=\"number\" value=\"00012\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00012\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1668679414108</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00013\" summary=\"update 17/11\">\r\n      <created>1668680326163</created>\r\n      <option name=\"number\" value=\"00013\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00013\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1668680326163</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00014\" summary=\"update 1/12\">\r\n      <created>1669890349025</created>\r\n      <option name=\"number\" value=\"00014\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00014\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1669890349025</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00015\" summary=\"update 2/12\">\r\n      <created>1669970263188</created>\r\n      <option name=\"number\" value=\"00015\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00015\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1669970263188</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00016\" summary=\"update 2/12\">\r\n      <created>1669970283637</created>\r\n      <option name=\"number\" value=\"00016\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00016\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1669970283637</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00017\" summary=\"update 2/12\">\r\n      <created>1669971254739</created>\r\n      <option name=\"number\" value=\"00017\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00017\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1669971254739</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00018\" summary=\"6/12\">\r\n      <created>1670264752107</created>\r\n      <option name=\"number\" value=\"00018\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00018\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1670264752107</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"19\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <option name=\"ADD_EXTERNAL_FILES_SILENTLY\" value=\"true\" />\r\n    <MESSAGE value=\"abc\" />\r\n    <MESSAGE value=\"tiep\" />\r\n    <MESSAGE value=\"test\" />\r\n    <MESSAGE value=\"ok\" />\r\n    <MESSAGE value=\"ngu\" />\r\n    <MESSAGE value=\"len\" />\r\n    <MESSAGE value=\"len tiep\" />\r\n    <MESSAGE value=\"file chay admin\" />\r\n    <MESSAGE value=\"file lon\" />\r\n    <MESSAGE value=\"logout\" />\r\n    <MESSAGE value=\"header\" />\r\n    <MESSAGE value=\"end comment\" />\r\n    <MESSAGE value=\"update 17/11\" />\r\n    <MESSAGE value=\"done admin khung_gio_chieu\" />\r\n    <MESSAGE value=\"update 1/12\" />\r\n    <MESSAGE value=\"update 2/12\" />\r\n    <MESSAGE value=\"6/12\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"6/12\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision d627b5845dbc67cdefe665bc5f245e8037f315d5)
++++ b/.idea/workspace.xml	(date 1670432000511)
+@@ -5,8 +5,23 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="7fee531a-e60d-4653-a655-7a8e4f30f069" name="Changes" comment="6/12">
++      <change afterPath="$PROJECT_DIR$/admin/public/img/Nitro_Wallpaper_5000x2813 - Copy.jpg" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/admin/public/img/Planet9_Wallpaper_5000x2813 - Copy.jpg" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/admin/public/img/cropped-1920-1080-705556.png" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_11_2022_9_52_CH_[Changes]/cropped-1920-1080-598846.jpg" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_11_2022_9_52_CH_[Changes]/shelved.patch" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_11_2022_9_52_CH_[Changes]/tải xuống (1).jfif" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_11_2022_9_52_CH_[Changes]/tải xuống (2).jfif" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_11_2022_9_52_CH_[Changes]/tải xuống.jfif" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_11_2022_9_52_CH__Changes_.xml" beforeDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/views/details/v_details.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/details/v_details.php" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/admin/controllers/c_phim.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controllers/c_phim.php" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/admin/models/m_phim.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/models/m_phim.php" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/admin/models/m_ve.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/models/m_ve.php" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/admin/views/phim/v_add_phim.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/views/phim/v_add_phim.php" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/admin/views/phim/v_edit_phim.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/views/phim/v_edit_phim.php" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/admin/views/phim/v_phim.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/views/phim/v_phim.php" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/admin/views/ve/v_ve.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/views/ve/v_ve.php" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -111,6 +126,8 @@
+       <workItem from="1670260165010" duration="3644000" />
+       <workItem from="1670264435503" duration="985000" />
+       <workItem from="1670318666990" duration="1242000" />
++      <workItem from="1670337671425" duration="594000" />
++      <workItem from="1670413091758" duration="9148000" />
+     </task>
+     <task id="LOCAL-00001" summary="test">
+       <created>1668509976207</created>
