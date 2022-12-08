@@ -34,7 +34,8 @@ class c_ve{
             $status = $m_ve->read_ve_by_id($id);
             if (isset($_POST['btn_save'])) {
                 $ghe_ngoi = $_POST['ghe_ngoi'];
-                $result = $m_ve->edit_ve($id, $ghe_ngoi);
+                $trang_thai = $_POST['trang_thai'];
+                $result = $m_ve->edit_ve($id, $ghe_ngoi, $trang_thai);
                 if ($result) {
                     $update = "done";
                     header("location: ve.php?update=$update");

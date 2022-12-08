@@ -7,7 +7,7 @@ $_SESSION['gio_bat_dau'] = $_GET['gio_bat_dau'];
 $_SESSION['ngay_chieu'] = $_GET['ngay_chieu'];
 $_SESSION['phong_chieu'] = $_GET['phong_chieu'];
 $_SESSION['chi_nhanh'] = $_GET['chi_nhanh'];
-$_SESSION['online'] = $_GET['online'];
+$_SESSION['trang_thai'] = $_GET['trang_thai'];
 ?>
 <!DOCTYPE html>
 <html lang="en">

@@ -109,8 +109,10 @@ session_start();
                         if ($secureHash == $vnp_SecureHash) {
                             if ($_GET['vnp_ResponseCode'] == '00') {
                                 echo "<span style='color:blue'>GD Thanh cong</span>";
+                                $_SESSION['paid'] = "Giao dịch thành công";
                             } else {
                                 echo "<span style='color:red'>GD Khong thanh cong</span>";
+                                $_SESSION['unpaid'] = "Giao dịch không thành công";
                             }
                         } else {
                             echo "<span style='color:red'>Chu ky khong hop le</span>";

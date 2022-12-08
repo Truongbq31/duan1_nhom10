@@ -4,14 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7fee531a-e60d-4653-a655-7a8e4f30f069" name="Changes" comment="8/12">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_1_2022_12_51_AM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_1_2022_12_51_AM__Changes_.xml" beforeDir="false" />
+    <list default="true" id="7fee531a-e60d-4653-a655-7a8e4f30f069" name="Changes" comment="8/12 update thanh toán online + offline">
+      <change afterPath="$PROJECT_DIR$/controllers/c_dat_ve_offline.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dat_ve_offline.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/layout4.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/thanh_toan/v_tt_offline.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/controllers/c_ve.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controllers/c_ve.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/models/m_ve.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/models/m_ve.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/views/ve/v_edit_ve.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/views/ve/v_edit_ve.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/views/ve/v_ve.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/views/ve/v_ve.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/c_home.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/c_home.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/m_ve.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/m_ve.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/Seat/v_Seat.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/Seat/v_Seat.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vnpay_php/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/vnpay_php/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vnpay_php/vnpay_return.php" beforeDir="false" afterPath="$PROJECT_DIR$/vnpay_php/vnpay_return.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +123,8 @@
       <workItem from="1670260165010" duration="3644000" />
       <workItem from="1670264435503" duration="985000" />
       <workItem from="1670318666990" duration="1242000" />
-      <workItem from="1670490934665" duration="2954000" />
+      <workItem from="1670490934665" duration="12673000" />
+      <workItem from="1670506955129" duration="6204000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1668509976207</created>
@@ -258,7 +266,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670434759400</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="8/12 update thanh toán online + offline">
+      <created>1670493979757</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1670493979757</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -295,6 +310,7 @@
     <MESSAGE value="update 2/12" />
     <MESSAGE value="6/12" />
     <MESSAGE value="8/12" />
-    <option name="LAST_COMMIT_MESSAGE" value="8/12" />
+    <MESSAGE value="8/12 update thanh toán online + offline" />
+    <option name="LAST_COMMIT_MESSAGE" value="8/12 update thanh toán online + offline" />
   </component>
 </project>

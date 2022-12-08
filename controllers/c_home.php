@@ -12,10 +12,16 @@ class c_home {
             echo "<script>alert('Đăng nhập thành công')</script>";
         }
         if(isset($_GET['online'])){
-            echo "<script>alert('Đặt vé thành công')</script>";
+            echo "<script>alert('Đặt vé thành công!')</script>";
         }
         if(isset($_GET['offline'])){
-            echo "<script>alert('Vui lòng có mặt trước giờ chiếu để thanh toán vé')</script>";
+            echo "<script>alert('Đặt vé thành công. Vui lòng có mặt trước giờ chiếu để thanh toán vé!')</script>";
+        }
+        if(isset($_GET['unpaid'])){
+            echo "<script>alert('Vé của quý khách chưa được đặt!')</script>";
+        }
+        if(isset($_GET['cancel'])){
+            echo "<script>alert('Vé của quý khách chưa được đặt!')</script>";
         }
     }
 }

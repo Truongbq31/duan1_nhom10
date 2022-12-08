@@ -16,7 +16,20 @@
                                 <div class="form-group row">
                                     <label for="fname" class="col-sm-3 text-right control-label col-form-label">Ghế ngồi</label>
                                     <div class="col-sm-9">
-                                        <input type="text" class="form-control" id="ten_tieu_de" name="ghe_ngoi" placeholder="A1-A6;B1-B6;C1-C6;D1-D6;E1-E6;F1-F6" value="<?php echo $status->ghe_ngoi;?>">
+                                        <input type="text" class="form-control" id="ten_tieu_de" name="ghe_ngoi" value="<?php echo $status->ghe_ngoi;?>">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="lname" class="col-sm-3 text-right control-label col-form-label">Trạng thái</label>
+                                    <div class="col-sm-9">
+                                        <select class="select2 form-control custom-select" style="width: 100%; height:36px;" name="trang_thai">
+                                            <option selected value="<?php echo $status->trang_thai ?>"><?php echo $status->trang_thai == 1 ? "Đã thanh toán" : "Chưa thanh toán" ?></option>
+
+                                            <option value="1">Đã thanh toán</option>
+                                            <option value="0">Chưa thanh toán</option>
+
+                                        </select>
                                     </div>
                                 </div>
                             </div>

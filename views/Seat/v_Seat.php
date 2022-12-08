@@ -1,6 +1,7 @@
 <?php
 session_start();
 $_SESSION['id_lich_chieu'] = $_GET['id'];
+$id_lich_chieu = $_SESSION['id_lich_chieu'];
 
 require "models/connect.php";
 $id = $_GET['id'];
@@ -12,16 +13,27 @@ $sql = "Select *, phim.name as ten_phim, chi_nhanh.ten_chi_nhanh,khung_gio_chieu
       inner join phong_chieu on khung_gio_phong_chieu.id_phong_chieu=phong_chieu.id                                                   
       where phim.id='$id'";
 $result = $conn->query($sql)->fetch();
+
 $sql2 = "Select * from ve";
 $result2 = $conn->query($sql2)->fetchAll();
+
+$sql_ghe = "Select ghe_ngoi from ve where id_lich_chieu = $id_lich_chieu";
+$result_ghe = $conn->query($sql_ghe)->fetchAll();
+//echo "<pre>";
+//print_r($result_ghe);
+
 $mangGheDat=[];
 foreach ($result2 as $item => $value){
     $mangGheDat[] = explode(",",$value['ghe_ngoi']);
 }
+//echo "<pre>";
+//print_r($mangGheDat);
+//die();
+
 $mangGheDaDat=[];
 foreach ($mangGheDat as $item => $value){
     foreach ($value as $index => $key){
-        $mangGheDaDat[] = trim($key);
+            $mangGheDaDat[] = trim($key);
     }
 }
 $mangGhe = [["A1","A2","A3","A4","A5","A6"],
@@ -75,40 +87,41 @@ $mangGhe = [["A1","A2","A3","A4","A5","A6"],
     <div class="proceed-to-book">
         <div class="book-item">
             <span>Ghế</span>
-            <h3 class="title booked"></h3>
+            <h5 class="title booked"></h5>
         </div>
         <div class="book-item">
             <span>Phim</span>
 
-            <h3 class="title ten_phim"><?= $result['ten_phim']; ?></h3>
+            <h5 class="title ten_phim"><?= $result['ten_phim']; ?></h5>
 
         </div>
         <div class="book-item">
             <span>Giờ Chiếu</span>
 
-            <h3 class="title gio_chieu"><?= $result['gio_bat_dau'] ?></h3>
+            <h5 class="title gio_chieu"><?= $result['gio_bat_dau'] ?></h5>
 
         </div>
         <div class="book-item">
 
             <span>Ngày chiếu</span>
-                        <h3 class="title ngay_chieu"><?= $result['ngay_chieu'] ?></h3>
+                        <h5 class="title ngay_chieu"><?= $result['ngay_chieu'] ?></h5>
         </div>
         <div class="book-item">
 
             <span>Phòng chiếu</span>
 
-            <h3 class="title ten_phong"><?= $result['ten_phong'] ?></h3>
+            <h5 class="title ten_phong"><?= $result['ten_phong'] ?></h5>
 
         </div>
         <div class="book-item">
             <span>Chi Nhánh</span>
-                        <h3 class="title ten_chi_nhanh"><?= $result['ten_chi_nhanh'] ?></h3>
+                        <h5 class="title ten_chi_nhanh"><?= $result['ten_chi_nhanh'] ?></h5>
         </div>
         <div class="book-item">
             <span>Giá</span>
-            <h3 class="title price"></h3>
+            <h5 class="title price"></h5>
         </div>
+
         <div class="book-item">
             <a style=" color:whitesmoke ; text-decoration: none;font-size: 20px; background-color: yellow;border-radius: 3px"  class="custom-button submit_onl">Thanh toán online</a>
         </div>
@@ -153,15 +166,23 @@ $mangGhe = [["A1","A2","A3","A4","A5","A6"],
                 var ngay_chieu = $(".ngay_chieu").html();
                 var phong_chieu = $(".ten_phong").html();
                 var chi_nhanh = $(".ten_chi_nhanh").html();
-                // var trang_thai =
-                 location.href="vnpay_php/index.php?id="+id+"&&gia="+gia+"&&ten_phim="+ten_phim+"&&gio_bat_dau="+gio_bat_dau+"&&ngay_chieu="+ngay_chieu+"&&phong_chieu="+phong_chieu+"&&chi_nhanh=" +chi_nhanh+"&&online="+0;
+                var trang_thai = 1;
+                 location.href="vnpay_php/index.php?id="+id+"&&gia="+gia+"&&ten_phim="+ten_phim+"&&gio_bat_dau="+gio_bat_dau+"&&ngay_chieu="+ngay_chieu+"&&phong_chieu="+phong_chieu+"&&chi_nhanh=" +chi_nhanh+"&&trang_thai="+trang_thai;
 
                 // $.post("models/m_ve.php",{ghe_ngoi: id,ten_phim: ten_phim,gio_bat_dau:gio_bat_dau,ngay_chieu:ngay_chieu,phong_chieu:phong_chieu,chi_nhanh:chi_nhanh,gia:gia});
             // }
         })
 
         $(".submit_off").click(function(){
-            location.href="models/m_ve.php";
+            var id=$(".booked").html();
+            var gia=$(".price").html();
+            var ten_phim=$(".ten_phim").html();
+            var gio_bat_dau=$(".gio_chieu").html();
+            var ngay_chieu = $(".ngay_chieu").html();
+            var phong_chieu = $(".ten_phong").html();
+            var chi_nhanh = $(".ten_chi_nhanh").html();
+            var trang_thai = 0;
+            location.href="dat_ve_offline.php?id="+id+"&&gia="+gia+"&&ten_phim="+ten_phim+"&&gio_bat_dau="+gio_bat_dau+"&&ngay_chieu="+ngay_chieu+"&&phong_chieu="+phong_chieu+"&&chi_nhanh=" +chi_nhanh+"&&trang_thai="+trang_thai;
 
             // $.post("models/m_ve.php",{ghe_ngoi: id,ten_phim: ten_phim,gio_bat_dau:gio_bat_dau,ngay_chieu:ngay_chieu,phong_chieu:phong_chieu,chi_nhanh:chi_nhanh,gia:gia});
             // }

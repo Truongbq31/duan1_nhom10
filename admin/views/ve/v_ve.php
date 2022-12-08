@@ -40,7 +40,7 @@
                                         <td><?php echo $value->ten_chi_nhanh; ?></td>
                                         <td><?php echo $value->ghe_ngoi; ?></td>
                                         <td><?php echo $value->ngay_dat; ?></td>
-                                        <td><?php echo $value->gia; ?></td>
+                                        <td><?php echo number_format($value->gia);?> VNĐ</td>
                                         <td><?php echo $value->trang_thai == 1 ? "Đã thanh toán" : "Chưa thanh toán"; ?></td>
 
                                         <td>

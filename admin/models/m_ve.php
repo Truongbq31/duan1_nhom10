@@ -28,10 +28,10 @@ class m_ve extends database {
         return $this->loadRow(array($id));
     }
 
-    public function edit_ve($id, $ghe_ngoi) {
-        $sql = "update ve set ghe_ngoi = ? where id = ?";
+    public function edit_ve($id, $ghe_ngoi, $trang_thai) {
+        $sql = "update ve set ghe_ngoi = ?, trang_thai = ? where id = ?";
         $this->setQuery($sql);
-        return $this->execute(array($ghe_ngoi, $id));
+        return $this->execute(array($ghe_ngoi, $trang_thai, $id));
     }
 }
 
