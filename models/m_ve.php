@@ -20,6 +20,21 @@ require("connect.php");
         $conn->exec($sql);
         $online = "done";
         header("location:../index.php?online=$online");
+
+//        //Send mail
+//        $to = $_SESSION['email'];
+//        $subject = "VÉ XEM PHIM CỦA QUÝ KHÁCH ĐÃ ĐẶT THÀNH CÔNG";
+//        $message = "Vé xem phim của quý khách đã được đặt thành công vào lúc";
+//        $header = "From:Cgv@cinema.com.vn";
+//        $send_mail = mail($to,$subject,$message,$header);
+//        //end send mail
+//        if($send_mail == true){
+//            $online = "done";
+//            header("location:../index.php?online=$online");
+//        }else{
+//            $false = "done";
+//            header("location:../index.php?false=$false");
+//        }
     }
     if(isset($_SESSION['unpaid'])){
         if(isset($_SESSION['paid'])){

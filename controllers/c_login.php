@@ -21,6 +21,7 @@ class c_login{
                 $_SESSION['admin'] = "admin";
                 foreach ($check_admin as $key => $value){
                     $_SESSION['id_nguoi_dung'] = $value->id;
+                    $_SESSION['email'] = $value->email;
                 }
                 if(isset($_SESSION['id_phim'])){
                     $id_phim = $_SESSION['id_phim'];
@@ -33,6 +34,7 @@ class c_login{
                 $_SESSION['user'] = "user";
                 foreach ($check_user as $key => $value){
                     $_SESSION['id_nguoi_dung'] = $value->id;
+                    $_SESSION['email'] = $value->email;
                 }
                 if(isset($_SESSION['id_phim'])){
                     $id_phim = $_SESSION['id_phim'];

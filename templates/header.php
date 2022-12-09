@@ -52,33 +52,34 @@
 								</li>
 								<!-- end dropdown -->
 
-								<li class="header__nav-item">
-									<a class="header__nav-link" href="index.php?act=price">Pricing Plan</a>
+								<li class="header__nav-item" <?php if(isset($_SESSION['id_nguoi_dung'])){
+                                    echo "";
+                                }else{
+                                    echo "hidden";
+                                } ?>>
+									<a class="header__nav-link" href="ve_da_dat.php?id_nguoi_dung=<?php echo $_SESSION['id_nguoi_dung']?>">VÉ ĐÃ ĐẶT</a>
 								</li>
 
-								<li class="header__nav-item">
-									<a href="index.php?act=help" class="header__nav-link">Help</a>
-								</li>
 
 								<!-- dropdown -->
-								<li class="dropdown header__nav-item">
-									<a class="dropdown-toggle header__nav-link header__nav-link--more" href="#" role="button" id="dropdownMenuMore" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-											<path d="M12,10a2,2,0,1,0,2,2A2,2,0,0,0,12,10ZM5,10a2,2,0,1,0,2,2A2,2,0,0,0,5,10Zm14,0a2,2,0,1,0,2,2A2,2,0,0,0,19,10Z" />
-										</svg>
-									</a>
-
-									<ul class="dropdown-menu header__dropdown-menu" aria-labelledby="dropdownMenuMore">
-										<li><a href="index.php?act=about">About</a></li>
-										<li><a href="index.php?act=profile">Profile</a></li>
-										<li><a href="index.php?act=signin">Sign In</a></li>
-										<li><a href="index.php?act=signup">Sign Up</a></li>
-										<li><a href="index.php?act=forgot">Forgot password</a></li>
-										<li><a href="index.php?act=privacy">Privacy Policy</a></li>
-										<li><a href="index.php?act=contacts">Contacts</a></li>
-										<li><a href="index.php?act=404page">404 Page</a></li>
-									</ul>
-								</li>
+<!--								<li class="dropdown header__nav-item">-->
+<!--									<a class="dropdown-toggle header__nav-link header__nav-link--more" href="#" role="button" id="dropdownMenuMore" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+<!--										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+<!--											<path d="M12,10a2,2,0,1,0,2,2A2,2,0,0,0,12,10ZM5,10a2,2,0,1,0,2,2A2,2,0,0,0,5,10Zm14,0a2,2,0,1,0,2,2A2,2,0,0,0,19,10Z" />-->
+<!--										</svg>-->
+<!--									</a>-->
+<!---->
+<!--									<ul class="dropdown-menu header__dropdown-menu" aria-labelledby="dropdownMenuMore">-->
+<!--										<li><a href="index.php?act=about">About</a></li>-->
+<!--										<li><a href="index.php?act=profile">Profile</a></li>-->
+<!--										<li><a href="index.php?act=signin">Sign In</a></li>-->
+<!--										<li><a href="index.php?act=signup">Sign Up</a></li>-->
+<!--										<li><a href="index.php?act=forgot">Forgot password</a></li>-->
+<!--										<li><a href="index.php?act=privacy">Privacy Policy</a></li>-->
+<!--										<li><a href="index.php?act=contacts">Contacts</a></li>-->
+<!--										<li><a href="index.php?act=404page">404 Page</a></li>-->
+<!--									</ul>-->
+<!--								</li>-->
 								<!-- end dropdown -->
 							</ul>
 							<!-- end header nav -->
