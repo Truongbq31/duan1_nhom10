@@ -51,45 +51,34 @@
 </head>
 <main class="main">
 	<div class="container">
-		<div class="row">
-			<!-- main title -->
-			<div class="col-12">
-				<div class="main__title">
-					<h2>Dashboard</h2>
-
-					<a href="add-item.html" class="main__title-link">add item</a>
-				</div>
-			</div>
-			<!-- end main title -->
-		</div>
 
 		<div class="row row--grid">
 			<!-- stats -->
 			<div class="col-12 col-sm-6 col-xl-3">
 				<div class="stats">
-					<span>Tổng Cặp Ghế Đặt</span>
+					<h5>Tổng Cặp Ghế Đặt</h5>
 					<p><?= $sum_all->Sum_ghe_ngoi ?></p>
 					<img src="abcd/dmitryvolkov.me/demo/flixgo2.0/admin/img/graph-bar.svg" alt="">
 				</div>
 			</div>
 			<div class="col-12 col-sm-6 col-xl-3">
 				<div class="stats">
-					<span>Tổng Comment</span>
+					<h5>Tổng Comment</h5>
 					<p><?= $sum_comment->tongcomment ?></p>
 					<img src="abcd/dmitryvolkov.me/demo/flixgo2.0/admin/img/graph-bar.svg" alt="">
 				</div>
 			</div>
 			<div class="col-12 col-sm-6 col-xl-3">
 				<div class="stats">
-					<span>Tổng Phim Được Chiếu</span>
+					<h5>Tổng Phim Được Chiếu</h5>
 					<p><?= $sum_all->Sum_phim ?></p>
 					<img src="abcd/dmitryvolkov.me/demo/flixgo2.0/admin/img/graph-bar.svg" alt="">
 				</div>
 			</div>
 			<div class="col-12 col-sm-6 col-xl-3">
 				<div class="stats">
-					<span>Tổng Tiền</span>
-					<p><?= $sum_all->tong_tien ?></p>
+					<h5>Tổng doanh thu</h5>
+					<p><?= number_format($sum_all->tong_tien) ?> VNĐ</p>
 					<img src="abcd/dmitryvolkov.me/demo/flixgo2.0/admin/img/graph-bar.svg" alt="">
 				</div>
 			</div>
@@ -110,12 +99,11 @@
 					</div>
 
 					<div class="dashbox__table-wrap">
-						<table class="main__table main__table--dash">
+						<table class="main__table main__table--dash" border="1" style="border-collapse: collapse">
 							<thead>
 								<tr>
 									<th>ID</th>
 									<th>Tên Phim</th>
-									
 									<th>Giá Trung Bình</th>
 								</tr>
 							</thead>
@@ -130,7 +118,7 @@
 										</td>
 										
 										<td>
-											<div class="main__table-text "><?= $value->gia_trung_binh ?></div>
+											<div class="main__table-text "><?= number_format($value->gia_trung_binh) ?> VNĐ</div>
 										</td>
 									</tr>
 								<?php } ?>
@@ -157,7 +145,7 @@
 					</div>
 
 					<div class="dashbox__table-wrap">
-						<table class="main__table main__table--dash">
+						<table class="main__table main__table--dash" border="1">
 							<thead>
 								<tr>
 									<th>ID</th>
@@ -173,13 +161,13 @@
 											<div class="main__table-text"><?= $value->id ?></div>
 										</td>
 										<td>
-											<div class="main__table-text"><?= $value->name ?></div>
+											<div class="main__table-text"><?= $value->name ?> </div>
 										</td>
 										<td>
-											<div class="main__table-text"><?= $value->gia_thap_nhat ?></div>
+											<div class="main__table-text"><?= number_format($value->gia_thap_nhat) ?> VNĐ</div>
 										</td>
 										<td>
-											<div class="main__table-text "><?= $value->gia_cao_nhat ?></div>
+											<div class="main__table-text "><?= number_format($value->gia_cao_nhat) ?> VNĐ</div>
 										</td>
 									</tr>
 								<?php } ?>
