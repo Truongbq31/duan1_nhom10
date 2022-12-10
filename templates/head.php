@@ -24,5 +24,4 @@
     <meta name="keywords" content="">
     <meta name="author" content="Dmitry Volkov">
     <title>FlixGo – Online Movies, TV Shows & Cinema HTML Template</title>
-
 </head>

@@ -21,7 +21,7 @@ class c_dat_ve_offline {
             header("location:index.php?cancel=$cancel");
         }
         $view = "views/thanh_toan/v_tt_offline.php";
-        include ("templates/layout4.php");
+        include ("templates/layout5.php");
     }
 
 }

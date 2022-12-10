@@ -14,20 +14,16 @@ $sql = "Select *, phim.name as ten_phim, chi_nhanh.ten_chi_nhanh,khung_gio_chieu
       where phim.id='$id'";
 $result = $conn->query($sql)->fetch();
 
-//$sql2 = "Select * from ve";
-//$result2 = $conn->query($sql2)->fetchAll();
+$sql2 = "Select * from ve";
+$result2 = $conn->query($sql2)->fetchAll();
 
-$sql_ghe = "Select * from ve inner join lich_chieu on lich_chieu.id=ve.id_lich_chieu
-    inner join chi_nhanh_phim on chi_nhanh_phim.id = lich_chieu.id_chi_nhanh_phim
-                inner join phim on phim.id=chi_nhanh_phim.id_phim
-         inner join chi_nhanh on chi_nhanh.id = chi_nhanh_phim.id_chi_nhanh where phim.id = $id";
+$sql_ghe = "Select ghe_ngoi from ve where id_lich_chieu = $id_lich_chieu";
 $result_ghe = $conn->query($sql_ghe)->fetchAll();
 //echo "<pre>";
 //print_r($result_ghe);
-//die();
 
 $mangGheDat=[];
-foreach ($result_ghe as $item => $value){
+foreach ($result2 as $item => $value){
     $mangGheDat[] = explode(",",$value['ghe_ngoi']);
 }
 //echo "<pre>";
@@ -81,7 +77,7 @@ $mangGhe = [["A1","A2","A3","A4","A5","A6"],
         <?php foreach($mangGhe as $item =>$value){ ?>
             <div class="row2">
                 <?php foreach($value as $index => $key){ ?>
-                    <div class="seat <?php echo in_array($key,$mangGheDaDat) ? 'occupied' :'';?>"> <?php echo $key ?> </div>
+                    <div class="seat <?php echo in_array($key,$mangGheDaDat) ?'occupied':''?>"><?= $key ?></div>
                 <?php }?>
             </div>
         <?php }?>
@@ -91,39 +87,39 @@ $mangGhe = [["A1","A2","A3","A4","A5","A6"],
     <div class="proceed-to-book">
         <div class="book-item">
             <span>Ghế</span>
-            <h6 class="title booked"></h6>
+            <h5 class="title booked"></h5>
         </div>
         <div class="book-item">
             <span>Phim</span>
 
-            <h6 class="title ten_phim"><?= $result['ten_phim']; ?></h6>
+            <h5 class="title ten_phim"><?= $result['ten_phim']; ?></h5>
 
         </div>
         <div class="book-item">
             <span>Giờ Chiếu</span>
 
-            <h6 class="title gio_chieu"><?= $result['gio_bat_dau'] ?></h6>
+            <h5 class="title gio_chieu"><?= $result['gio_bat_dau'] ?></h5>
 
         </div>
         <div class="book-item">
 
             <span>Ngày chiếu</span>
-                        <h6 class="title ngay_chieu"><?= $result['ngay_chieu'] ?></h6>
+                        <h5 class="title ngay_chieu"><?= $result['ngay_chieu'] ?></h5>
         </div>
         <div class="book-item">
 
             <span>Phòng chiếu</span>
 
-            <h6 class="title ten_phong"><?= $result['ten_phong'] ?></h6>
+            <h5 class="title ten_phong"><?= $result['ten_phong'] ?></h5>
 
         </div>
         <div class="book-item">
             <span>Chi Nhánh</span>
-                        <h6 class="title ten_chi_nhanh"><?= $result['ten_chi_nhanh'] ?></h6>
+                        <h5 class="title ten_chi_nhanh"><?= $result['ten_chi_nhanh'] ?></h5>
         </div>
         <div class="book-item">
             <span>Giá</span>
-            <h6 class="title price"></h6>
+            <h5 class="title price"></h5>
         </div>
 
         <div class="book-item">
@@ -141,8 +137,8 @@ $mangGhe = [["A1","A2","A3","A4","A5","A6"],
         var arr=[];
         $(".seat").click(function(e) {
             if (e.target.classList.contains("occupied")) {
-                    alert("Ghế đã được đặt");
-                    $(".seat").click == die();
+                alert("Ghế đã được đặt");
+                $(".seat").click == die();
             }
             if (!e.target.classList.contains("selected")) {
                 var id = $(this).html();
