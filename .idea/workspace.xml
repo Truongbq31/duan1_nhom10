@@ -5,9 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7fee531a-e60d-4653-a655-7a8e4f30f069" name="Changes" comment="10/12">
+      <change afterPath="$PROJECT_DIR$/admin/public/img/9af7188fd0a06855c1c12cbad33b34c9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/public/img/Poster-vo-han-infinite-id_2721_152049589gCSke.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/public/img/c5978ea5b3e296e95fa4a467057fd028.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/public/img/d24c0cac91e6c5f7f020b886dd45be31.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/public/img/f52d39e6eacda16328b78c0c845f8470.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/views/nguoi_dung/v_edit_nguoidung.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/views/nguoi_dung/v_edit_nguoidung.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/c_dat_ve_offline.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/c_dat_ve_offline.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/home/v_home.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/home/v_home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/phim/v_phim.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/phim/v_phim.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +126,7 @@
       <workItem from="1670604865509" duration="1592000" />
       <workItem from="1670608141800" duration="1229000" />
       <workItem from="1670661035444" duration="370000" />
-      <workItem from="1670664570039" duration="1004000" />
+      <workItem from="1670664570039" duration="3049000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1668509976207</created>
@@ -312,7 +317,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670661385863</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="10/12">
+      <created>1670665638889</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1670665638889</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
