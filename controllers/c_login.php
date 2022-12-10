@@ -23,13 +23,8 @@ class c_login{
                     $_SESSION['id_nguoi_dung'] = $value->id;
                     $_SESSION['email'] = $value->email;
                 }
-                if(isset($_SESSION['id_phim'])){
-                    $id_phim = $_SESSION['id_phim'];
-                    header("location:details.php?id=$id_phim");
-                }else{
-                    $login='successful';
-                    header("location:admin/home.php?login=$login");
-                }
+                $login='successful';
+                header("location:admin/home.php?login=$login");
             }elseif($check_user){
                 $_SESSION['user'] = "user";
                 foreach ($check_user as $key => $value){
