@@ -56,28 +56,28 @@
 			<!-- stats -->
 			<div class="col-12 col-sm-6 col-xl-3">
 				<div class="stats">
-					<h5>Tổng Cặp Ghế Đặt</h5>
+					<span>Tổng Cặp Ghế Đặt</span>
 					<p><?= $sum_all->Sum_ghe_ngoi ?></p>
 					<img src="abcd/dmitryvolkov.me/demo/flixgo2.0/admin/img/graph-bar.svg" alt="">
 				</div>
 			</div>
 			<div class="col-12 col-sm-6 col-xl-3">
 				<div class="stats">
-					<h5>Tổng Comment</h5>
+					<span>Tổng Comment</span>
 					<p><?= $sum_comment->tongcomment ?></p>
 					<img src="abcd/dmitryvolkov.me/demo/flixgo2.0/admin/img/graph-bar.svg" alt="">
 				</div>
 			</div>
 			<div class="col-12 col-sm-6 col-xl-3">
 				<div class="stats">
-					<h5>Tổng Phim Được Chiếu</h5>
+					<span>Tổng Phim Được Chiếu</span>
 					<p><?= $sum_all->Sum_phim ?></p>
 					<img src="abcd/dmitryvolkov.me/demo/flixgo2.0/admin/img/graph-bar.svg" alt="">
 				</div>
 			</div>
 			<div class="col-12 col-sm-6 col-xl-3">
 				<div class="stats">
-					<h5>Tổng doanh thu</h5>
+					<span>Tổng doanh thu</span>
 					<p><?= number_format($sum_all->tong_tien) ?> VNĐ</p>
 					<img src="abcd/dmitryvolkov.me/demo/flixgo2.0/admin/img/graph-bar.svg" alt="">
 				</div>
@@ -94,12 +94,11 @@
 							<a class="dashbox__refresh" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
 									<path d="M21,11a1,1,0,0,0-1,1,8.05,8.05,0,1,1-2.22-5.5h-2.4a1,1,0,0,0,0,2h4.53a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4.77A10,10,0,1,0,22,12,1,1,0,0,0,21,11Z" />
 								</svg></a>
-							<a class="dashbox__more" href="catalog.html">View All</a>
 						</div>
 					</div>
 
 					<div class="dashbox__table-wrap">
-						<table class="main__table main__table--dash" border="1" style="border-collapse: collapse">
+						<table class="main__table main__table--dash" style="border-collapse: collapse">
 							<thead>
 								<tr>
 									<th>ID</th>
@@ -140,12 +139,12 @@
 							<a class="dashbox__refresh" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
 									<path d="M21,11a1,1,0,0,0-1,1,8.05,8.05,0,1,1-2.22-5.5h-2.4a1,1,0,0,0,0,2h4.53a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4.77A10,10,0,1,0,22,12,1,1,0,0,0,21,11Z" />
 								</svg></a>
-							<a class="dashbox__more" href="catalog.html">View All</a>
+
 						</div>
 					</div>
 
 					<div class="dashbox__table-wrap">
-						<table class="main__table main__table--dash" border="1">
+						<table class="main__table main__table--dash" >
 							<thead>
 								<tr>
 									<th>ID</th>
@@ -190,7 +189,6 @@
 			<div class="row">
 				<div class="col-md-9">
 					<div class="card">
-						
 						<div class="card-body">
 							<div class="row">
 								<canvas id="myChart" style="width:100%;max-width:600px;margin: auto;"></canvas>

@@ -4,19 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7fee531a-e60d-4653-a655-7a8e4f30f069" name="Changes" comment="thong ke">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_10_2022_1_26_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_10_2022_1_26_PM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_7_2022_10_48_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_7_2022_10_48_PM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_8_2022_12_39_AM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_8_2022_12_39_AM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_8_2022_12_40_AM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_8_2022_12_40_AM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_8_2022_5_06_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_8_2022_5_06_PM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_9_2022_9_51_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_9_2022_9_51_PM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_9_2022_9_59_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_9_2022_9_59_PM__Changes_.xml" afterDir="false" />
+    <list default="true" id="7fee531a-e60d-4653-a655-7a8e4f30f069" name="Changes" comment="10/12">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/c_dat_ve_offline.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/c_dat_ve_offline.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/header2.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/header2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/layout4.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layout4.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/ve_da_dat/v_ve_da_dat.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/ve_da_dat/v_ve_da_dat.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/views/home/v_home.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/views/home/v_home.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,6 +119,7 @@
       <workItem from="1670587166427" duration="10854000" />
       <workItem from="1670604865509" duration="1592000" />
       <workItem from="1670608141800" duration="1229000" />
+      <workItem from="1670661035444" duration="220000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1668509976207</created>
@@ -305,7 +296,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670609450584</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="10/12">
+      <created>1670660912796</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1670660912796</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -346,6 +344,7 @@
     <MESSAGE value="8/12" />
     <MESSAGE value="9/12" />
     <MESSAGE value="thong ke" />
-    <option name="LAST_COMMIT_MESSAGE" value="thong ke" />
+    <MESSAGE value="10/12" />
+    <option name="LAST_COMMIT_MESSAGE" value="10/12" />
   </component>
 </project>
