@@ -16,7 +16,7 @@
                 </div>
                 <br>
                 <main>
-                    <table border="1px" style="border-collapse: collapse; color: yellow" width="100%">
+                    <table border="1px" style="border-collapse: collapse; text-align: center; color: yellow" width="100%">
                         <tr>
                             <th>Tên khách hàng</th>
                             <th>Tên phim</th>
@@ -33,16 +33,16 @@
 
                             ?>
                             <tr>
-                                <th><?php echo $value->username?></th>
-                                <th><?php echo $value->name?></th>
-                                <th><?php echo $value->gio_bat_dau?></th>
-                                <th><?php echo $value->ngay_chieu?></th>
-                                <th><?php echo $value->ten_phong?></th>
-                                <th><?php echo $value->ten_chi_nhanh?></th>
-                                <th><?php echo $value->ghe_ngoi?></th>
-                                <th><?php echo $value->ngay_dat?></th>
-                                <th><?php echo number_format($value->gia)?> VNĐ</th>
-                                <th><?php echo $value->trang_thai == 1 ? "Đã thanh toán" : "Chưa thanh toán, vui lòng có mặt trước giờ chiếu để thanh toán vé"?></th>
+                                <td><?php echo $value->username?></td>
+                                <td><?php echo $value->name?></td>
+                                <td><?php echo $value->gio_bat_dau?></td>
+                                <td><?php echo $value->ngay_chieu?></td>
+                                <td><?php echo $value->ten_phong?></td>
+                                <td><?php echo $value->ten_chi_nhanh?></td>
+                                <td><?php echo $value->ghe_ngoi?></td>
+                                <td><?php echo $value->ngay_dat?></td>
+                                <td><?php echo number_format($value->gia)?> VNĐ</td>
+                                <td><?php echo $value->trang_thai == 1 ? "Đã thanh toán" : "Chưa thanh toán, vui lòng có mặt trước giờ chiếu để thanh toán vé"?></td>
                             </tr>
                         <?php } ?>
                     </table>

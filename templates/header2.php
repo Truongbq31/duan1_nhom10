@@ -147,7 +147,20 @@
             </div>
         </div>
     </div>
+
     <!-- header search -->
+    <form action="#" class="header__search">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="header__search-content">
+                        <input type="text" placeholder="I'm looking for...">
+                        <button type="button">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
     <!-- end header search -->
 </header>
 <!-- end header -->
