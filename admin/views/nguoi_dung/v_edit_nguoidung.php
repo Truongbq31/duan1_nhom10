@@ -36,6 +36,7 @@
                                     <label for="lname" class="col-sm-3 text-right control-label col-form-label">Vai trò</label>
                                     <div class="col-sm-9">
                                         <select class="select2 form-control custom-select" style="width: 100%; height:36px;" name="vai_tro">
+                                            <option selected value="<?php echo $nguoidung_details->vai_tro?>"><?php echo $nguoidung_details->vai_tro == 0 ? "Admin" : "User"?></option>
                                             <option value="0">Admin</option>
                                             <option value="1">User</option>
                                         </select>

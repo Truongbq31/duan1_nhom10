@@ -11,15 +11,17 @@ class c_dat_ve_offline {
         $_SESSION['gia'] = $_GET['gia'];
         $_SESSION['ghe_ngoi'] = $_GET['id'];
 
-        if($_SESSION['ghe_ngoi'] == "" || $_SESSION['gia'] == 0){
-            echo "<script>alert('Quý khách chưa chọn ghế!')</script>";
-        }
-        if($_SESSION['ghe_ngoi'] != "" && $_SESSION['gia'] != 0){
-            if(isset($_POST['btn_submit'])){
+        if(isset($_POST['btn_submit'])){
+            if($_SESSION['ghe_ngoi'] == "" || $_SESSION['gia'] == 0){
+                echo "<script>alert('Quý khách chưa chọn ghế!')</script>";
+            }
+            if($_SESSION['ghe_ngoi'] != "" && $_SESSION['gia'] != 0){
                 $offline = "offline";
                 header("location: models/m_ve.php?offline=offline");
             }
+
         }
+
         if(isset($_POST['btn_cancel'])){
             $cancel = "cancel";
             header("location:index.php?cancel=$cancel");
