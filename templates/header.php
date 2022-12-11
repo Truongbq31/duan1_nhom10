@@ -17,7 +17,7 @@
 						<div class="header__content">
 							<!-- header logo -->
 							<a href="index.php" class="header__logo">
-								<img src="public/abc/dmitryvolkov.me/demo/flixgo2.0/main/img/logo.svg" alt="">
+								<img style="max-width: 100%; height: 100%" src="public/abc/dmitryvolkov.me/demo/flixgo2.0/main/img/logo_du_an1.png" alt="">
 							</a>
 							<!-- end header logo -->
 
@@ -86,22 +86,22 @@
 
 							<!-- header auth -->
 							<div class="header__auth">
-								<button class="header__search-btn" aria-label="search btn" type="button">
-									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-										<path d="M21.71,20.29,18,16.61A9,9,0,1,0,16.61,18l3.68,3.68a1,1,0,0,0,1.42,0A1,1,0,0,0,21.71,20.29ZM11,18a7,7,0,1,1,7-7A7,7,0,0,1,11,18Z" />
-									</svg>
-								</button>
+<!--								<button class="header__search-btn" aria-label="search btn" type="button">-->
+<!--									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
+<!--										<path d="M21.71,20.29,18,16.61A9,9,0,1,0,16.61,18l3.68,3.68a1,1,0,0,0,1.42,0A1,1,0,0,0,21.71,20.29ZM11,18a7,7,0,1,1,7-7A7,7,0,0,1,11,18Z" />-->
+<!--									</svg>-->
+<!--								</button>-->
 
 								<!-- dropdown -->
-								<div class="dropdown header__lang">
-									<a class="dropdown-toggle header__nav-link" href="#" role="button" id="dropdownMenuLang" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">EN</a>
-
-									<ul class="dropdown-menu header__dropdown-menu" aria-labelledby="dropdownMenuLang">
-										<li><a href="#">English</a></li>
-										<li><a href="#">Spanish</a></li>
-										<li><a href="#">Russian</a></li>
-									</ul>
-								</div>
+<!--								<div class="dropdown header__lang">-->
+<!--									<a class="dropdown-toggle header__nav-link" href="#" role="button" id="dropdownMenuLang" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">EN</a>-->
+<!---->
+<!--									<ul class="dropdown-menu header__dropdown-menu" aria-labelledby="dropdownMenuLang">-->
+<!--										<li><a href="#">English</a></li>-->
+<!--										<li><a href="#">Spanish</a></li>-->
+<!--										<li><a href="#">Russian</a></li>-->
+<!--									</ul>-->
+<!--								</div>-->
 								<!-- end dropdown -->
 
 								<a href="login.php" class="header__sign-in" <?php if(isset($_SESSION['admin']) || isset($_SESSION['user'])){

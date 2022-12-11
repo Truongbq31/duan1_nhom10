@@ -15,9 +15,9 @@
 			<div class="col-6 col-sm-4 col-md-3">
 				<h6 class="footer__title">Resources</h6>
 				<ul class="footer__list">
-					<li><a href="about.html">About Us</a></li>
-					<li><a href="pricing.html">Pricing Plan</a></li>
-					<li><a href="faq.html">Help Center</a></li>
+					<li><a href="#">About Us</a></li>
+					<li><a href="#">Pricing Plan</a></li>
+					<li><a href="#">Help Center</a></li>
 				</ul>
 			</div>
 			<!-- end footer list -->
@@ -26,9 +26,9 @@
 			<div class="col-6 col-sm-4 col-md-3">
 				<h6 class="footer__title">Legal</h6>
 				<ul class="footer__list">
-					<li><a href="privacy.html">Terms of Use</a></li>
-					<li><a href="privacy.html">Privacy Policy</a></li>
-					<li><a href="privacy.html">Security</a></li>
+					<li><a href="#">Terms of Use</a></li>
+					<li><a href="#">Privacy Policy</a></li>
+					<li><a href="#">Security</a></li>
 				</ul>
 			</div>
 			<!-- end footer list -->
@@ -38,7 +38,7 @@
 				<h6 class="footer__title">Contact</h6>
 				<ul class="footer__list">
 					<li><a href="tel:88002345678">8 800 234 56 78</a></li>
-					<li><a href="mailto:support@flixgo.com">support@flixgo.com</a></li>
+					<li><a href="mailto:support@flixgo.com">TLT-cinema@gmail.com</a></li>
 				</ul>
 				<ul class="footer__social">
 					<li class="facebook"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.9,2H3.1A1.1,1.1,0,0,0,2,3.1V20.9A1.1,1.1,0,0,0,3.1,22h9.58V14.25h-2.6v-3h2.6V9a3.64,3.64,0,0,1,3.88-4,20.26,20.26,0,0,1,2.33.12v2.7H17.3c-1.26,0-1.5.6-1.5,1.47v1.93h3l-.39,3H15.8V22h5.1A1.1,1.1,0,0,0,22,20.9V3.1A1.1,1.1,0,0,0,20.9,2Z"/></svg></a></li>
@@ -52,10 +52,10 @@
 			<!-- footer copyright -->
 			<div class="col-12">
 				<div class="footer__copyright">
-					<small>Dự án 1 - Giảng viên Hoàng Quang Thắng - Create by nhóm 10</small>
+					<small>Dự án 1 - Giảng viên Hoàng Quang Thắng - Nhóm 10</small>
 					<ul>
-						<li><a href="privacy.html">Terms of Use</a></li>
-						<li><a href="privacy.html">Privacy Policy</a></li>
+						<li><a href="#">Terms of Use</a></li>
+						<li><a href="#">Privacy Policy</a></li>
 					</ul>
 				</div>
 			</div>
