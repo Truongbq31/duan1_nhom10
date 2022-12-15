@@ -14,8 +14,8 @@ class c_login{
             $mat_khau = $_POST['mat_khau'];
             $_SESSION['id_nguoi_dung'] = "";
             $m_login = new m_login();
-            $check_admin = $m_login->check_admin($email,$mat_khau);
-            $check_user = $m_login->check_user($email, $mat_khau);
+            $check_admin = $m_login->check_admin($email,md5($mat_khau));
+            $check_user = $m_login->check_user($email, md5($mat_khau));
 
             if($check_admin) {
                 $_SESSION['admin'] = "admin";

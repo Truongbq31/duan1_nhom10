@@ -17,7 +17,7 @@
                     <div class="header__content">
                         <!-- header logo -->
                         <a href="index.php" class="header__logo">
-                            <img src="public/abc/dmitryvolkov.me/demo/flixgo2.0/main/img/logo.svg" alt="">
+                            <img style="max-width: 100%; height: 100%" src="public/abc/dmitryvolkov.me/demo/flixgo2.0/main/img/logo_du_an1.png" alt="">
                         </a>
                         <!-- end header logo -->
 

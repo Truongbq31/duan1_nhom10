@@ -12,7 +12,7 @@ class c_signup{
                 $email = $_POST['email'];
                 $vai_tro = $_POST['vai_tro'];
                 $save_signup = new m_signup();
-                $signup = $save_signup->doc_signup($id,$email,$password,$username,$vai_tro);
+                $signup = $save_signup->doc_signup($id,$email,md5($password),$username,$vai_tro);
             }else{
                 $error['pass'] = "Mật khẩu không trùng khớp!";
             }

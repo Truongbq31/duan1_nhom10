@@ -25,7 +25,7 @@ class c_nguoidung{
             $vai_tro = $_POST['vai_tro'];
 
             $m_nguoidung = new m_nguoidung();
-            $result = $m_nguoidung->insert_nguoidung($id, $email, $mat_khau, $username, $vai_tro);
+            $result = $m_nguoidung->insert_nguoidung($id, $email, md5($mat_khau), $username, $vai_tro);
             if($result){
                 echo "<script>alert('Thêm thành công')</script>";
             } else {
@@ -49,7 +49,7 @@ class c_nguoidung{
                 $vai_tro = $_POST['vai_tro'];
 
                 $m_nguoidung = new m_nguoidung();
-                $result = $m_nguoidung->edit_nguoidung($id, $email, $mat_khau, $username, $vai_tro);
+                $result = $m_nguoidung->edit_nguoidung($id, $email, md5($mat_khau), $username, $vai_tro);
                 if ($result) {
                     $update = "done";
                     header("location: nguoidung.php?update=$update");
