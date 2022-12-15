@@ -3,7 +3,7 @@ require_once "database.php";
 class m_ve_da_dat extends database{
     public function doc_ve_da_dat(){
         $id_nguoi_dung = $_GET['id_nguoi_dung'];
-        $sql = "SELECT * from ve inner join lich_chieu on lich_chieu.id=ve.id_lich_chieu
+        $sql = "SELECT *, ve.gia as gia_ve from ve inner join lich_chieu on lich_chieu.id=ve.id_lich_chieu
         inner join chi_nhanh_phim on chi_nhanh_phim.id=lich_chieu.id_chi_nhanh_phim
         inner join phim on phim.id=chi_nhanh_phim.id_phim
          inner join chi_nhanh on chi_nhanh.id=chi_nhanh_phim.id_chi_nhanh

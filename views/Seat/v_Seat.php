@@ -23,7 +23,7 @@ $result_ghe = $conn->query($sql_ghe)->fetchAll();
 //print_r($result_ghe);
 
 $mangGheDat=[];
-foreach ($result2 as $item => $value){
+foreach ($result_ghe as $item => $value){
     $mangGheDat[] = explode(",",$value['ghe_ngoi']);
 }
 //echo "<pre>";
@@ -143,7 +143,7 @@ $mangGhe = [["A1","A2","A3","A4","A5","A6"],
             if (!e.target.classList.contains("selected")) {
                 var id = $(this).html();
                 arr.push(id);
-                var price = arr.length * <?= $result["gia"] ?>;
+                var price = arr.length * 50000;
                 $(".booked").html(arr+" ");
                 $(".price").html(price);
             }
@@ -151,7 +151,7 @@ $mangGhe = [["A1","A2","A3","A4","A5","A6"],
                 var id_delete = $(this).html();
                 var num_delete = arr.indexOf(id_delete);
                 arr.splice(num_delete, 1);
-                var price = arr.length*<?= $result["gia"] ?>;
+                var price = arr.length* 50000;
                 $(".booked").html(arr + " ");
                 $(".price").html(price);
             }

@@ -61,6 +61,7 @@ require("connect.php");
         date_default_timezone_set('Asia/Ho_Chi_Minh');
         $ngay_dat=date("H:i a d-m-Y");
         $gia = $_SESSION['gia'];
+        echo $gia;
         $trang_thai = $_SESSION['trang_thai'];
         $sql="INSERT INTO ve VALUE('','$id_lich_chieu','$id_nguoi_dung','$ghe_ngoi','$ngay_dat','$gia','$trang_thai')";
         $conn->exec($sql);

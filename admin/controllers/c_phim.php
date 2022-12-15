@@ -25,7 +25,6 @@ class c_phim{
             $rate = $_POST['rate'];
             $description = $_POST['description'];
             $id_loai_phim = $_POST['id_loai_phim'];
-            $gia = $_POST['gia'];
             $link_demo = $_POST['link_demo'];
 
             if(isset($_FILES['img'])){
@@ -34,7 +33,7 @@ class c_phim{
                 $target_dir = "public/img/";
                 $target_file = $target_dir .$_FILES['img']['name'];
                 $imageFileType = pathinfo($target_file, PATHINFO_EXTENSION);
-                $allowTypes = ['jpg', 'png', 'jpeg'];
+                $allowTypes = ['jpg', 'png', 'jpeg','jfif'];
                 $check = getimagesize($_FILES['img']['tmp_name']);
                 if($check == false){
                     echo "<script>alert('File upload không phải file ảnh')</script>";
@@ -48,7 +47,7 @@ class c_phim{
                 if ($allow_upload == true) {
                     move_uploaded_file($_FILES['img']['tmp_name'],$target_file);
                     $add_phim = new m_phim();
-                    $result = $add_phim->insert_phim($id,$name,$rate,$description,$img,$gia, $link_demo, $id_loai_phim);
+                    $result = $add_phim->insert_phim($id,$name,$rate,$description,$img, $link_demo, $id_loai_phim);
                     echo "<script>alert('Thêm thành công')</script>";
                 }else {
                     echo "<script>alert('Thêm không thành công')</script>";
@@ -75,7 +74,6 @@ class c_phim{
                 $rate = $_POST['rate'];
                 $description = $_POST['description'];
                 $link_demo = $_POST['link_demo'];
-                $gia = $_POST['gia'];
                 $id_loai_phim = $_POST['id_loai_phim'];
 
                 if(isset($_FILES['img'])){
@@ -84,7 +82,7 @@ class c_phim{
                     $target_dir = "public/img/";
                     $target_file = $target_dir .$_FILES['img']['name'];
                     $imageFileType = pathinfo($target_file, PATHINFO_EXTENSION);
-                    $allowTypes = ['jpg', 'png', 'jpeg',''];
+                    $allowTypes = ['jpg', 'png', 'jpeg','jfif',''];
 
 
                     if($img != $phim_details->img){
@@ -102,7 +100,7 @@ class c_phim{
                     if ($allow_upload == true) {
                         move_uploaded_file($_FILES['img']['tmp_name'],$target_file);
                         $edit_phim = new m_phim();
-                        $result = $edit_phim->edit_phim($id,$name,$rate,$description,$img, $gia, $link_demo,$id_loai_phim);
+                        $result = $edit_phim->edit_phim($id,$name,$rate,$description,$img, $link_demo,$id_loai_phim);
                         $update = "done";
                         header("location: phim.php?update=$update");
                     }else {

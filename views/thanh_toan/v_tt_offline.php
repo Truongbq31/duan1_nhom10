@@ -1,4 +1,9 @@
+<?php
 
+$_SESSION['gia'] = $_GET['gia'];
+//echo $_SESSION['gia'];
+//die();
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -20,11 +25,11 @@
                     }  ?>
                 </label></div>
         <div>
-                <label>Ten Phim: </label>
+                <label>Tên Phim: </label>
                 <label><?php echo $_GET['ten_phim']?></label>
         </div>
         <div>
-        <label>Giờ bắt dau: </label>
+        <label>Giờ bắt đầu: </label>
                 <label><?php echo $_GET['gio_bat_dau']?></label>
         </div>
         <div>

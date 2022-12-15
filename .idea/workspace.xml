@@ -4,25 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7fee531a-e60d-4653-a655-7a8e4f30f069" name="Changes" comment="11/12">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_12_2022_11_55_CH_[Changes]/Nitro_Wallpaper_5000x2813 - Copy.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_12_2022_11_55_CH_[Changes]/Planet9_Wallpaper_5000x2813 - Copy.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_12_2022_11_55_CH_[Changes]/cropped-1920-1080-705556.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_12_2022_11_55_CH_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_12_2022_11_55_CH__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_5_2022_10_49_PM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_5_2022_10_49_PM__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_8_2022_12_39_AM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_8_2022_12_39_AM__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_8_2022_12_40_AM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_8_2022_12_40_AM__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_8_2022_5_06_PM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_8_2022_5_06_PM__Changes_.xml" beforeDir="false" />
+    <list default="true" id="7fee531a-e60d-4653-a655-7a8e4f30f069" name="Changes" comment="15/12">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/controllers/c_nguoidung.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controllers/c_nguoidung.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/c_login.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/c_login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/c_signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/c_signup.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/header2.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/header2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/controllers/c_phim.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controllers/c_phim.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/models/m_phim.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/models/m_phim.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/views/phim/v_add_phim.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/views/phim/v_add_phim.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/views/phim/v_edit_phim.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/views/phim/v_edit_phim.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/views/phim/v_phim.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/views/phim/v_phim.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/m_ve.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/m_ve.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/m_ve_da_dat.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/m_ve_da_dat.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/Seat/v_Seat.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/Seat/v_Seat.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/thanh_toan/v_tt_offline.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/thanh_toan/v_tt_offline.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/ve_da_dat/v_ve_da_dat.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/ve_da_dat/v_ve_da_dat.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +132,7 @@
       <workItem from="1670661035444" duration="370000" />
       <workItem from="1670664570039" duration="5348000" />
       <workItem from="1670769439692" duration="5780000" />
-      <workItem from="1671115141144" duration="765000" />
+      <workItem from="1671115141144" duration="4078000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1668509976207</created>
@@ -358,7 +351,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670775648664</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="15/12">
+      <created>1671116086395</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1671116086395</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -401,6 +401,7 @@
     <MESSAGE value="thong ke" />
     <MESSAGE value="10/12" />
     <MESSAGE value="11/12" />
-    <option name="LAST_COMMIT_MESSAGE" value="11/12" />
+    <MESSAGE value="15/12" />
+    <option name="LAST_COMMIT_MESSAGE" value="15/12" />
   </component>
 </project>

@@ -19,7 +19,6 @@
                         <th>Chi tiết</th>
                         <th>Ảnh</th>
                         <th>Loại phim</th>
-                        <th>Giá vé</th>
                         <th>Hành động</th>
 
                     </tr>
@@ -34,7 +33,6 @@
                         <td><?php echo $value->description; ?></td>
                         <td><img width="100px" src="public/img/<?php echo $value->img; ?>"></td>
                         <td><?php echo $value->ten_loai; ?></td>
-                        <th><?php echo number_format($value->gia); ?> VNĐ</th>
 
 
                         <td>
