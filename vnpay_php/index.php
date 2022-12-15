@@ -9,6 +9,7 @@ $_SESSION['phong_chieu'] = $_GET['phong_chieu'];
 $_SESSION['chi_nhanh'] = $_GET['chi_nhanh'];
 $_SESSION['trang_thai'] = $_GET['trang_thai'];
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

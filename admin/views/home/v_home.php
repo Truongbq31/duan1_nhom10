@@ -46,8 +46,8 @@
 	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 	<script src="public/assetss/libs/jquery/distt/jquery.min.js"></script>
     <!-- Bootstrap tether Core JavaScript -->
-   
 
+    <script src="https://kit.fontawesome.com/ef9e733f3a.js" crossorigin="anonymous"></script>
 </head>
 <main class="main">
 	<div class="container">
@@ -56,8 +56,8 @@
 			<!-- stats -->
 			<div class="col-12 col-sm-6 col-xl-3">
 				<div class="stats">
-					<span>Tổng Cặp Ghế Đặt</span>
-					<p><?= $sum_all->Sum_ghe_ngoi ?></p>
+					<span>TỔNG SỐ LƯỢNG VÉ BÁN RA</span>
+					<p><?= $sum_all->Sum_ghe_ngoi ?> Vé</p>
 					<img src="abcd/dmitryvolkov.me/demo/flixgo2.0/admin/img/graph-bar.svg" alt="">
 				</div>
 			</div>
@@ -101,23 +101,25 @@
 						<table class="main__table main__table--dash" style="border-collapse: collapse">
 							<thead>
 								<tr>
-									<th>ID</th>
 									<th>Tên Phim</th>
-									<th>Giá Trung Bình</th>
+                                    <th>Số vé bán</th>
+									<th>Doanh thu phim</th>
 								</tr>
 							</thead>
 							<tbody>
-								<?php foreach ($result as $item => $value) { ?>
+								<?php foreach ($phim_noi_bat as $item => $value) { ?>
 									<tr>
-										<td>
-											<div class="main__table-text"><?= $value->id ?></div>
-										</td>
 										<td>
 											<div class="main__table-text"><?= $value->name ?></div>
 										</td>
+
+
+                                        <td>
+                                            <div class="main__table-text"><?= $value->so_ve_ban ?></div>
+                                        </td>
 										
 										<td>
-											<div class="main__table-text "><?= number_format($value->gia_trung_binh) ?> VNĐ</div>
+											<div class="main__table-text "><?= number_format($value->doanh_thu) ?> VNĐ</div>
 										</td>
 									</tr>
 								<?php } ?>
@@ -133,7 +135,7 @@
 			<div class="col-12 col-xl-6">
 				<div class="dashbox">
 					<div class="dashbox__title">
-						<h3><img src="abcd/dmitryvolkov.me/demo/flixgo2.0/admin/img/film.svg" alt="">Chi Tiết Thống Kê</h3>
+						<h3><img src="abcd/dmitryvolkov.me/demo/flixgo2.0/admin/img/film.svg" alt="">Thống Kê Chi Tiết</h3>
 
 						<div class="dashbox__wrap">
 							<a class="dashbox__refresh" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -147,26 +149,35 @@
 						<table class="main__table main__table--dash" >
 							<thead>
 								<tr>
-									<th>ID</th>
 									<th>Tên Phim</th>
-									<th>Giá Thấp Nhất</th>
-									<th>Giá Cao Nhất</th>
+                                    <th>Đánh giá</th>
+                                    <th>Số vé bán</th>
+                                    <th>Giá vé thấp nhất</th>
+                                    <th>Giá vé cao nhất</th>
+                                    <th>Doanh thu</th>
 								</tr>
 							</thead>
 							<tbody>
-								<?php foreach ($result as $item => $value) { ?>
+								<?php foreach ($thong_ke_chi_tiet as $item => $value) { ?>
 									<tr>
-										<td>
-											<div class="main__table-text"><?= $value->id ?></div>
-										</td>
 										<td>
 											<div class="main__table-text"><?= $value->name ?> </div>
 										</td>
+                                        <td>
+                                            <div class="main__table-text"><?= $value->rate ?> <i class="fa-solid fa-star"></i></div>
+                                        </td>
+
+                                        <td>
+                                            <div class="main__table-text"><?= $value->so_ve_ban ?> </div>
+                                        </td>
+                                        <td>
+                                            <div class="main__table-text"><?= number_format($value->gia_thap_nhat) ?> VNĐ</div>
+                                        </td>
+                                        <td>
+                                            <div class="main__table-text"><?= number_format($value->gia_cao_nhat) ?> VNĐ</div>
+                                        </td>
 										<td>
-											<div class="main__table-text"><?= number_format($value->gia_thap_nhat) ?> VNĐ</div>
-										</td>
-										<td>
-											<div class="main__table-text "><?= number_format($value->gia_cao_nhat) ?> VNĐ</div>
+											<div class="main__table-text "><?= number_format($value->doanh_thu) ?> VNĐ</div>
 										</td>
 									</tr>
 								<?php } ?>

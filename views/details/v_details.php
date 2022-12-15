@@ -50,9 +50,7 @@
                             echo "";
                         }else{
                             echo "hidden";
-                        } ?> href="lich_chieu.php?id=<?php foreach ($lich_chieu as $index => $item){
-                            echo $item->id;
-                        }?>">Đặt vé</a>
+                        }?> href="lich_chieu.php?id=<?= $values->id_phim;?>">Đặt vé</a>
 
 
                     </div>
