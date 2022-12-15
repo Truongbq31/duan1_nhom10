@@ -4,67 +4,101 @@ $_SESSION['gia'] = $_GET['gia'];
 //echo $_SESSION['gia'];
 //die();
 ?>
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Tạo mới đơn hàng</title>
+    <!-- Bootstrap core CSS -->
+    <link href="vnpay_php/assets/bootstrap.min.css" rel="stylesheet"/>
+    <!-- Custom styles for this template -->
+    <link href="vnpay_php/assets/jumbotron-narrow.css" rel="stylesheet">
+    <script src="vnpay_php/assets/jquery-1.11.3.min.js"></script>
 </head>
+
 <body>
-<div class="container" style="margin-top: 100px;color: yellow">
-         <form method="post" action="">
-             <div>
-                <label>Ten KH: <label>
-                <label><?php foreach ($nguoi_dung as $key => $value){
-                    if($value->id == $_SESSION['id_nguoi_dung']){
-                        echo $value->username;
-                    }
-                    }  ?>
-                </label></div>
-        <div>
-                <label>Tên Phim: </label>
-                <label><?php echo $_GET['ten_phim']?></label>
-        </div>
-        <div>
-        <label>Giờ bắt đầu: </label>
-                <label><?php echo $_GET['gio_bat_dau']?></label>
-        </div>
-        <div>
-        <label>Ngày chiếu: </label>
-                <label><?php echo $_GET['ngay_chieu']?></label>
-            </div>
-                <div>
-        <label>Phòng chiếu: </label>
-                <label><?php echo $_GET['phong_chieu']?></label>
-                    </div>
-        <div>
-        <label>Chi nhánh: </label>
-                <label><?php echo $_GET['chi_nhanh']?></label>
-            </div>
-        <div>
-        <label>Ghế ngồi: </label>
-                <label><?php echo $_GET['id']?></label>
-            </div>
-        <div>
-        <label>Ngày đặt: </label>
-                <label><?php echo $_GET['ngay_chieu']?></label>
-            </div>
-        <div>
-        <label>Giá vé: </label>
-                <label><?php echo $_GET['gia']?></label>
-            </div>
-        <div>
-        <label>Chú ý: </label>
-                <label>Vui lòng có mặt đúng giờ để thanh toán vé. Sau 30p kể từ <?php echo $_GET['gio_bat_dau']?> ngày <?php echo $_GET['ngay_chieu']?> nếu vé không được thanh toán vé của bạn sẽ bị hủy!</label>
+<div class="container">
+    <div class="table-responsive">
+        <form action="" id="create_form" method="post">
+
+
+            <div class="form-group">
+                <h3>Xác nhận thông tin hóa đơn</h3>
             </div>
 
-        <button type="submit" name="btn_submit" style="background-color: deepskyblue;width: 70px;height: 30px;border-radius: 5px">Xác nhận</button>
-        <button type="submit" name="btn_cancel" style="background-color: red;width: 70px;height: 30px;border-radius: 5px">Hủy</button>
-    </form>
+            <div class="form-group">
+                <label >Tên khách hàng</label>
+                <input class="form-control" id="txt_billing_film"
+                       name="txt_billing_email" type="text" value="<?php foreach ($nguoi_dung as $key => $value){
+                           if($value->id == $_SESSION['id_nguoi_dung']){
+                               echo $value->username;
+                           }
+                } ?>"/>
+            </div>
+
+            <div class="form-group">
+                <label >Tên phim</label>
+                <input class="form-control" id="txt_billing_film"
+                       name="txt_billing_email" type="text" value="<?= $_GET['ten_phim']?>"/>
+            </div>
+
+            <div class="form-group">
+                <label >Giờ bắt đầu</label>
+                <input class="form-control" id="txt_billing_time"
+                       name="txt_billing_email" type="text" value="<?= $_GET['gio_bat_dau']?>"/>
+            </div>
+
+            <div class="form-group">
+                <label >Ngày chiếu</label>
+                <input class="form-control" id="txt_billing_day"
+                       name="txt_billing_email" type="text" value="<?= $_GET['ngay_chieu']?>"/>
+            </div>
+
+            <div class="form-group">
+                <label >Phòng chiếu</label>
+                <input class="form-control" id="txt_billing_room"
+                       name="txt_billing_email" type="text" value="<?= $_GET['phong_chieu']?>"/>
+            </div>
+
+            <div class="form-group">
+                <label >Ghế ngồi</label>
+                <input class="form-control" id="txt_billing_seat"
+                       name="txt_billing_email" type="text" value="<?= $_GET['id']?>"/>
+            </div>
+
+            <div class="form-group">
+                <label >Giá vé</label>
+                <input class="form-control" id="txt_billing_seat"
+                       name="txt_billing_email" type="text" value="<?= number_format($_GET['gia'])?> VNĐ"/>
+            </div>
+
+            <div class="form-group">
+                <label >Chi nhánh</label>
+                <input class="form-control" id="txt_bill_city"
+                       name="txt_bill_city" type="text" value="<?= $_GET['chi_nhanh']?>"/>
+            </div>
+
+            <div class="form-group">
+                <label >Chú ý (*)</label>
+                <input class="form-control" id="txt_bill_city"
+                       name="txt_bill_city" type="text" value="Nếu sau 30 phút chiếu phim kể từ <?= $_GET['gio_bat_dau'] ?> ngày <?= $_GET['ngay_chieu']?> vé chưa được thanh toán, vé của bạn sẽ bị hủy!"/>
+            </div>
+
+            <button type="submit" name="btn_submit" style="background-color: deepskyblue;width: 70px;height: 30px;border-radius: 5px">Xác nhận</button>
+            <button type="submit" name="btn_cancel" style="background-color: red;width: 70px;height: 30px;border-radius: 5px">Hủy</button>
+
+        </form>
+    </div>
 </div>
 
 </body>
 </html>
+
+
+
