@@ -4,28 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7fee531a-e60d-4653-a655-7a8e4f30f069" name="Changes" comment="15/12">
-      <change afterPath="$PROJECT_DIR$/admin/add_ngay_chieu.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/controllers/c_ngay_chieu.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/delete_ngay_chieu.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/edit_ngay_chieu.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/models/m_ngay_chieu.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/ngay_chieu.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/views/ngay_chieu/v_add_ngay_chieu.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/views/ngay_chieu/v_edit_ngay_chieu.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/views/ngay_chieu/v_ngay_chieu.php" afterDir="false" />
+    <list default="true" id="7fee531a-e60d-4653-a655-7a8e4f30f069" name="Changes" comment="17/12">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/controllers/c_lich_chieu.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controllers/c_lich_chieu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/models/m_home.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/models/m_home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/models/m_lich_chieu.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/models/m_lich_chieu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/models/m_ve.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/models/m_ve.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/templates/aside.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/templates/aside.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/views/lich_chieu/v_edit_lich_chieu.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/views/lich_chieu/v_edit_lich_chieu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/views/lich_chieu/v_add_lich_chieu.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/views/lich_chieu/v_add_lich_chieu.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/views/lich_chieu/v_lich_chieu.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/views/lich_chieu/v_lich_chieu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/views/ve/v_ve.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/views/ve/v_ve.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/m_ve_da_dat.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/m_ve_da_dat.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/Seat/v_Seat.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/Seat/v_Seat.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/ve_da_dat/v_ve_da_dat.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/ve_da_dat/v_ve_da_dat.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -389,7 +372,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671129127730</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="17/12">
+      <created>1671221187708</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1671221187708</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -408,7 +398,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="abc" />
     <MESSAGE value="tiep" />
     <MESSAGE value="test" />
     <MESSAGE value="ok" />
@@ -433,6 +422,7 @@
     <MESSAGE value="10/12" />
     <MESSAGE value="11/12" />
     <MESSAGE value="15/12" />
-    <option name="LAST_COMMIT_MESSAGE" value="15/12" />
+    <MESSAGE value="17/12" />
+    <option name="LAST_COMMIT_MESSAGE" value="17/12" />
   </component>
 </project>

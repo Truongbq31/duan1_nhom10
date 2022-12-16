@@ -12,12 +12,12 @@
                             <h4 class="card-title">Thêm lịch chiếu</h4>
 
                             <div class="form-group row">
-                                <label for="lname" class="col-sm-3 text-right control-label col-form-label">Chi nhánh</label>
+                                <label for="lname" class="col-sm-3 text-right control-label col-form-label">Tên phim - Chi nhánh chiếu</label>
                                 <div class="col-sm-9">
 
                                     <select class="select2 form-control custom-select" style="width: 100%; height:36px;" name="id_chi_nhanh_phim">
                                         <?php foreach ($chinhanh_phim as $key => $value){ ?>
-                                            <option value="<?php echo $value->id_chinhanh_phim ?>"><?php echo $value->ten_chi_nhanh ?></option>
+                                            <option value="<?php echo $value->id_chinhanh_phim ?>"><?= $value->name?> - <?php echo $value->ten_chi_nhanh ?> </option>
                                         <?php } ?>
                                     </select>
                                 </div>
@@ -36,9 +36,14 @@
                             </div>
 
                             <div class="form-group row">
-                                <label for="fname" class="col-sm-3 text-right control-label col-form-label">Ngày chieu</label>
+                                <label for="lname" class="col-sm-3 text-right control-label col-form-label">Ngày chieu</label>
                                 <div class="col-sm-9">
-                                    <input type="date" class="form-control" id="ten_loai" name="ngay_chieu" required>
+
+                                    <select class="select2 form-control custom-select" style="width: 100%; height:36px;" name="id_ngay_chieu">
+                                        <?php foreach ($ngay_chieu as $key => $value){ ?>
+                                            <option value="<?php echo $value->id ?>"><?php echo $value->ngay ?></option>
+                                        <?php } ?>
+                                    </select>
                                 </div>
                             </div>
 

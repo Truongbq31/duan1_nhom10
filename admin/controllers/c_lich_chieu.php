@@ -20,6 +20,10 @@ class c_lich_chieu{
         $m_chinhanh_phim = new m_chinhanh_phim();
         $chinhanh_phim = $m_chinhanh_phim->doc_chinhanh_phim();
 
+        include ("models/m_ngay_chieu.php");
+        $m_ngay_chieu = new m_ngay_chieu();
+        $ngay_chieu = $m_ngay_chieu->doc_ngay_chieu();
+
         include ("models/m_khung_gio_chieu.php");
         $m_kgc = new m_khung_gio_chieu();
         $kgc = $m_kgc->doc_khung_gio_chieu();
@@ -28,11 +32,11 @@ class c_lich_chieu{
             $id = null;
             $id_chi_nhanh_phim = $_POST['id_chi_nhanh_phim'];
             $id_khung_gio_chieu = $_POST['id_khung_gio_chieu'];
-            $ngay_chieu = $_POST['ngay_chieu'];
+            $id_ngay_chieu = $_POST['id_ngay_chieu'];
 
             include ("models/m_lich_chieu.php");
             $m_lich_chieu = new m_lich_chieu();
-            $result = $m_lich_chieu->insert_lichchieu($id, $id_chi_nhanh_phim, $id_khung_gio_chieu, $ngay_chieu);
+            $result = $m_lich_chieu->insert_lichchieu($id, $id_chi_nhanh_phim, $id_khung_gio_chieu, $id_ngay_chieu);
 
             if ($result) {
                 echo "<script>alert('Thêm thành công')</script>";

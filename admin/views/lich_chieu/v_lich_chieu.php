@@ -8,7 +8,7 @@
             <div class="col-12">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">Khung giờ chiếu</h5>
+                        <h5 class="card-title">Lịch chiếu</h5>
 
                         <button type="button" class="btn btn-cyan btn-sm" onclick="window.location.href='add_lich_chieu.php'">Thêm mới</button>
 
