@@ -1,18 +1,8 @@
 <?php
 session_start();
-$_SESSION['id_lich_chieu'] = $_GET['id'];
-$id_lich_chieu = $_SESSION['id_lich_chieu'];
-
 require "models/connect.php";
-$id = $_GET['id'];
-$sql = "Select *, phim.name as ten_phim, chi_nhanh.ten_chi_nhanh,khung_gio_chieu.gio_bat_dau,phong_chieu.ten_phong,lich_chieu.id as id_lich_chieu from lich_chieu  inner join chi_nhanh_phim on chi_nhanh_phim.id=lich_chieu.id_chi_nhanh_phim 
-      inner join phim on chi_nhanh_phim.id_phim = phim.id 
-      inner join chi_nhanh on chi_nhanh_phim.id_chi_nhanh=chi_nhanh.id
-      inner join khung_gio_chieu on khung_gio_chieu.id=lich_chieu.id_khung_gio_chieu
-      inner join khung_gio_phong_chieu on khung_gio_chieu.id=khung_gio_phong_chieu.id_khung_gio_chieu
-      inner join phong_chieu on khung_gio_phong_chieu.id_phong_chieu=phong_chieu.id                                                   
-      where phim.id='$id'";
-$result = $conn->query($sql)->fetch();
+$id_lich_chieu = $_GET['id_lich_chieu'];
+$_SESSION['id_lich_chieu'] = $id_lich_chieu;
 
 $sql2 = "Select * from ve";
 $result2 = $conn->query($sql2)->fetchAll();
@@ -23,7 +13,7 @@ $result_ghe = $conn->query($sql_ghe)->fetchAll();
 //print_r($result_ghe);
 
 $mangGheDat=[];
-foreach ($result_ghe as $item => $value){
+foreach ($result2 as $item => $value){
     $mangGheDat[] = explode(",",$value['ghe_ngoi']);
 }
 //echo "<pre>";
@@ -92,30 +82,30 @@ $mangGhe = [["A1","A2","A3","A4","A5","A6"],
         <div class="book-item">
             <span>Phim</span>
 
-            <h5 class="title ten_phim"><?= $result['ten_phim']; ?></h5>
+            <h5 class="title ten_phim"><?= $_GET['phim']; ?></h5>
 
         </div>
         <div class="book-item">
             <span>Giờ Chiếu</span>
 
-            <h5 class="title gio_chieu"><?= $result['gio_bat_dau'] ?></h5>
+            <h5 class="title gio_chieu"><?= $_GET['id_khung_gio_chieu'] ?></h5>
 
         </div>
         <div class="book-item">
 
             <span>Ngày chiếu</span>
-                        <h5 class="title ngay_chieu"><?= $result['ngay_chieu'] ?></h5>
+                        <h5 class="title ngay_chieu"><?= $_GET['ngay_chieu'] ?></h5>
         </div>
         <div class="book-item">
 
             <span>Phòng chiếu</span>
 
-            <h5 class="title ten_phong"><?= $result['ten_phong'] ?></h5>
+            <h5 class="title ten_phong"><?= $_GET['phong_chieu'] ?></h5>
 
         </div>
         <div class="book-item">
             <span>Chi Nhánh</span>
-                        <h5 class="title ten_chi_nhanh"><?= $result['ten_chi_nhanh'] ?></h5>
+                        <h5 class="title ten_chi_nhanh"><?= $_GET['chi_nhanh'] ?></h5>
         </div>
         <div class="book-item">
             <span>Giá</span>
@@ -143,7 +133,7 @@ $mangGhe = [["A1","A2","A3","A4","A5","A6"],
             if (!e.target.classList.contains("selected")) {
                 var id = $(this).html();
                 arr.push(id);
-                var price = arr.length * 50000;
+                var price = arr.length * 20000;
                 $(".booked").html(arr+" ");
                 $(".price").html(price);
             }
@@ -151,7 +141,7 @@ $mangGhe = [["A1","A2","A3","A4","A5","A6"],
                 var id_delete = $(this).html();
                 var num_delete = arr.indexOf(id_delete);
                 arr.splice(num_delete, 1);
-                var price = arr.length* 50000;
+                var price = arr.length* 20000;
                 $(".booked").html(arr + " ");
                 $(".price").html(price);
             }
