@@ -35,7 +35,7 @@
                                         <td><?php echo $value->username; ?></td>
                                         <td><?php echo $value->name; ?></td>
                                         <td><?php echo $value->gio_bat_dau; ?></td>
-                                        <td><?php echo $value->ngay_chieu; ?></td>
+                                        <td><?php echo $value->ngay; ?></td>
                                         <td><?php echo $value->ten_phong; ?></td>
                                         <td><?php echo $value->ten_chi_nhanh; ?></td>
                                         <td><?php echo $value->ghe_ngoi; ?></td>

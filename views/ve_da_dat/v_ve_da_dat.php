@@ -16,7 +16,7 @@
                 </div>
                 <br>
                 <main>
-                    <table border="1px" style="border-collapse: collapse; text-align: center; color: yellow" width="100%">
+                    <table border="1px" style="border-collapse: collapse; text-align: center; color: white" width="100%">
                         <tr>
                             <th>Tên khách hàng</th>
                             <th>Tên phim</th>
@@ -32,11 +32,11 @@
                         <?php foreach ($ve_da_dat as $key => $value){
 
                             ?>
-                            <tr>
+                            <tr bgcolor="<?php echo $value->trang_thai == 1 ? "green" : "#6699FF" ?>">
                                 <td><?php echo $value->username?></td>
                                 <td><?php echo $value->name?></td>
                                 <td><?php echo $value->gio_bat_dau?></td>
-                                <td><?php echo $value->ngay_chieu?></td>
+                                <td><?php echo $value->ngay?></td>
                                 <td><?php echo $value->ten_phong?></td>
                                 <td><?php echo $value->ten_chi_nhanh?></td>
                                 <td><?php echo $value->ghe_ngoi?></td>

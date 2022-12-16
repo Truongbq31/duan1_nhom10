@@ -5,7 +5,8 @@ class m_lich_chieu extends database {
     public function doc_lich_chieu(){
         $sql = "SELECT *, lich_chieu.id as id_lich_chieu FROM lich_chieu inner join chi_nhanh_phim on chi_nhanh_phim.id=lich_chieu.id_chi_nhanh_phim
         inner join khung_gio_chieu on khung_gio_chieu.id=lich_chieu.id_khung_gio_chieu
-        INNER JOIN chi_nhanh on chi_nhanh.id=chi_nhanh_phim.id_chi_nhanh";//chuỗi câu truy vấn dữ liệu
+        INNER JOIN chi_nhanh on chi_nhanh.id=chi_nhanh_phim.id_chi_nhanh
+        inner join ngay_chieu on ngay_chieu.id=lich_chieu.id_ngay_chieu";//chuỗi câu truy vấn dữ liệu
         $this -> setQuery($sql);
         //lấy nhiều dòng dữ liệu(Trả về 1 mảng dữ liệu)
         return $this -> loadAllRows();
@@ -18,16 +19,18 @@ class m_lich_chieu extends database {
     }
 
 
-    public function edit_lich_chieu($id, $id_chi_nhanh_phim,$id_khung_gio_chieu,$ngay_chieu) {
-        $sql = "update lich_chieu set id_chi_nhanh_phim = ?, id_khung_gio_chieu=?, ngay_chieu=? where id = ?";
+    public function edit_lich_chieu($id, $id_chi_nhanh_phim,$id_khung_gio_chieu,$id_ngay_chieu) {
+        $sql = "update lich_chieu set id_chi_nhanh_phim = ?, id_khung_gio_chieu=?, id_ngay_chieu=? where id = ?";
         $this->setQuery($sql);
-        return $this->execute(array($id_chi_nhanh_phim,$id_khung_gio_chieu,$ngay_chieu, $id));
+        return $this->execute(array($id_chi_nhanh_phim,$id_khung_gio_chieu,$id_ngay_chieu, $id));
     }
 
     public function read_lich_chieu_by_id($id) {
         $sql = "select *, lich_chieu.id as id_lc from lich_chieu inner join chi_nhanh_phim on chi_nhanh_phim.id=lich_chieu.id_chi_nhanh_phim
          inner join khung_gio_chieu on khung_gio_chieu.id=lich_chieu.id_khung_gio_chieu
-         inner join chi_nhanh on chi_nhanh.id=chi_nhanh_phim.id_chi_nhanh where lich_chieu.id = ?";
+         inner join chi_nhanh on chi_nhanh.id=chi_nhanh_phim.id_chi_nhanh
+                                 inner join ngay_chieu on ngay_chieu.id=lich_chieu.id_ngay_chieu
+                                 where lich_chieu.id = ?";
         $this->setQuery($sql);
         return $this->loadRow(array($id));
     }

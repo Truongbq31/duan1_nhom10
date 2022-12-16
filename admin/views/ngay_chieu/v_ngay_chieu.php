@@ -8,36 +8,32 @@
             <div class="col-12">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">Khung giờ chiếu</h5>
+                        <h5 class="card-title">Ngày chiếu</h5>
 
-                        <button type="button" class="btn btn-cyan btn-sm" onclick="window.location.href='add_lich_chieu.php'">Thêm mới</button>
+                        <button type="button" class="btn btn-cyan btn-sm" onclick="window.location.href='add_ngay_chieu.php'">Thêm mới</button>
 
                         <div class="table-responsive">
                             <table id="zero_config" class="table table-striped table-bordered">
                                 <thead>
                                 <tr>
                                     <th>ID</th>
-                                    <th>Chi nhánh phim</th>
-                                    <th>Khung giờ chiếu</th>
-                                    <th>ngày chiếu</th>
+                                    <th>Ngày chiếu</th>
                                     <th>Hành động</th>
                                 </tr>
                                 </thead>
 
                                 <tbody>
                                 <?php
-                                foreach ($lich_chieu as $key => $value) {
+                                foreach ($ngay_chieu as $key => $value) {
                                     ?>
                                     <tr>
-                                        <td><?php echo $value->id_lich_chieu; ?></td>
-                                        <td><?php echo $value->ten_chi_nhanh; ?></td>
-                                        <td><?php echo $value->gio_bat_dau; ?></td>
+                                        <td><?php echo $value->id; ?></td>
                                         <td><?php echo $value->ngay; ?></td>
 
                                         <td>
-                                            <button type="button" name="btn_edit" class="btn btn-cyan btn-sm" onclick="window.location.href='edit_lich_chieu.php?id=<?php echo $value->id_lich_chieu;?>'">Edit</button>
+                                            <button type="button" name="btn_edit" class="btn btn-cyan btn-sm" onclick="window.location.href='edit_ngay_chieu.php?id=<?php echo $value->id;?>'">Edit</button>
                                             <button type="button" name="btn_del" class="btn btn-cyan btn-sm" onclick="return confirm('Chắc chắn xóa?')">
-                                                <a style="color: white" href="delete_lich_chieu.php?id=<?php echo $value->id_lich_chieu;?>">Delete</a>
+                                                <a style="color: white" href="delete_ngay_chieu.php?id=<?php echo $value->id;?>">Delete</a>
                                             </button>
                                         </td>
                                     </tr>
@@ -55,5 +51,4 @@
         </div>
     </div>
 </div><?php
-
 

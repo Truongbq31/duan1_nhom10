@@ -10,6 +10,7 @@ class m_ve extends database {
         inner join khung_gio_phong_chieu on khung_gio_phong_chieu.id_khung_gio_chieu=khung_gio_chieu.id
         inner join phong_chieu on phong_chieu.id=khung_gio_phong_chieu.id_phong_chieu
         inner join chi_nhanh on chi_nhanh.id=chi_nhanh_phim.id_chi_nhanh
+        inner join ngay_chieu on ngay_chieu.id=lich_chieu.id_ngay_chieu
         group by ve.id";//chuỗi câu truy vấn dữ liệu
         $this -> setQuery($sql);
         //lấy nhiều dòng dữ liệu(Trả về 1 mảng dữ liệu)

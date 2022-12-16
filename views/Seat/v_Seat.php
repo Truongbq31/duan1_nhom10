@@ -77,39 +77,39 @@ $mangGhe = [["A1","A2","A3","A4","A5","A6"],
     <div class="proceed-to-book">
         <div class="book-item">
             <span>Ghế</span>
-            <h5 class="title booked"></h5>
+            <h6 class="title booked"></h6>
         </div>
         <div class="book-item">
             <span>Phim</span>
 
-            <h5 class="title ten_phim"><?= $_GET['phim']; ?></h5>
+            <h6 class="title ten_phim"><?= $_GET['phim']; ?></h6>
 
         </div>
         <div class="book-item">
             <span>Giờ Chiếu</span>
 
-            <h5 class="title gio_chieu"><?= $_GET['id_khung_gio_chieu'] ?></h5>
+            <h6 class="title gio_chieu"><?= $_GET['id_khung_gio_chieu'] ?></h6>
 
         </div>
         <div class="book-item">
 
             <span>Ngày chiếu</span>
-                        <h5 class="title ngay_chieu"><?= $_GET['ngay_chieu'] ?></h5>
+                        <h6 class="title ngay_chieu"><?= $_GET['ngay_chieu'] ?></h6>
         </div>
         <div class="book-item">
 
             <span>Phòng chiếu</span>
 
-            <h5 class="title ten_phong"><?= $_GET['phong_chieu'] ?></h5>
+            <h6 class="title ten_phong"><?= $_GET['phong_chieu'] ?></h6>
 
         </div>
         <div class="book-item">
             <span>Chi Nhánh</span>
-                        <h5 class="title ten_chi_nhanh"><?= $_GET['chi_nhanh'] ?></h5>
+                        <h6 class="title ten_chi_nhanh"><?= $_GET['chi_nhanh'] ?></h6>
         </div>
         <div class="book-item">
             <span>Giá</span>
-            <h5 class="title price"></h5>
+            <h6 class="title price"></h6>
         </div>
 
         <div class="book-item">

@@ -26,7 +26,7 @@
                             </div>
 
                             <div class="form-group row">
-                                <label for="lname" class="col-sm-3 text-right control-label col-form-label">Khung gio chieu</label>
+                                <label for="lname" class="col-sm-3 text-right control-label col-form-label">Khung giờ chiếu</label>
                                 <div class="col-sm-9">
 
                                     <select class="select2 form-control custom-select" style="width: 100%; height:36px;" name="id_khung_gio_chieu">
@@ -38,16 +38,23 @@
                                 </div>
                             </div>
 
+
                             <div class="form-group row">
-                                <label for="fname" class="col-sm-3 text-right control-label col-form-label">Ngày chieu</label>
+                                <label for="lname" class="col-sm-3 text-right control-label col-form-label">Ngày chiếu</label>
                                 <div class="col-sm-9">
-                                    <input type="date" class="form-control" id="ten_loai" name="ngay_chieu" required value="<?php echo $lich_chieu_details->ngay_chieu ?>">
+
+                                    <select class="select2 form-control custom-select" style="width: 100%; height:36px;" name="id_ngay_chieu">
+                                        <option selected value="<?php echo $lich_chieu_details->id_ngay_chieu ?>"><?php echo $lich_chieu_details->ngay ?></option>
+                                        <?php foreach ($ngay_chieu as $key => $value){ ?>
+                                            <option value="<?php echo $value->id ?>"><?php echo $value->ngay ?></option>
+                                        <?php } ?>
+                                    </select>
                                 </div>
                             </div>
 
                             <div class="border-top">
                                 <div class="card-body">
-                                    <button type="submit" name="btn_save" class="btn btn-primary">Sửa</button>
+                                    <button type="submit" name="btn_save" class="btn btn-primary">Lưu</button>
                                     <a href="lich_chieu.php" type="submit" name="btn-submit" class="btn btn-primary">Danh sách</a>
                                 </div>
                             </div>
