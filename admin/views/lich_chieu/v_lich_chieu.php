@@ -17,7 +17,9 @@
                                 <thead>
                                 <tr>
                                     <th>ID</th>
-                                    <th>Chi nhánh phim</th>
+                                    <th>Tên phim</th>
+                                    <th>Banner</th>
+                                    <th>Chi nhánh chiếu phim</th>
                                     <th>Khung giờ chiếu</th>
                                     <th>ngày chiếu</th>
                                     <th>Hành động</th>
@@ -30,6 +32,8 @@
                                     ?>
                                     <tr>
                                         <td><?php echo $value->id_lich_chieu; ?></td>
+                                        <td><?php echo $value->name; ?></td>
+                                        <td><img width="50px" src="public/img/<?php echo $value->img; ?>" alt=""></td>
                                         <td><?php echo $value->ten_chi_nhanh; ?></td>
                                         <td><?php echo $value->gio_bat_dau; ?></td>
                                         <td><?php echo $value->ngay; ?></td>

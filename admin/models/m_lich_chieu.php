@@ -6,7 +6,8 @@ class m_lich_chieu extends database {
         $sql = "SELECT *, lich_chieu.id as id_lich_chieu FROM lich_chieu inner join chi_nhanh_phim on chi_nhanh_phim.id=lich_chieu.id_chi_nhanh_phim
         inner join khung_gio_chieu on khung_gio_chieu.id=lich_chieu.id_khung_gio_chieu
         INNER JOIN chi_nhanh on chi_nhanh.id=chi_nhanh_phim.id_chi_nhanh
-        inner join ngay_chieu on ngay_chieu.id=lich_chieu.id_ngay_chieu";//chuỗi câu truy vấn dữ liệu
+        inner join ngay_chieu on ngay_chieu.id=lich_chieu.id_ngay_chieu
+        inner join phim on phim.id=chi_nhanh_phim.id_phim";//chuỗi câu truy vấn dữ liệu
         $this -> setQuery($sql);
         //lấy nhiều dòng dữ liệu(Trả về 1 mảng dữ liệu)
         return $this -> loadAllRows();

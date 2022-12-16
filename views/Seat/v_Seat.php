@@ -2,9 +2,14 @@
 session_start();
 require "models/connect.php";
 $id_lich_chieu = $_GET['id_lich_chieu'];
+$id_phim = $_GET['id_phim'];
+
 $_SESSION['id_lich_chieu'] = $id_lich_chieu;
 
-$sql2 = "Select * from ve";
+$sql2 = "Select * from ve inner join lich_chieu on lich_chieu.id=ve.id_lich_chieu
+        inner join chi_nhanh_phim on chi_nhanh_phim.id=lich_chieu.id_chi_nhanh_phim
+        inner join phim on phim.id=chi_nhanh_phim.id_phim
+        where phim.name= '$id_phim'";
 $result2 = $conn->query($sql2)->fetchAll();
 
 $sql_ghe = "Select ghe_ngoi from ve where id_lich_chieu = $id_lich_chieu";

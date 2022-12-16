@@ -6,9 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="7fee531a-e60d-4653-a655-7a8e4f30f069" name="Changes" comment="17/12">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/controllers/c_lich_chieu.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controllers/c_lich_chieu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/views/lich_chieu/v_add_lich_chieu.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/views/lich_chieu/v_add_lich_chieu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/models/m_lich_chieu.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/models/m_lich_chieu.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/views/lich_chieu/v_lich_chieu.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/views/lich_chieu/v_lich_chieu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/c_lich_chieu.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/c_lich_chieu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/m_data.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/m_data.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/m_lich_chieu.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/m_lich_chieu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/Seat/v_Seat.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/Seat/v_Seat.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/lich_chieu/v_lich_chieu.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/lich_chieu/v_lich_chieu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/lich_chieu/v_suat_chieu1.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,6 +131,7 @@
       <workItem from="1670664570039" duration="5348000" />
       <workItem from="1670769439692" duration="5780000" />
       <workItem from="1671115141144" duration="14352000" />
+      <workItem from="1671223254532" duration="4940000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1668509976207</created>
@@ -379,7 +385,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671221187708</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="17/12">
+      <created>1671223289989</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1671223289989</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

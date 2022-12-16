@@ -36,8 +36,8 @@
                 </div>
                 <span class="type">date</span>
                 <select class="select-bar day">
-                    <?php  foreach ($lich_chieu as $key => $value){?>
-                    <option value="<?php echo $value->id_lich_chieu;?>"><?php echo $value->ngay;?></option>
+                    <?php foreach ($lich_chieu as $key => $value){?>
+                    <option value="<?php echo $value->id_ngay_chieu;?>"><?php echo $value->ngay;?></option>
                       <?php } ?>
                 </select>
             </div>
