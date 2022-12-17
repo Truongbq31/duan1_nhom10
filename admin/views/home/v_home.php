@@ -195,42 +195,49 @@
 		</div>
 	</div>
 
-	<div class="page-wrapper" >
+	<div>
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-md-9">
+				<div class="col-md-12">
 					<div class="card">
 						<div class="card-body">
 							<div class="row">
-								<canvas id="myChart" style="width:100%;max-width:600px;margin: auto;"></canvas>
+<!--                                <div><h5>BIỂU ĐỒ DOANH THU PHIM</h5></div>-->
+								<canvas id="myChart" style="width:100%;max-width:800px;margin: auto;"></canvas>
 								<script>
 									<?php 
 									$array_phim=[];
-									foreach($result as $item => $value){
+									foreach($thong_ke_chi_tiet as $item => $value){
 										$array_phim[]=$value->name;
 									} ?>
 									
 									 xValues = <?php echo json_encode($array_phim) ?>;
 									
-									 <?php 
+									 <?php
+
 									$array_gia=[];
-									foreach($result as $item => $value){
-										$array_gia[]=$value->gia_cao_nhat;
+									foreach($thong_ke_chi_tiet as $item => $value){
+										$array_gia[]=$value->doanh_thu;
 									} ?>
 									var yValues =  <?php echo json_encode($array_gia) ?>;
-									console.log(xValues);
+
 									var barColors = [
 										"#b91d47",
 										"#00aba9",
 										"#2b5797",
-
-
+                                        "#66FF66",
+                                        "#FFCC00",
+                                        "#CCCCFF",
+                                        "#FF99FF",
+                                        "#339999",
+                                        "#FF6600",
 									];
 									new Chart("myChart", {
-										type: "pie",
+										type: "bar",
 										data: {
 											labels: xValues,
 											datasets: [{
+                                                label:'DOANH THU PHIM',
 												backgroundColor: barColors,
 												data: yValues
 											}]
@@ -238,7 +245,7 @@
 										options: {
 											title: {
 												display: true,
-												text: ""
+												text: 'BIỂU ĐỒ DOANH THU PHIM'
 											}
 										}
 									});

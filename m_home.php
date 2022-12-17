@@ -19,7 +19,7 @@ class m_home extends database{
         return $this->loadRow();
     }
     public function sum_allphim(){
-        $sql="SELECT ve.id, phim.name, MIN(ve.gia) as gia_thap_nhat,MAX(ve.gia) as gia_cao_nhat,AVG(ve.gia) as gia_trung_binh FROM ve INNER JOIN lich_chieu on ve.id_lich_chieu=lich_chieu.id INNER JOIN chi_nhanh_phim ON chi_nhanh_phim.id=lich_chieu.id_chi_nhanh_phim INNER JOIN khung_gio_chieu ON khung_gio_chieu.id=lich_chieu.id_khung_gio_chieu INNER JOIN phim ON phim.id= chi_nhanh_phim.id_phim INNER JOIN chi_nhanh ON chi_nhanh.id=chi_nhanh_phim.id_chi_nhanh GROUP BY chi_nhanh.ten_chi_nhanh ORDER BY ve.gia ASC";
+        $sql="SELECT ve.id, sum(ve.gia) as tong_tien, phim.name, MIN(ve.gia) as gia_thap_nhat,MAX(ve.gia) as gia_cao_nhat,AVG(ve.gia) as gia_trung_binh FROM ve INNER JOIN lich_chieu on ve.id_lich_chieu=lich_chieu.id INNER JOIN chi_nhanh_phim ON chi_nhanh_phim.id=lich_chieu.id_chi_nhanh_phim INNER JOIN khung_gio_chieu ON khung_gio_chieu.id=lich_chieu.id_khung_gio_chieu INNER JOIN phim ON phim.id= chi_nhanh_phim.id_phim INNER JOIN chi_nhanh ON chi_nhanh.id=chi_nhanh_phim.id_chi_nhanh GROUP BY chi_nhanh.ten_chi_nhanh ORDER BY ve.gia ASC";
         $this->setQuery($sql);
         return $this->loadAllRows();
     }
