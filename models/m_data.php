@@ -3,7 +3,7 @@ session_start();
    require "connect.php";
         $key = $_POST['id'];
         $id_phim = $_COOKIE['id_phim'];
-      $sql="Select chi_nhanh.id, chi_nhanh.ten_chi_nhanh,lich_chieu.id as id_lich_chieu from lich_chieu  inner join chi_nhanh_phim on chi_nhanh_phim.id=lich_chieu.id_chi_nhanh_phim
+      $sql="Select phim.id as id_phim, chi_nhanh.id, chi_nhanh.ten_chi_nhanh,lich_chieu.id as id_lich_chieu from lich_chieu  inner join chi_nhanh_phim on chi_nhanh_phim.id=lich_chieu.id_chi_nhanh_phim
       inner join phim on chi_nhanh_phim.id_phim = phim.id
       inner join chi_nhanh on chi_nhanh_phim.id_chi_nhanh=chi_nhanh.id
       inner join khung_gio_chieu on khung_gio_chieu.id=lich_chieu.id_khung_gio_chieu
@@ -42,7 +42,7 @@ session_start();
         <div class="movie-schedule">
        <?php
        foreach ($resultGioChieu as $index => $value1){
-           if($value['id'] == $value1['id']){
+           if($value['id_phim'] == $value1['id_phim'] && $value['id'] == $value1['id']){
            ?>
             <div class="item" onclick="location.href='Seat.php?id_lich_chieu=<?php echo $value1['id_lich_chieu'];?>&&phim=<?php echo $value1['name']?>&&ngay_chieu=<?php echo $value1['ngay']?>&&phong_chieu=<?php echo $value1['ten_phong']?>&&id_khung_gio_chieu=<?php echo $value1['gio_bat_dau'];?>&&chi_nhanh=<?php echo $value['ten_chi_nhanh']?>&&id_phim=<?= $value1['id_phim']?>'">
                 <?php echo $value1['gio_bat_dau'];?>

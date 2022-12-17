@@ -41,7 +41,7 @@
                             <div class="border-top">
                                 <div class="card-body">
                                     <button type="submit" name="btn_save" class="btn btn-primary">Lưu</button>
-                                    <a href="chinhanh_phim.php" type="submit" name="btn-submit" class="btn btn-primary">Danh sách</a>
+                                    <a href="khung_gio_phong_chieu.php" type="submit" name="btn-submit" class="btn btn-primary">Danh sách</a>
                                 </div>
                             </div>
                     </form>

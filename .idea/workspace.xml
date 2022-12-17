@@ -5,15 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7fee531a-e60d-4653-a655-7a8e4f30f069" name="Changes" comment="17/12">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_10_2022_1_26_PM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_10_2022_1_26_PM__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/models/m_lich_chieu.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/models/m_lich_chieu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/views/lich_chieu/v_lich_chieu.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/views/lich_chieu/v_lich_chieu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/c_lich_chieu.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/c_lich_chieu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/templates/aside.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/templates/aside.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/views/khung_gio_phong_chieu/v_edit_khung_gio_phong_chieu.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/views/khung_gio_phong_chieu/v_edit_khung_gio_phong_chieu.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/m_data.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/m_data.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/m_lich_chieu.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/m_lich_chieu.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/Seat/v_Seat.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/Seat/v_Seat.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/lich_chieu/v_lich_chieu.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/lich_chieu/v_lich_chieu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/lich_chieu/v_suat_chieu1.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +129,8 @@
       <workItem from="1670664570039" duration="5348000" />
       <workItem from="1670769439692" duration="5780000" />
       <workItem from="1671115141144" duration="14352000" />
-      <workItem from="1671223254532" duration="4940000" />
+      <workItem from="1671223254532" duration="5152000" />
+      <workItem from="1671283177045" duration="4322000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1668509976207</created>
@@ -392,7 +391,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671223289989</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="17/12">
+      <created>1671228576680</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1671228576680</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

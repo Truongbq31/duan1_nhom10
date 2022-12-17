@@ -9,7 +9,7 @@ $_SESSION['id_lich_chieu'] = $id_lich_chieu;
 $sql2 = "Select * from ve inner join lich_chieu on lich_chieu.id=ve.id_lich_chieu
         inner join chi_nhanh_phim on chi_nhanh_phim.id=lich_chieu.id_chi_nhanh_phim
         inner join phim on phim.id=chi_nhanh_phim.id_phim
-        where phim.name= '$id_phim'";
+        where phim.id= '$id_phim'";
 $result2 = $conn->query($sql2)->fetchAll();
 
 $sql_ghe = "Select ghe_ngoi from ve where id_lich_chieu = $id_lich_chieu";
@@ -71,7 +71,7 @@ $mangGhe = [["A1","A2","A3","A4","A5","A6"],
         <div class="screen2"></div>
         <?php foreach($mangGhe as $item =>$value){ ?>
             <div class="row2">
-                <?php foreach($value as $index => $key){ ?>
+                <?php foreach($value as $index => $key){?>
                     <div class="seat <?php echo in_array($key,$mangGheDaDat) ?'occupied':''?>"><?= $key ?></div>
                 <?php }?>
             </div>
