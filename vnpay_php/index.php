@@ -261,8 +261,9 @@ $_SESSION['trang_thai'] = $_GET['trang_thai'];
                            name="txt_inv_mobile" type="text" value="02437764668"/>
                 </div>
             </div>
-            <button type="submit" class="btn btn-primary" id="btnPopup">Thanh toán Post</button>
-            <button type="submit" name="redirect" id="redirect" class="btn btn-default">Thanh toán Redirect</button>
+
+            <button style="background-color: #2ab7f5" type="submit" name="redirect" id="redirect" class="btn btn-default">Thanh toán Redirect</button>
+            <button><a href="../index.php?cancel=cancel">Hủy</a></button>
 
         </form>
     </div>

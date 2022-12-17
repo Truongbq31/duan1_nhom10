@@ -72,7 +72,7 @@ $mangGhe = [["A1","A2","A3","A4","A5","A6"],
         <?php foreach($mangGhe as $item =>$value){ ?>
             <div class="row2">
                 <?php foreach($value as $index => $key){?>
-                    <div class="seat <?php echo in_array($key,$mangGheDaDat) ?'occupied':''?>"><?= $key ?></div>
+                    <div class="seat <?php echo in_array($key,$mangGheDaDat) ?'occupied':''?>"><?= $key?></div>
                 <?php }?>
             </div>
         <?php }?>

@@ -16,15 +16,12 @@ class c_dat_ve_offline {
                 echo "<script>alert('Quý khách chưa chọn ghế!')</script>";
             }
             if($_SESSION['ghe_ngoi'] != "" && $_SESSION['gia'] != 0){
-                $offline = "offline";
-                header("location: models/m_ve.php?offline=offline");
+                header("location: models/m_ve.php?offline=done");
             }
-
         }
 
         if(isset($_POST['btn_cancel'])){
-            $cancel = "cancel";
-            header("location:index.php?cancel=$cancel");
+            header("location:index.php?cancel=done");
         }
 
         $view = "views/thanh_toan/v_tt_offline.php";
