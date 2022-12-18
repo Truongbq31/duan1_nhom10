@@ -27,6 +27,7 @@
                             <th>Ghế ngồi</th>
                             <th>Ngày đặt</th>
                             <th>Giá vé</th>
+                            <th>Mã hóa đơn</th>
                             <th>Trạng thái</th>
                         </tr>
                         <?php foreach ($ve_da_dat as $key => $value){
@@ -42,6 +43,7 @@
                                 <td><?php echo $value->ghe_ngoi?></td>
                                 <td><?php echo $value->ngay_dat?></td>
                                 <td><?php echo number_format($value->gia_ve)?> VNĐ</td>
+                                <td><?php echo $value->ma_hoa_don?></td>
                                 <td><?php echo $value->trang_thai == 1 ? "Đã thanh toán" : "Chưa thanh toán"?></td>
                             </tr>
                         <?php } ?>

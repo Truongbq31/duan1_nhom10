@@ -36,8 +36,8 @@
 					<div class="card__content">
 						<h3 class="card__title"><a href="#"><?php echo $value->name?></a></h3>
 						<span class="card__category">
-							<a href="#"><?php echo $value->ten_loai?></a>
-							<a href="#"><?php echo $value->description?></a>
+							<a href="">Thể Loại: <?php echo $value->ten_loai?></a>
+<!--							<a href="#">--><?php //echo $value->description?><!--</a>-->
 						</span>
 						<span class="card__rate"><?php echo $value->rate?></span>
 

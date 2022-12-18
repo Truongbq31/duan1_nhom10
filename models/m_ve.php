@@ -8,8 +8,12 @@ require("connect.php");
         date_default_timezone_set('Asia/Ho_Chi_Minh');
         $ngay_dat=date("H:i a d-m-Y");
         $gia = $_SESSION['gia'];
+
+        $permitted_chars = '0123456789ABCDEFZHIKLMNOPQRSTVX';
+        $ma_hoa_don = substr(str_shuffle($permitted_chars), 0, 10);
+
         $trang_thai = $_SESSION['trang_thai'];
-        $sql="INSERT INTO ve VALUE('','$id_lich_chieu','$id_nguoi_dung','$ghe_ngoi','$ngay_dat','$gia','$trang_thai')";
+        $sql="INSERT INTO ve VALUE('','$id_lich_chieu','$id_nguoi_dung','$ghe_ngoi','$ngay_dat','$gia','$ma_hoa_don','$trang_thai')";
         $conn->exec($sql);
         header("location:../index.php?online=done");
 
@@ -38,9 +42,12 @@ require("connect.php");
         date_default_timezone_set('Asia/Ho_Chi_Minh');
         $ngay_dat=date("H:i a d-m-Y");
         $gia = $_SESSION['gia'];
-        echo $gia;
+
+        $permitted_chars = '0123456789ABCDEFZHIKLMNOPQRSTVX';
+        $ma_hoa_don = substr(str_shuffle($permitted_chars), 0, 10);
+
         $trang_thai = $_SESSION['trang_thai'];
-        $sql="INSERT INTO ve VALUE('','$id_lich_chieu','$id_nguoi_dung','$ghe_ngoi','$ngay_dat','$gia','$trang_thai')";
+        $sql="INSERT INTO ve VALUE('','$id_lich_chieu','$id_nguoi_dung','$ghe_ngoi','$ngay_dat','$gia','$ma_hoa_don','$trang_thai')";
         $conn->exec($sql);
         header("location:../index.php?offline=done");
         die();

@@ -3,13 +3,19 @@ session_start();
 require "models/connect.php";
 $id_lich_chieu = $_GET['id_lich_chieu'];
 $id_phim = $_GET['id_phim'];
+$id_chi_nhanh = $_GET['id_chi_nhanh'];
+$id_ngay = $_GET['id_ngay'];
+$id_khung_gio = $_GET['id_khung_gio'];
 
 $_SESSION['id_lich_chieu'] = $id_lich_chieu;
 
 $sql2 = "Select * from ve inner join lich_chieu on lich_chieu.id=ve.id_lich_chieu
         inner join chi_nhanh_phim on chi_nhanh_phim.id=lich_chieu.id_chi_nhanh_phim
         inner join phim on phim.id=chi_nhanh_phim.id_phim
-        where phim.id= '$id_phim'";
+        inner join chi_nhanh on chi_nhanh.id=chi_nhanh_phim.id_chi_nhanh
+        inner join ngay_chieu on lich_chieu.id_ngay_chieu=ngay_chieu.id
+         inner join khung_gio_chieu on khung_gio_chieu.id=lich_chieu.id_khung_gio_chieu
+        where phim.id= '$id_phim' and chi_nhanh.id = '$id_chi_nhanh' and ngay_chieu.id='$id_ngay' and khung_gio_chieu.id='$id_khung_gio'";
 $result2 = $conn->query($sql2)->fetchAll();
 
 $sql_ghe = "Select ghe_ngoi from ve where id_lich_chieu = $id_lich_chieu";
@@ -138,7 +144,7 @@ $mangGhe = [["A1","A2","A3","A4","A5","A6"],
             if (!e.target.classList.contains("selected")) {
                 var id = $(this).html();
                 arr.push(id);
-                var price = arr.length * 20000;
+                var price = arr.length * 50000;
                 $(".booked").html(arr+" ");
                 $(".price").html(price);
             }
@@ -146,7 +152,7 @@ $mangGhe = [["A1","A2","A3","A4","A5","A6"],
                 var id_delete = $(this).html();
                 var num_delete = arr.indexOf(id_delete);
                 arr.splice(num_delete, 1);
-                var price = arr.length* 20000;
+                var price = arr.length* 50000;
                 $(".booked").html(arr + " ");
                 $(".price").html(price);
             }
