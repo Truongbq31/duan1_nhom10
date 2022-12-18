@@ -21,12 +21,22 @@ class c_phong_chieu{
             $ten_phong = $_POST['ten_phong'];
             include ("models/m_phong_chieu.php");
             $m_phong_chieu = new m_phong_chieu();
-            $result = $m_phong_chieu->insert_phong_chieu($id, $ten_phong);
-            if ($result) {
-                echo "<script>alert('Thêm thành công')</script>";
-            } else {
-                echo "<script>alert('Thêm không thành công')</script>";
+
+            $validate = $m_phong_chieu->doc_phong_chieu();
+            $count=0;
+            foreach ($validate as $key => $value){
+                if ($value->ten_phong == $ten_phong){
+                    $count++;
+                }
             }
+
+            if ($count==0){
+                $result = $m_phong_chieu->insert_phong_chieu($id, $ten_phong);
+                echo "<script>alert('Thêm thành công')</script>";
+            }else{
+                echo "<script>alert('Phòng đã tồn tại')</script>";
+            }
+
         }
         $view = "views/phong_chieu/v_add_phong_chieu.php";
         include ("templates/layout.php");

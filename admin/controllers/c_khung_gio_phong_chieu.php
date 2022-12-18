@@ -29,12 +29,20 @@ class c_khung_gio_phong_chieu{
             $id_khung_gio_chieu = $_POST['id_khung_gio_chieu'];
             include ("models/m_khung_gio_phong_chieu.php");
             $m_khung_gio_phong_chieu = new m_khung_gio_phong_chieu();
-            $result = $m_khung_gio_phong_chieu->insert_khung_gio_phong_chieu($id, $id_phong_chieu, $id_khung_gio_chieu);
-            if ($result) {
-                echo "<script>alert('Thêm thành công')</script>";
-            } else {
-                echo "<script>alert('Thêm không thành công')</script>";
+            $validate = $m_khung_gio_phong_chieu->doc_khung_gio_phong_chieu();
+            $count=0;
+            foreach ($validate as $key => $value){
+                if ($value->id_phong_chieu == $id_phong_chieu && $value->id_khung_gio_chieu == $id_khung_gio_chieu){
+                    $count++;
+                }
             }
+            if ($count==0){
+                $result = $m_khung_gio_phong_chieu->insert_khung_gio_phong_chieu($id, $id_phong_chieu, $id_khung_gio_chieu);
+                echo "<script>alert('Thêm thành công')</script>";
+            }else{
+                echo "<script>alert('Đã tồn tại')</script>";
+            }
+
         }
         $view = "views/khung_gio_phong_chieu/v_add_khung_gio_phong_chieu.php";
         include ("templates/layout.php");

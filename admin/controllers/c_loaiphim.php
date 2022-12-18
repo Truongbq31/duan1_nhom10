@@ -21,12 +21,22 @@ class c_loaiphim{
             $id = null;
             $ten_loai = $_POST['ten_loai'];
             $m_loaiphim = new m_loaiphim();
-            $result = $m_loaiphim->insert_loaiphim($id, $ten_loai);
-            if ($result) {
-                echo "<script>alert('Thêm thành công')</script>";
-            } else {
-                echo "<script>alert('Thêm không thành công')</script>";
+
+            $validate = $m_loaiphim->doc_loaiphim();
+            $count=0;
+            foreach ($validate as $key => $value){
+                if ($value->ten_loai == $ten_loai){
+                    $count++;
+                }
             }
+
+            if ($count==0){
+                $result = $m_loaiphim->insert_loaiphim($id, $ten_loai);
+                echo "<script>alert('Thêm thành công')</script>";
+            }else{
+                echo "<script>alert('Loại phim đã tồn tại')</script>";
+            }
+
         }
         $view = "views/loai_phim/v_add_loaiphim.php";
         include ("templates/layout.php");

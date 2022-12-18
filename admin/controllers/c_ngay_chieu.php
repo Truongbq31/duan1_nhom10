@@ -21,11 +21,20 @@ class c_ngay_chieu{
             $id = null;
             $ngay = $_POST['ngay'];
             $m_ngay_chieu = new m_ngay_chieu();
-            $result = $m_ngay_chieu->insert_ngay_chieu($id, $ngay);
-            if ($result) {
+
+            $validate = $m_ngay_chieu->doc_ngay_chieu();
+            $count=0;
+            foreach ($validate as $key => $value){
+                if ($value->ngay == $ngay){
+                    $count++;
+                }
+            }
+
+            if ($count==0){
+                $result = $m_ngay_chieu->insert_ngay_chieu($id, $ngay);
                 echo "<script>alert('Thêm thành công')</script>";
-            } else {
-                echo "<script>alert('Thêm không thành công')</script>";
+            }else{
+                echo "<script>alert('Đã tồn tại')</script>";
             }
         }
         $view = "views/ngay_chieu/v_add_ngay_chieu.php";

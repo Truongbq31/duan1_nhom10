@@ -47,10 +47,20 @@ class c_phim{
                 if ($allow_upload == true) {
                     move_uploaded_file($_FILES['img']['tmp_name'],$target_file);
                     $add_phim = new m_phim();
-                    $result = $add_phim->insert_phim($id,$name,$rate,$description,$img, $link_demo, $id_loai_phim);
-                    echo "<script>alert('Thêm thành công')</script>";
-                }else {
-                    echo "<script>alert('Thêm không thành công')</script>";
+                    $validate = $add_phim->doc_phim();
+                    $count=0;
+                    foreach ($validate as $key => $value){
+                        if ($value->name == $name){
+                            $count++;
+                        }
+                    }
+
+                    if ($count==0){
+                        $result = $add_phim->insert_phim($id,$name,$rate,$description,$img, $link_demo, $id_loai_phim);
+                        echo "<script>alert('Thêm thành công')</script>";
+                    }else{
+                        echo "<script>alert('Phim đã tồn tại')</script>";
+                    }
                 }
             }
 

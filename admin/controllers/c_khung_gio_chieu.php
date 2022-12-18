@@ -21,11 +21,20 @@ class c_khung_gio_chieu{
             $gio_bat_dau = $_POST['gio_bat_dau'];
             include ("models/m_khung_gio_chieu.php");
             $m_khung_gio_chieu = new m_khung_gio_chieu();
-            $result = $m_khung_gio_chieu->insert_khung_gio_chieu($id, $gio_bat_dau);
-            if ($result) {
+
+            $validate = $m_khung_gio_chieu->doc_khung_gio_chieu();
+            $count=0;
+            foreach ($validate as $key => $value){
+                if ($value->gio_bat_dau == $gio_bat_dau){
+                    $count++;
+                }
+            }
+
+            if ($count==0){
+                $result = $m_khung_gio_chieu->insert_khung_gio_chieu($id, $gio_bat_dau);
                 echo "<script>alert('Thêm thành công')</script>";
-            } else {
-                echo "<script>alert('Thêm không thành công')</script>";
+            }else{
+                echo "<script>alert('Khung giờ đã tồn tại')</script>";
             }
         }
         $view = "views/khung_gio_chieu/v_add_khung_gio_chieu.php";

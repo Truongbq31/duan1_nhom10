@@ -21,12 +21,21 @@ class c_chinhanh{
             $id = null;
             $ten_chi_nhanh = $_POST['ten_chi_nhanh'];
             $m_chinhanh = new m_chinhanh();
-            $result = $m_chinhanh->insert_chinhanh($id, $ten_chi_nhanh);
-            if ($result) {
-                echo "<script>alert('Thêm thành công')</script>";
-            } else {
-                echo "<script>alert('Thêm không thành công')</script>";
+            $validate = $m_chinhanh->doc_chinhanh();
+            $count = 0;
+            foreach ($validate as $key => $value){
+                if ($value->ten_chi_nhanh == $ten_chi_nhanh){
+                    $count++;
+                }
             }
+
+            if ($count==0){
+                $result = $m_chinhanh->insert_chinhanh($id, $ten_chi_nhanh);
+                echo "<script>alert('Thêm thành công!')</script>";
+            }else{
+                echo "<script>alert('Chi nhánh đã tồn tại!')</script>";
+            }
+
         }
         $view = "views/chi_nhanh/v_add_chinhanh.php";
         include ("templates/layout.php");

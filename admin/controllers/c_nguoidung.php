@@ -25,11 +25,20 @@ class c_nguoidung{
             $vai_tro = $_POST['vai_tro'];
 
             $m_nguoidung = new m_nguoidung();
-            $result = $m_nguoidung->insert_nguoidung($id, $email, md5($mat_khau), $username, $vai_tro);
-            if($result){
+
+            $validate = $m_nguoidung->doc_nguoidung();
+            $count=0;
+            foreach ($validate as $key => $value){
+                if ($value->email == $email){
+                    $count++;
+                }
+            }
+
+            if ($count==0){
+                $result = $m_nguoidung->insert_nguoidung($id, $email, md5($mat_khau), $username, $vai_tro);
                 echo "<script>alert('Thêm thành công')</script>";
-            } else {
-                echo "<script>alert('Thêm không thành công')</script>";
+            }else{
+                echo "<script>alert('Email đăng kí đã tồn tại')</script>";
             }
         }
         $view = "views/nguoi_dung/v_add_nguoidung.php";
