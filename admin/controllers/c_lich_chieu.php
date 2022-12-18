@@ -36,13 +36,38 @@ class c_lich_chieu{
 
             include ("models/m_lich_chieu.php");
             $m_lich_chieu = new m_lich_chieu();
-            $result = $m_lich_chieu->insert_lichchieu($id, $id_chi_nhanh_phim, $id_khung_gio_chieu, $id_ngay_chieu);
+            $validate = $m_lich_chieu->validate_lc();
 
-            if ($result) {
-                echo "<script>alert('Thêm thành công')</script>";
-            } else {
-                echo "<script>alert('Thêm không thành công')</script>";
+            $count = 0;
+            foreach ($validate as $key => $values){
+                if($values->id_khung_gio_chieu == $id_khung_gio_chieu && $values->id_chi_nhanh_phim == $id_chi_nhanh_phim && $values->id_ngay_chieu == $id_ngay_chieu) {
+                    $count++;
+                }
             }
+
+//            echo $count;
+//            echo "</br>";
+//            echo $values->id_chi_nhanh_phim;
+//            echo "</br>";
+//            echo $id_chi_nhanh_phim;
+//            echo "</br>";
+//            echo "kgc" .$values->id_khung_gio_chieu;
+//            echo "</br>";
+//            echo "pst kgc" .$id_khung_gio_chieu;
+//            echo "</br>";
+//            echo $values->id_ngay_chieu;
+//            echo "</br>";
+//            echo $id_ngay_chieu;
+//            die();
+
+
+            if($count==0){
+                $result = $m_lich_chieu->insert_lichchieu($id, $id_chi_nhanh_phim, $id_khung_gio_chieu, $id_ngay_chieu);
+                echo "<script>alert('Thêm thành công')</script>";
+            }else{
+                echo "<script>alert('Lịch chiếu đã tồn tại')</script>";
+            }
+
         }
         $view = "views/lich_chieu/v_add_lich_chieu.php";
         include ("templates/layout.php");

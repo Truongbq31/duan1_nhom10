@@ -13,12 +13,6 @@
                         <div class="card-body">
                             <h4 class="card-title">Cập nhật trạng thái vé</h4>
                             <div class="col-sm-9">
-                                <div class="form-group row">
-                                    <label for="fname" class="col-sm-3 text-right control-label col-form-label">Ghế ngồi</label>
-                                    <div class="col-sm-9">
-                                        <input type="text" class="form-control" id="ten_tieu_de" name="ghe_ngoi" value="<?php echo $status->ghe_ngoi;?>">
-                                    </div>
-                                </div>
 
                                 <div class="form-group row">
                                     <label for="lname" class="col-sm-3 text-right control-label col-form-label">Trạng thái</label>

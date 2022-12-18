@@ -4,10 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7fee531a-e60d-4653-a655-7a8e4f30f069" name="Changes" comment="17/12">
+    <list default="true" id="7fee531a-e60d-4653-a655-7a8e4f30f069" name="Changes" comment="18/12">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/controllers/c_home.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controllers/c_home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/models/m_home.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/models/m_home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/controllers/c_lich_chieu.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controllers/c_lich_chieu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/controllers/c_ve.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/controllers/c_ve.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/models/m_lich_chieu.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/models/m_lich_chieu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/models/m_ve.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/models/m_ve.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/views/ve/v_edit_ve.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/views/ve/v_edit_ve.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/views/ve/v_ve.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/views/ve/v_ve.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/m_data.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/m_data.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/m_ve_da_dat.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/m_ve_da_dat.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/thanh_toan/v_tt_offline.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/thanh_toan/v_tt_offline.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +136,8 @@
       <workItem from="1671283177045" duration="15707000" />
       <workItem from="1671319902935" duration="316000" />
       <workItem from="1671321527703" duration="4574000" />
-      <workItem from="1671326431416" duration="317000" />
+      <workItem from="1671326431416" duration="367000" />
+      <workItem from="1671342750123" duration="7913000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1668509976207</created>
@@ -432,7 +440,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671326113522</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="18/12">
+      <created>1671326792608</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1671326792608</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -451,7 +466,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="tiep" />
     <MESSAGE value="test" />
     <MESSAGE value="ok" />
     <MESSAGE value="ngu" />
@@ -476,6 +490,7 @@
     <MESSAGE value="11/12" />
     <MESSAGE value="15/12" />
     <MESSAGE value="17/12" />
-    <option name="LAST_COMMIT_MESSAGE" value="17/12" />
+    <MESSAGE value="18/12" />
+    <option name="LAST_COMMIT_MESSAGE" value="18/12" />
   </component>
 </project>

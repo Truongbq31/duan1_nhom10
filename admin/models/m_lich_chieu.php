@@ -13,6 +13,12 @@ class m_lich_chieu extends database {
         return $this -> loadAllRows();
     }
 
+    public function validate_lc(){
+        $sql = "select * from lich_chieu";
+        $this -> setQuery($sql);
+        return $this -> loadAllRows();
+    }
+
     public function insert_lichchieu($id, $id_chi_nhanh_phim, $id_khung_gio_chieu, $ngay_chieu) {
         $sql = "insert into lich_chieu values (?,?,?,?)";
         $this->setQuery($sql);

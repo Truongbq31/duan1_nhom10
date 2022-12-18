@@ -46,8 +46,16 @@
                                         <td><?php echo $value->trang_thai == 1 ? "Đã thanh toán" : "Chưa thanh toán"; ?></td>
 
                                         <td>
-                                            <button style="margin: 5px 0px; width: 80px" type="button" name="btn_edit" class="btn btn-cyan btn-sm" onclick="window.location.href='edit_tt_ve.php?id=<?php echo $value->id_ve;?>'">Update</button>
-                                            <button style="width: 80px;" type="button" name="btn_del" class="btn btn-cyan btn-sm" onclick="return confirm('Chắc chắn xóa?')">
+                                            <button <?php if($value->trang_thai==1){
+                                                echo "hidden";
+                                            }else{
+                                                "";
+                                            } ?>  style="margin: 5px 0px; width: 80px" type="button" name="btn_edit" class="btn btn-cyan btn-sm" onclick="window.location.href='edit_tt_ve.php?id=<?php echo $value->id_ve;?>'">Update</button>
+                                            <button <?php if($value->trang_thai==1){
+                                                echo "hidden";
+                                            }else{
+                                                "";
+                                            } ?> style="width: 80px;" type="button" name="btn_del" class="btn btn-cyan btn-sm" onclick="return confirm('Chắc chắn xóa?')">
                                                 <a style="color: white" href="delete_ve.php?id=<?php echo $value->id_ve;?>">Delete</a>
                                             </button>
                                         </td>
